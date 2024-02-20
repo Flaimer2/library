@@ -1,4 +1,4 @@
-const val rootGroup = "ru.snapix.library"
+const val rootGroup = "ru.snapix"
 const val rootVersion = "1.0.0"
 
 const val kotlinVersion = "1.9.22"
