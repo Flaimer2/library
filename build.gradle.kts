@@ -10,10 +10,10 @@ allprojects {
     version = rootVersion
 
     repositories {
-        maven("https://repo.papermc.io/repository/maven-public/")
-        maven("https://repo.aikar.co/content/groups/aikar/")
         mavenLocal()
         mavenCentral()
+        maven("https://repo.papermc.io/repository/maven-public/")
+        maven("https://repo.aikar.co/content/groups/aikar/")
     }
 }
 
@@ -24,10 +24,10 @@ subprojects {
     apply(plugin = "maven-publish")
 
     repositories {
-        maven("https://repo.papermc.io/repository/maven-public/")
-        maven("https://repo.aikar.co/content/groups/aikar/")
         mavenLocal()
         mavenCentral()
+        maven("https://repo.papermc.io/repository/maven-public/")
+        maven("https://repo.aikar.co/content/groups/aikar/")
     }
 
     dependencies {
@@ -46,16 +46,17 @@ subprojects {
 }
 
 subprojects
+    .filter { it.name.startsWith("platform") }
     .forEach { proj ->
         proj.publishing { applyToSub(proj) }
     }
 
-fun PublishingExtension.applyToSub(project: Project) {
+fun PublishingExtension.applyToSub(subProject: Project) {
     publications {
         create<MavenPublication>("maven") {
-            artifactId = project.name
+            artifactId = project.name.toLowerCase()
             groupId = rootGroup
-            version = rootVersion
+            version = "$rootVersion-${subProject.name.removePrefix("platform-")}"
         }
     }
 }
