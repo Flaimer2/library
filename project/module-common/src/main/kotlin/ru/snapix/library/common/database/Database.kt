@@ -8,14 +8,17 @@ import ru.snapix.library.common.utils.forEachIndexed
 import java.sql.ResultSet
 import java.sql.SQLException
 
-// TODO: 1. Use DatabaseOptions to initialize class
+// TODO: 1. Add kotlin dsl
 // TODO: 2. Add kotlin coroutines
+// TODO: 3. Add logger
 object Database {
     private lateinit var pool: Pool
 
-    fun init(host: String, port: Int, database: String, username: String, password: String, maxPoolSize: Int, options: String) {
-        val configuration = Configuration.parse("jdbc:mariadb://$host:$port/$database?maxPoolSize=$maxPoolSize&$options")
-        pool = Pools.retrievePool(configuration.clone(username, password))
+    operator fun invoke(databaseOptions: DatabaseOptions) {
+        databaseOptions.apply {
+            val configuration = Configuration.parse("jdbc:mariadb://$host:$port/$database?$options")
+            pool = Pools.retrievePool(configuration.clone(username, password))
+        }
     }
 
     fun execute(@Language("sql") query: String, vararg parameters: Any) {
