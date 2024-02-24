@@ -6,10 +6,12 @@ class DatabaseOptions {
     var database = "server_global"
     var username = "root"
     var password = "root"
-    var options = ""
-}
-fun databaseOptions(init: DatabaseOptions.() -> Unit): DatabaseOptions {
-    val options = DatabaseOptions()
-    options.init()
-    return options
+    var maximumPoolSize = 10
+    var connectionTimeout = 1000L
+    var autoReconnect = true
+    var cachePrepStmts = true
+    var prepStmtCacheSize = 250
+    var prepStmtCacheSqlLimit = 2048
+    var useServerPrepStmts = true
+    var cacheResultSetMetadata = true
 }

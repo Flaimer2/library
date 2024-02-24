@@ -23,13 +23,6 @@ subprojects {
     apply(plugin = "com.github.johnrengelman.shadow")
     apply(plugin = "maven-publish")
 
-    repositories {
-        mavenLocal()
-        mavenCentral()
-        maven("https://repo.papermc.io/repository/maven-public/")
-        maven("https://repo.aikar.co/content/groups/aikar/")
-    }
-
     dependencies {
         compileOnly(kotlin("stdlib"))
         compileOnly("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
