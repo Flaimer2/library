@@ -4,8 +4,8 @@ import org.bukkit.plugin.java.JavaPlugin
 import ru.snapix.library.SnapiLibraryBukkit
 import ru.snapix.library.database.Database
 import ru.snapix.library.database.initializeDatabase
+import ru.snapix.library.extensions.create
 import ru.snapix.library.settings.Configuration
-import space.arim.dazzleconf.ConfigurationOptions
 
 class SnapiBukkit : JavaPlugin() {
     private lateinit var database: Database
@@ -22,7 +22,7 @@ class SnapiBukkit : JavaPlugin() {
             username = "root"
             password = "root"
         }
-        Configuration.create(this, "config.yml", SnapiLibraryBukkit::class.java, ConfigurationOptions.defaults())
+        Configuration.create("mysql.yml", SnapiLibraryBukkit::class.java, this)
     }
 
     override fun onDisable() {

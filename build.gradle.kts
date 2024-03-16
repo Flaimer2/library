@@ -1,3 +1,5 @@
+import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
+
 plugins {
     id("org.jetbrains.kotlin.jvm") version kotlinVersion
     id("org.jetbrains.kotlin.kapt") version kotlinVersion
@@ -35,6 +37,11 @@ subprojects {
         options.encoding = "UTF-8"
         options.compilerArgs.addAll(listOf("-XDenableSunApiLintControl"))
     }
+
+    tasks.withType<ShadowJar> {
+        archiveAppendix.set("")
+        archiveClassifier.set("")
+    }
 }
 
 subprojects
@@ -49,6 +56,7 @@ fun PublishingExtension.applyToSub(subProject: Project) {
             artifactId = project.name.toLowerCase()
             groupId = rootGroup
             version = "$rootVersion-${subProject.name.removePrefix("platform-")}"
+            artifact(subProject.tasks["shadowJar"])
         }
     }
 }
