@@ -1,4 +1,4 @@
-package ru.snapix.library.common.utils
+package ru.snapix.library.utils
 
 import com.zaxxer.hikari.HikariConfig
 

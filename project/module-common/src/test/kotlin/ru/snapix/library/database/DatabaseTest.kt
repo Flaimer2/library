@@ -1,4 +1,4 @@
-package ru.snapix.library.common.database
+package ru.snapix.library.database
 
 import kotlin.time.measureTime
 

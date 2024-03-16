@@ -1,4 +1,4 @@
-package ru.snapix.library.common.database
+package ru.snapix.library.database
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
@@ -8,8 +8,8 @@ import kotlinx.coroutines.flow.firstOrNull
 import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.runBlocking
 import org.intellij.lang.annotations.Language
-import ru.snapix.library.common.utils.addDataSourceProperty
-import ru.snapix.library.common.utils.forEachIndexed
+import ru.snapix.library.utils.addDataSourceProperty
+import ru.snapix.library.utils.forEachIndexed
 import java.sql.Connection
 
 class Database(databaseOptions: DatabaseOptions) {
