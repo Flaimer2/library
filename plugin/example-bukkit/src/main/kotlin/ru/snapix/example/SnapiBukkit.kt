@@ -5,23 +5,23 @@ import ru.snapix.library.common.database.Database
 import ru.snapix.library.common.database.initializeDatabase
 
 class SnapiBukkit : JavaPlugin() {
+    private lateinit var database: Database
     override fun onLoad() {
         instance = this
     }
 
     override fun onEnable() {
-        initializeDatabase {
+        database = initializeDatabase {
             host = "localhost"
             port = 3306
             database = "server_global"
             username = "root"
             password = "root"
         }
-        hashMapOf<>()
     }
 
     override fun onDisable() {
-        Database.close()
+        database.close()
     }
 
     companion object {

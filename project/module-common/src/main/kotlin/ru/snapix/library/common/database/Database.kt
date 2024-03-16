@@ -2,28 +2,27 @@ package ru.snapix.library.common.database
 
 import com.zaxxer.hikari.HikariConfig
 import com.zaxxer.hikari.HikariDataSource
+import kotlinx.coroutines.async
+import kotlinx.coroutines.coroutineScope
+import kotlinx.coroutines.flow.firstOrNull
+import kotlinx.coroutines.flow.flow
+import kotlinx.coroutines.runBlocking
 import org.intellij.lang.annotations.Language
 import ru.snapix.library.common.utils.addDataSourceProperty
 import ru.snapix.library.common.utils.forEachIndexed
 import java.sql.Connection
-import java.sql.ResultSet
-import java.sql.SQLException
 
+class Database(databaseOptions: DatabaseOptions) {
+    private var dataSource: HikariDataSource
+    private var connection: Connection
 
-// TODO: 1. Add kotlin dsl
-// TODO: 2. Add kotlin coroutines
-// TODO: 3. Add logger
-object Database {
-    private lateinit var dataSource: HikariDataSource
-    private lateinit var connection: Connection
-
-    operator fun invoke(databaseOptions: DatabaseOptions) {
+    init {
         val hikariConfig = HikariConfig()
         hikariConfig.apply {
             databaseOptions.also {
                 maximumPoolSize = it.maximumPoolSize
                 driverClassName = "org.mariadb.jdbc.Driver"
-                jdbcUrl = "jdbc:mariadb://localhost:3306/${it.database}"
+                jdbcUrl = "jdbc:mariadb://${it.host}:${it.port}/${it.database}"
                 username = it.username
                 password = it.password
                 connectionTimeout = it.connectionTimeout
@@ -45,33 +44,56 @@ object Database {
         dataSource.close()
     }
 
-    private fun execute(@Language("sql") query: String, vararg parameters: Any) {
-        try {
-            val ps = connection.prepareStatement(query)
-
-            parameters.forEachIndexed(1) { index, value -> ps.setObject(index, value) }
-            ps.execute()
-        } catch (e: SQLException) {
-            // TODO: log exception
+    @Suppress("DeferredResultUnused", "SqlSourceToSinkFlow")
+    suspend fun execute(@Language("sql") query: String, vararg parameters: Any) {
+        coroutineScope {
+            async {
+                val ps = connection.prepareStatement(query)
+                parameters.forEachIndexed(1) { index, value -> ps.setObject(index, value) }
+                ps.execute()
+            }
         }
     }
 
-    private fun query(@Language("sql") query: String, vararg parameters: Any): ResultSet {
+    @Suppress("SqlSourceToSinkFlow")
+    suspend fun query(@Language("sql") query: String, vararg parameters: Any) = flow {
         val ps = connection.prepareStatement(query)
-
         parameters.forEachIndexed(1) { index, value -> ps.setObject(index, value) }
-        return ps.executeQuery()
+
+        val resultSet = ps.executeQuery()
+        while (resultSet.next()) {
+            val resultMetadata = resultSet.metaData
+            val dbRow = DbRow()
+            for (i in 1 until resultMetadata.columnCount) {
+                dbRow[resultMetadata.getColumnLabel(i)] = resultSet.getObject(i)
+            }
+            emit(dbRow)
+        }
     }
 
+    suspend fun firstRowQuery(@Language("sql") query: String, vararg parameters: Any): DbRow? {
+        if (parameters.isEmpty()) {
+            return query(query).firstOrNull()
+        }
+        return query(query).firstOrNull()
+    }
 
+    suspend fun firstColumnQuery(@Language("sql") query: String, vararg parameters: Any): Any? {
+        if (parameters.isEmpty()) {
+            return firstRowQuery(query)?.values?.firstOrNull()
+        }
+        return firstRowQuery(query, parameters)?.values?.firstOrNull()
+    }
 }
 
-fun initializeDatabase(block: DatabaseOptions.() -> Unit) {
+fun initializeDatabase(block: DatabaseOptions.() -> Unit): Database {
     val options = DatabaseOptions()
     options.block()
-    Database(options)
+    return Database(options)
 }
 
-fun database(block: Database.() -> Unit) {
-    Database.block()
+fun Database.database(block: suspend Database.() -> Unit) {
+    runBlocking {
+        this@database.block()
+    }
 }

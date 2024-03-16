@@ -1,5 +1,5 @@
 import org.gradle.api.artifacts.dsl.DependencyHandler
-import org.gradle.kotlin.dsl.*
+import org.gradle.kotlin.dsl.project
 
 fun DependencyHandler.compileModule(vararg name: String) {
     name.forEach { add("compileOnly", project(":project:$it")) }
