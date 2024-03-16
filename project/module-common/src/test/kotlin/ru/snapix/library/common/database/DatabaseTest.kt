@@ -17,7 +17,7 @@ class DatabaseTest {
             database.database {
                 execute("CREATE TABLE IF NOT EXISTS table_name(name VARCHAR(255), position VARCHAR(30))")
                 execute("INSERT INTO table_name VALUES (?, ?)", "Flaimer", "first")
-                println(firstColumnQuery("SELECT * FROM table_name"))
+                println(firstColumn("SELECT * FROM table_name"))
                 execute("DROP TABLE table_name")
             }
         }

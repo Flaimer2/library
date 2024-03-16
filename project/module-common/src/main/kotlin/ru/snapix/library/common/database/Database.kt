@@ -45,18 +45,16 @@ class Database(databaseOptions: DatabaseOptions) {
     }
 
     @Suppress("DeferredResultUnused", "SqlSourceToSinkFlow")
-    suspend fun execute(@Language("sql") query: String, vararg parameters: Any) {
-        coroutineScope {
-            async {
-                val ps = connection.prepareStatement(query)
-                parameters.forEachIndexed(1) { index, value -> ps.setObject(index, value) }
-                ps.execute()
-            }
+    suspend fun execute(@Language("sql") query: String, vararg parameters: Any) = coroutineScope {
+        async {
+            val ps = connection.prepareStatement(query)
+            parameters.forEachIndexed(1) { index, value -> ps.setObject(index, value) }
+            ps.execute()
         }
     }
 
     @Suppress("SqlSourceToSinkFlow")
-    suspend fun query(@Language("sql") query: String, vararg parameters: Any) = flow {
+    suspend fun select(@Language("sql") query: String, vararg parameters: Any) = flow {
         val ps = connection.prepareStatement(query)
         parameters.forEachIndexed(1) { index, value -> ps.setObject(index, value) }
 
@@ -71,18 +69,18 @@ class Database(databaseOptions: DatabaseOptions) {
         }
     }
 
-    suspend fun firstRowQuery(@Language("sql") query: String, vararg parameters: Any): DbRow? {
+    suspend fun firstRow(@Language("sql") query: String, vararg parameters: Any): DbRow? {
         if (parameters.isEmpty()) {
-            return query(query).firstOrNull()
+            return select(query).firstOrNull()
         }
-        return query(query).firstOrNull()
+        return select(query).firstOrNull()
     }
 
-    suspend fun firstColumnQuery(@Language("sql") query: String, vararg parameters: Any): Any? {
+    suspend fun firstColumn(@Language("sql") query: String, vararg parameters: Any): Any? {
         if (parameters.isEmpty()) {
-            return firstRowQuery(query)?.values?.firstOrNull()
+            return firstRow(query)?.values?.firstOrNull()
         }
-        return firstRowQuery(query, parameters)?.values?.firstOrNull()
+        return firstRow(query, parameters)?.values?.firstOrNull()
     }
 }
 
