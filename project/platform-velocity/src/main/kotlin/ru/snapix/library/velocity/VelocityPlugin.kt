@@ -7,7 +7,7 @@ import org.slf4j.Logger
 import java.nio.file.Path
 
 @Suppress("Unused", "MemberVisibilityCanBePrivate")
-class VelocityPlugin {
+abstract class VelocityPlugin {
     lateinit var name: String
     lateinit var version: String
     lateinit var server: ProxyServer
