@@ -8,6 +8,6 @@ import com.velocitypowered.api.plugin.Plugin
     name = "SnapiVelocity",
     version = "1.0",
     authors = ["Flaimer"],
-    dependencies = [Dependency(id = "snapilibrary", optional = false)]
+    dependencies = [Dependency(id = "snapilibrary")]
 )
 class SnapiVelocity
