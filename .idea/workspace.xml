@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/project/module-common">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/project/platform-bukkit">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/project">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/project/platform-velocity">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/project/menu">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="shadow" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="project" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="project" type="2d1252cf:ModuleNode" />
+                <item name="platform-bukkit" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="project" type="2d1252cf:ModuleNode" />
+                <item name="platform-bukkit" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="project" type="2d1252cf:ModuleNode" />
+                <item name="platform-bukkit" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="project" type="2d1252cf:ModuleNode" />
+                <item name="platform-bukkit" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="project" type="2d1252cf:ModuleNode" />
+                <item name="platform-bukkit" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="shadow" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KotlinScriptingSettings">
+    <scriptDefinition className="org.jetbrains.kotlin.scripting.resolve.KotlinScriptDefinitionFromAnnotatedTemplate" definitionName="KotlinBuildScript">
+      <order>2147483647</order>
+      <autoReloadConfigurations>true</autoReloadConfigurations>
+    </scriptDefinition>
+    <scriptDefinition className="org.jetbrains.kotlin.scripting.resolve.KotlinScriptDefinitionFromAnnotatedTemplate" definitionName="KotlinSettingsScript">
+      <order>2147483647</order>
+      <autoReloadConfigurations>true</autoReloadConfigurations>
+    </scriptDefinition>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2bMjCjB9rW5MeaNg3f2K2CzjNZW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.DatabaseTest.Connection Test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DatabaseTest.Speed Test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DatabaseTest.connection.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DatabaseTest.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SnapiLibrary [Build and Publish].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SnapiLibrary [Build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SnapiLibrary [shadowJar publishToMavenLocal].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.library [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.library [publishMavenPublicationToMavenLocal].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.library [publishToMavenLocal].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.library [shadowJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.library:project [shadowJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.library:project:menu [shadowJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.library:project:module-common [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.library:project:module-common [shadowJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.library:project:platform-bukkit [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.library:project:platform-bukkit [publishToMavenLocal].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.library:project:platform-bukkit [shadowJar].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.library:project:platform-velocity [shadowJar].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/SnapiX/SourceCode/Plugin/library/gradle/wrapper&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.45842695&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mariadb&quot;
+    ],
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;C:\\Users\\danuu\\.gradle&quot;
+    ]
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\gradle\wrapper" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\project\menu\menu-bukkit\src\main\kotlin" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\project\module-common\src\test\kotlin" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\SnapiLibrary\plugin\example-velocity" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\project\module-common\src\main\kotlin\ru\snapix\library\menu" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\project\menu" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\SnapiLibrary\project" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\SnapiLibrary" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\SnapiLibrary\src\main\kotlin\ru\snapix\snapilibrary\platform\bukkit" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="ru.snapix.library.common.database" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="ru.snapix.library.menu" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.SnapiLibrary [Build]">
+    <configuration name="SnapiLibrary [Build]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="shadowJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="SnapiLibrary [Clean]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.SnapiLibrary [Build]" />
+      <item itemvalue="Gradle.SnapiLibrary [Clean]" />
+    </list>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
+        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="StandaloneScriptsStorage">
+    <option name="files">
+      <set>
+        <option value="$PROJECT_DIR$/build.gradle.kts" />
+        <option value="$PROJECT_DIR$/project/module-common/build.gradle.kts" />
+        <option value="$PROJECT_DIR$/settings.gradle.kts" />
+      </set>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="" />
+      <created>1706031715953</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706031715953</updated>
+      <workItem from="1706031717000" duration="4476000" />
+      <workItem from="1706112484224" duration="3116000" />
+      <workItem from="1706199588763" duration="3254000" />
+      <workItem from="1707587176694" duration="102000" />
+      <workItem from="1707588132950" duration="1147000" />
+      <workItem from="1708281560733" duration="669000" />
+      <workItem from="1708363072146" duration="6603000" />
+      <workItem from="1708410802352" duration="173000" />
+      <workItem from="1708420894274" duration="6193000" />
+      <workItem from="1708433394170" duration="14534000" />
+      <workItem from="1708454414532" duration="269000" />
+      <workItem from="1708520393380" duration="3827000" />
+      <workItem from="1708537613335" duration="26000" />
+      <workItem from="1708763840985" duration="13825000" />
+      <workItem from="1708788217686" duration="145000" />
+      <workItem from="1708799455341" duration="2510000" />
+      <workItem from="1708846820918" duration="12820000" />
+      <workItem from="1710580985385" duration="11148000" />
+      <workItem from="1710612155103" duration="14000" />
+      <workItem from="1710612220161" duration="35000" />
+      <workItem from="1710612685014" duration="66000" />
+      <workItem from="1710617377204" duration="4125000" />
+      <workItem from="1710663081683" duration="2178000" />
+      <workItem from="1710670419904" duration="731000" />
+      <workItem from="1711125542372" duration="1264000" />
+      <workItem from="1711221564553" duration="3857000" />
+      <workItem from="1711261698043" duration="78000" />
+      <workItem from="1711262597185" duration="3854000" />
+      <workItem from="1712323329336" duration="161000" />
+      <workItem from="1712323498024" duration="87000" />
+      <workItem from="1712325931488" duration="895000" />
+      <workItem from="1712326867224" duration="633000" />
+      <workItem from="1712327785314" duration="604000" />
+      <workItem from="1712328543466" duration="1070000" />
+      <workItem from="1712338215594" duration="370000" />
+      <workItem from="1712338600648" duration="1974000" />
+      <workItem from="1712386255469" duration="790000" />
+      <workItem from="1712387105526" duration="833000" />
+      <workItem from="1712390671429" duration="662000" />
+      <workItem from="1712392981969" duration="201000" />
+      <workItem from="1712393194741" duration="1314000" />
+      <workItem from="1712394679938" duration="178000" />
+      <workItem from="1712394934026" duration="72000" />
+      <workItem from="1712395017801" duration="30000" />
+      <workItem from="1712395491206" duration="62000" />
+      <workItem from="1712395577636" duration="6911000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint type="java-exception">
+          <properties class="java.sql.SQLDataException" package="java.sql" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.sql.SQLException" package="java.sql" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+        <breakpoint type="java-exception">
+          <properties class="java.util.zip.ZipException" package="java.util.zip" />
+          <option name="timeStamp" value="3" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
