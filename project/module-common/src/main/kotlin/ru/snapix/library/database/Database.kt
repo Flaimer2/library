@@ -44,7 +44,6 @@ class Database(databaseOptions: DatabaseOptions) {
         dataSource.close()
     }
 
-    @Suppress("DeferredResultUnused", "SqlSourceToSinkFlow")
     suspend fun execute(@Language("sql") query: String, vararg parameters: Any) = coroutineScope {
         async {
             val ps = connection.prepareStatement(query)
@@ -53,7 +52,6 @@ class Database(databaseOptions: DatabaseOptions) {
         }
     }
 
-    @Suppress("SqlSourceToSinkFlow")
     suspend fun select(@Language("sql") query: String, vararg parameters: Any) = flow {
         val ps = connection.prepareStatement(query)
         parameters.forEachIndexed(1) { index, value -> ps.setObject(index, value) }
