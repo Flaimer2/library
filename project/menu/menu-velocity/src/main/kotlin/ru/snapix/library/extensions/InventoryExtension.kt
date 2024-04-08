@@ -8,6 +8,9 @@ import ru.snapix.library.menu.StandardMenu
 
 fun Inventory.firstEmpty(): Int {
     val inventory: List<Int?> = items().keys.toList()
+
+    if (inventory.isEmpty()) return 0
+
     for (i in 0..54) {
         if (inventory[i] == null) {
             return i

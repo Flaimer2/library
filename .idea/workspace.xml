@@ -5,25 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin/example-bukkit/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin/example-bukkit/src/main/kotlin/ru/snapix/example/SnapiBukkit.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin/example-velocity/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/plugin/example-velocity/src/main/kotlin/ru/snapix/example/SnapiVelocity.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/menu/menu-bukkit/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-bukkit/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/build.gradle.kts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/extensions/InventoryExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/extensions/InventoryExtension.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/menu/StandardMenu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/menu/StandardMenu.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/menu/Menu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-common/src/main/kotlin/ru/snapix/library/menu/Menu.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/menu/MenuSettings.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/menu/structure.kts" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-common/src/main/kotlin/ru/snapix/library/menu/structure.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/platform-bukkit/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/project/platform-bukkit/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/platform-velocity/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/project/platform-velocity/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/platform-velocity/src/main/kotlin/ru/snapix/library/SnapiLibraryVelocity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/project/platform-velocity/src/main/kotlin/ru/snapix/library/SnapiLibraryVelocity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -355,7 +338,7 @@
       <workItem from="1712395577636" duration="7579000" />
       <workItem from="1712585847416" duration="466000" />
       <workItem from="1712589873878" duration="347000" />
-      <workItem from="1712596067906" duration="1666000" />
+      <workItem from="1712596067906" duration="2194000" />
     </task>
     <servers />
   </component>
