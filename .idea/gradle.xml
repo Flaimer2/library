@@ -20,12 +20,10 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/buildSrc" />
-            <option value="$PROJECT_DIR$/plugin" />
-            <option value="$PROJECT_DIR$/plugin/example-bukkit" />
-            <option value="$PROJECT_DIR$/plugin/example-velocity" />
             <option value="$PROJECT_DIR$/project" />
             <option value="$PROJECT_DIR$/project/menu" />
             <option value="$PROJECT_DIR$/project/menu/menu-bukkit" />
+            <option value="$PROJECT_DIR$/project/menu/menu-common" />
             <option value="$PROJECT_DIR$/project/menu/menu-velocity" />
             <option value="$PROJECT_DIR$/project/module-common" />
             <option value="$PROJECT_DIR$/project/platform-bukkit" />

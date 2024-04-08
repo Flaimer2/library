@@ -1,7 +1,8 @@
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
 
 plugins {
-    id("org.jetbrains.kotlin.jvm") version kotlinVersion
+    kotlin("jvm") version kotlinVersion
+    kotlin("kapt") version kotlinVersion
     id("com.github.johnrengelman.shadow") version shadowJarVersion
     `maven-publish`
 }
@@ -15,11 +16,13 @@ allprojects {
         mavenCentral()
         maven("https://repo.papermc.io/repository/maven-public/")
         maven("https://repo.aikar.co/content/groups/aikar/")
+        maven("https://mvn.exceptionflug.de/repository/exceptionflug-public/")
     }
 }
 
 subprojects {
     apply(plugin = "org.jetbrains.kotlin.jvm")
+    apply(plugin = "org.jetbrains.kotlin.kapt")
     apply(plugin = "com.github.johnrengelman.shadow")
     apply(plugin = "maven-publish")
 

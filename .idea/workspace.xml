@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="" />
+    <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/example-bukkit/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/example-bukkit/src/main/kotlin/ru/snapix/example/SnapiBukkit.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/example-velocity/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/plugin/example-velocity/src/main/kotlin/ru/snapix/example/SnapiVelocity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-bukkit/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-bukkit/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/extensions/InventoryExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/extensions/InventoryExtension.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/menu/StandardMenu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/menu/StandardMenu.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/menu/Menu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-common/src/main/kotlin/ru/snapix/library/menu/Menu.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/menu/MenuSettings.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/menu/structure.kts" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-common/src/main/kotlin/ru/snapix/library/menu/structure.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/platform-bukkit/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/project/platform-bukkit/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/platform-velocity/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/project/platform-velocity/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/platform-velocity/src/main/kotlin/ru/snapix/library/SnapiLibraryVelocity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/project/platform-velocity/src/main/kotlin/ru/snapix/library/SnapiLibraryVelocity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,48 +90,6 @@
                 <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
-                <item name="project" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
-                <item name="project" type="2d1252cf:ModuleNode" />
-                <item name="platform-bukkit" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
-                <item name="project" type="2d1252cf:ModuleNode" />
-                <item name="platform-bukkit" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
-                <item name="project" type="2d1252cf:ModuleNode" />
-                <item name="platform-bukkit" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
-                <item name="project" type="2d1252cf:ModuleNode" />
-                <item name="platform-bukkit" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="publishing" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
-                <item name="project" type="2d1252cf:ModuleNode" />
-                <item name="platform-bukkit" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="shadow" type="c8890929:TasksNode$1" />
-              </path>
             </expand>
             <select />
           </tree_state>
@@ -161,6 +139,8 @@
     &quot;Gradle.DatabaseTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SnapiLibrary [Build and Publish].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SnapiLibrary [Build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SnapiLibrary [Clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.SnapiLibrary [Publish].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SnapiLibrary [shadowJar publishToMavenLocal].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.library [clean].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.library [publishMavenPublicationToMavenLocal].executor&quot;: &quot;Run&quot;,
@@ -229,7 +209,7 @@
       <recent name="ru.snapix.library.menu" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.SnapiLibrary [Build]">
+  <component name="RunManager" selected="Gradle.SnapiLibrary [Publish]">
     <configuration name="SnapiLibrary [Build]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -241,7 +221,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="shadowJar" />
+            <option value="ShadowJar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -274,7 +254,30 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="SnapiLibrary [Publish]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishToMavenLocal" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Gradle.SnapiLibrary [Publish]" />
       <item itemvalue="Gradle.SnapiLibrary [Build]" />
       <item itemvalue="Gradle.SnapiLibrary [Clean]" />
     </list>
@@ -349,7 +352,10 @@
       <workItem from="1712394934026" duration="72000" />
       <workItem from="1712395017801" duration="30000" />
       <workItem from="1712395491206" duration="62000" />
-      <workItem from="1712395577636" duration="6911000" />
+      <workItem from="1712395577636" duration="7579000" />
+      <workItem from="1712585847416" duration="466000" />
+      <workItem from="1712589873878" duration="347000" />
+      <workItem from="1712596067906" duration="1666000" />
     </task>
     <servers />
   </component>

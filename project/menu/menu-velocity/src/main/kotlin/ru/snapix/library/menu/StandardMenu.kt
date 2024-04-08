@@ -8,11 +8,11 @@ import ru.snapix.library.extensions.firstEmpty
 
 
 class StandardMenu(override val settings: MenuSettings) : Menu {
-    val inventory: Inventory
-
-    init {
-        inventory = Inventory(InventoryType.chestInventoryWithRows(settings.rows))
-    }
+    val inventory: Inventory = Inventory(InventoryType.chestInventoryWithRows(settings.rows))
+    override var title: String = ""
+        set(value) {
+            inventory.title(ChatElement.ofLegacyText<String>(value))
+        }
 
     override fun update() {
         TODO("Not yet implemented")
@@ -22,15 +22,11 @@ class StandardMenu(override val settings: MenuSettings) : Menu {
         TODO("Not yet implemented")
     }
 
-    override fun <T> addItem(item: T) {
+    fun addItem(item: ItemStack) {
         setItem(inventory.firstEmpty(), item)
     }
 
-    override fun <T> setItem(slot: Int, item: T) {
-        inventory.item(slot, item as ItemStack)
-    }
-
-    override fun setTitle(title: String) {
-        inventory.title(ChatElement.ofLegacyText<Any>(settings.title))
+    fun setItem(slot: Int, item: ItemStack) {
+        inventory.item(slot, item)
     }
 }

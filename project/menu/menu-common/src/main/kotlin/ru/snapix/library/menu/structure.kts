@@ -6,15 +6,15 @@ menu {
     }
 
     layout {
-        ""
-        ""
-        ""
-        ""
-        ""
+        "1344"
+        "13453"
+        "52424"
+        "52543"
+        "52435"
     }
 
     items {
-        "menuBuilder" {
+        "1" {
             material = beacon
             name = "Test"
             action = [
