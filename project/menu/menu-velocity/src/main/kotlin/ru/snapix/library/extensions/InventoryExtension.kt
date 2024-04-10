@@ -2,9 +2,11 @@ package ru.snapix.library.extensions
 
 import com.velocitypowered.api.proxy.Player
 import dev.simplix.protocolize.api.Protocolize
+import dev.simplix.protocolize.api.chat.ChatElement
 import dev.simplix.protocolize.api.inventory.Inventory
+import dev.simplix.protocolize.api.item.ItemStack
 import ru.snapix.library.menu.Menu
-import ru.snapix.library.menu.StandardMenu
+import ru.snapix.library.menu.VelocityMenu
 
 fun Inventory.firstEmpty(): Int {
     val inventory: List<Int?> = items().keys.toList()
@@ -20,9 +22,8 @@ fun Inventory.firstEmpty(): Int {
 }
 
 fun Player.openMenu(menu: Menu) {
-    if (menu is StandardMenu) {
+    if (menu is VelocityMenu) {
         Protocolize.playerProvider().player(uniqueId).openInventory(menu.inventory)
-        println("Try open menu " + menu.inventory)
         return
     }
     error("Don't know how to open $menu")
