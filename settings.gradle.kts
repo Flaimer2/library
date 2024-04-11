@@ -1,10 +1,12 @@
+plugins {
+    id("org.gradle.toolchains.foojay-resolver-convention") version "0.5.0"
+}
 rootProject.name = "SnapiLibrary"
 
-// Core
-include("project:module-common")
-include("project:platform-bukkit")
-include("project:platform-velocity")
-// Menu
-include("project:menu:menu-common")
-include("project:menu:menu-velocity")
-include("project:menu:menu-bukkit")
+include("common")
+include("platform:platform-bukkit")
+include("platform:platform-velocity")
+include("module:module-database")
+include("module:module-menu:menu-common")
+include("module:module-menu:menu-bukkit")
+include("module:module-menu:menu-velocity")

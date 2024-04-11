@@ -1,5 +1,3 @@
-import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
-
 plugins {
     kotlin("jvm") version kotlinVersion
     kotlin("kapt") version kotlinVersion
@@ -30,18 +28,9 @@ subprojects {
         compileOnly(kotlin("stdlib"))
     }
 
-    tasks.build {
-        dependsOn("shadowJar")
-    }
-
     tasks.withType<JavaCompile> {
         options.encoding = "UTF-8"
         options.compilerArgs.addAll(listOf("-XDenableSunApiLintControl"))
-    }
-
-    tasks.withType<ShadowJar> {
-        archiveAppendix.set("")
-        archiveClassifier.set("")
     }
 }
 

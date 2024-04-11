@@ -5,12 +5,47 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/menu/menu-common/src/main/kotlin/ru/snapix/library/menu/Menu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-common/src/main/kotlin/ru/snapix/library/menu/Menu.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/menu/menu-common/src/main/kotlin/ru/snapix/library/menu/MenuSettings.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/extensions/InventoryExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/extensions/InventoryExtension.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/menu/StandardMenu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/menu/VelocityMenu.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Dependencies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Dependencies.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-bukkit/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-common/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-common/src/main/kotlin/ru/snapix/library/menu/Menu.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-common/src/main/kotlin/ru/snapix/library/menu/MenuItem.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-common/src/main/kotlin/ru/snapix/library/menu/MenuType.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-common/src/main/kotlin/ru/snapix/library/menu/structure.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/extensions/InventoryExtension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/menu/MenuFactory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/menu/VelocityMenu.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/menu/menu-velocity/src/main/kotlin/ru/snapix/library/menu/dsl/VelocityMenu.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/database/Database.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/database/DatabaseOptions.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/database/DbRow.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/extensions/ChatColor.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/settings/Configuration.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/utils/CollectionUtils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/utils/HikariUtils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/src/main/kotlin/ru/snapix/library/utils/NumberUtils.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/module-common/src/test/kotlin/ru/snapix/library/database/DatabaseTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/platform-bukkit/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/platform-bukkit/src/main/kotlin/ru/snapix/library/SnapiLibraryBukkit.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/platform-bukkit/src/main/kotlin/ru/snapix/library/extensions/ConfigurationExtension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/platform-bukkit/src/main/kotlin/ru/snapix/library/extensions/PlayerExtension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/platform-velocity/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/platform-velocity/src/main/kotlin/ru/snapix/library/SnapiLibraryVelocity.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/platform-velocity/src/main/kotlin/ru/snapix/library/extensions/PlayerExtension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/project/platform-velocity/src/main/kotlin/ru/snapix/library/velocity/VelocityPlugin.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,28 +88,6 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="publishing" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="shadow" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
-                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
                 <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
@@ -89,8 +102,10 @@
       <list>
         <option value="Class" />
         <option value="JUnit5 Test Class" />
-        <option value="Kotlin Enum" />
+        <option value="Kotlin Worksheet" />
+        <option value="Kotlin Object" />
         <option value="Kotlin File" />
+        <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -112,7 +127,7 @@
     </scriptDefinition>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -122,85 +137,90 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.DatabaseTest.Connection Test.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.DatabaseTest.Speed Test.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.DatabaseTest.connection.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.DatabaseTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SnapiLibrary [Build and Publish].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SnapiLibrary [Build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SnapiLibrary [Clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SnapiLibrary [Publish].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SnapiLibrary [shadowJar publishToMavenLocal].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.library [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.library [publishMavenPublicationToMavenLocal].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.library [publishToMavenLocal].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.library [shadowJar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.library:project [shadowJar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.library:project:menu [shadowJar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.library:project:module-common [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.library:project:module-common [shadowJar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.library:project:platform-bukkit [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.library:project:platform-bukkit [publishToMavenLocal].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.library:project:platform-bukkit [shadowJar].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.library:project:platform-velocity [shadowJar].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/SnapiX/SourceCode/Plugin/library/gradle/wrapper&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.45842695&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.DatabaseTest.Connection Test.executor": "Run",
+    "Gradle.DatabaseTest.Speed Test.executor": "Run",
+    "Gradle.DatabaseTest.connection.executor": "Run",
+    "Gradle.DatabaseTest.executor": "Run",
+    "Gradle.SnapiLibrary [Build and Publish].executor": "Run",
+    "Gradle.SnapiLibrary [Build].executor": "Run",
+    "Gradle.SnapiLibrary [Clean].executor": "Run",
+    "Gradle.SnapiLibrary [Publish].executor": "Run",
+    "Gradle.SnapiLibrary [shadowJar publishToMavenLocal].executor": "Run",
+    "Gradle.library [clean].executor": "Run",
+    "Gradle.library [publishMavenPublicationToMavenLocal].executor": "Run",
+    "Gradle.library [publishToMavenLocal].executor": "Run",
+    "Gradle.library [shadowJar].executor": "Run",
+    "Gradle.library:project [shadowJar].executor": "Run",
+    "Gradle.library:project:menu [shadowJar].executor": "Run",
+    "Gradle.library:project:module-common [build].executor": "Run",
+    "Gradle.library:project:module-common [shadowJar].executor": "Run",
+    "Gradle.library:project:platform-bukkit [build].executor": "Run",
+    "Gradle.library:project:platform-bukkit [publishToMavenLocal].executor": "Run",
+    "Gradle.library:project:platform-bukkit [shadowJar].executor": "Run",
+    "Gradle.library:project:platform-velocity [shadowJar].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "1.1",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "11",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/SnapiX/SourceCode/Plugin/library/platform/platform-velocity",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/SnapiX/SourceCode/Plugin/library/common/src/main/kotlin/Main.kt",
+    "project.structure.last.edited": "Problems",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.45842695",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mariadb&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mariadb"
     ],
-    &quot;kotlin-gradle-user-dirs&quot;: [
-      &quot;C:\\Users\\danuu\\.gradle&quot;
+    "kotlin-gradle-user-dirs": [
+      "C:\\Users\\danuu\\.gradle"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\module\module-menu" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\module" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\gradle\wrapper" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\project\menu\menu-bukkit\src\main\kotlin" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\project\module-common\src\test\kotlin" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\SnapiLibrary\plugin\example-velocity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\module\module-menu\velocity\src\main\kotlin" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\module\module-menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\project\module-common\src\main\kotlin\ru\snapix\library\menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\project\menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\SnapiLibrary\project" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\SnapiLibrary" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\SnapiLibrary\src\main\kotlin\ru\snapix\snapilibrary\platform\bukkit" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="" />
+      <recent name="type" />
+      <recent name="extension" />
       <recent name="ru.snapix.library.menu" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ru.snapix.library.common.database" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="type" />
       <recent name="ru.snapix.library.menu" />
     </key>
   </component>
@@ -357,6 +377,11 @@
       <workItem from="1712691432219" duration="4858000" />
       <workItem from="1712766577942" duration="4369000" />
       <workItem from="1712770997103" duration="520000" />
+      <workItem from="1712772725703" duration="2225000" />
+      <workItem from="1712813715880" duration="8081000" />
+      <workItem from="1712850314185" duration="5670000" />
+      <workItem from="1712859421380" duration="1502000" />
+      <workItem from="1712860962040" duration="2780000" />
     </task>
     <servers />
   </component>
@@ -389,6 +414,11 @@
           <properties class="java.util.zip.ZipException" package="java.util.zip" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="kotlin-line">
+          <url>file://$PROJECT_DIR$/untitled/src/main/kotlin/Main.kt</url>
+          <line>13</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
