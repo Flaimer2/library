@@ -9,7 +9,6 @@ fun menu(menuType: MenuType = MenuType.DEFAULT, block: VelocityMenu.() -> Unit):
 
 fun VelocityMenu.items(block: Items.() -> Unit) = Items(this).apply(block)
 
-
 @Suppress("MemberVisibilityCanBePrivate")
 class Items(val menu: VelocityMenu) {
     operator fun String.invoke(block: Item.() -> Unit) = Item(menu).apply {

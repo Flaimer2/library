@@ -65,29 +65,6 @@ class Database(databaseOptions: DatabaseOptions) {
         }
     }
 
-//    fun execute(@Language("sql") query: String, vararg parameters: Any) {
-//        val ps = connection.prepareStatement(query)
-//        parameters.forEachIndexed(1) { index, value -> ps.setObject(index, value) }
-//        ps.execute()
-//    }
-//
-//    fun select(@Language("sql") query: String, vararg parameters: Any): List<DbRow> {
-//        val result = mutableListOf<DbRow>()
-//        val ps = connection.prepareStatement(query)
-//        parameters.forEachIndexed(1) { index, value -> ps.setObject(index, value) }
-//
-//        val resultSet = ps.executeQuery()
-//        while (resultSet.next()) {
-//            val resultMetadata = resultSet.metaData
-//            val dbRow = DbRow()
-//            for (i in 1 until resultMetadata.columnCount) {
-//                dbRow[resultMetadata.getColumnLabel(i)] = resultSet.getObject(i)
-//            }
-//            result.add(dbRow)
-//        }
-//        return result
-//    }
-
     suspend fun firstRow(@Language("sql") query: String, vararg parameters: Any): DbRow? {
         if (parameters.isEmpty()) {
             return select(query).firstOrNull()
@@ -114,7 +91,3 @@ fun Database.database(block: suspend Database.() -> Unit) {
         this@database.block()
     }
 }
-
-//fun Database.database(block: Database.() -> Unit) {
-//    block()
-//}
