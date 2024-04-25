@@ -32,6 +32,11 @@ subprojects {
         options.encoding = "UTF-8"
         options.compilerArgs.addAll(listOf("-XDenableSunApiLintControl"))
     }
+
+    tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
+        archiveAppendix.set("")
+        archiveClassifier.set("")
+    }
 }
 
 subprojects

@@ -1,7 +1,11 @@
 package ru.snapix.library.menu
 
+import com.velocitypowered.api.proxy.Player
+import dev.simplix.protocolize.api.ClickType
 import dev.simplix.protocolize.api.chat.ChatElement
 import dev.simplix.protocolize.api.inventory.Inventory
+import dev.simplix.protocolize.api.inventory.InventoryClick
+import dev.simplix.protocolize.api.item.BaseItemStack
 import dev.simplix.protocolize.data.inventory.InventoryType
 import ru.snapix.library.utils.translateAlternateColorCodes
 
