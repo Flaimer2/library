@@ -16,18 +16,21 @@
           </compositeBuild>
         </compositeConfiguration>
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#JAVA_HOME" />
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/buildSrc" />
-            <option value="$PROJECT_DIR$/project" />
-            <option value="$PROJECT_DIR$/project/menu" />
-            <option value="$PROJECT_DIR$/project/menu/menu-bukkit" />
-            <option value="$PROJECT_DIR$/project/menu/menu-common" />
-            <option value="$PROJECT_DIR$/project/menu/menu-velocity" />
-            <option value="$PROJECT_DIR$/project/module-common" />
-            <option value="$PROJECT_DIR$/project/platform-bukkit" />
-            <option value="$PROJECT_DIR$/project/platform-velocity" />
+            <option value="$PROJECT_DIR$/common" />
+            <option value="$PROJECT_DIR$/module" />
+            <option value="$PROJECT_DIR$/module/module-database" />
+            <option value="$PROJECT_DIR$/module/module-menu" />
+            <option value="$PROJECT_DIR$/module/module-menu/menu-bukkit" />
+            <option value="$PROJECT_DIR$/module/module-menu/menu-common" />
+            <option value="$PROJECT_DIR$/module/module-menu/menu-velocity" />
+            <option value="$PROJECT_DIR$/platform" />
+            <option value="$PROJECT_DIR$/platform/platform-bukkit" />
+            <option value="$PROJECT_DIR$/platform/platform-velocity" />
           </set>
         </option>
       </GradleProjectSettings>
