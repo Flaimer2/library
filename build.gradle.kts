@@ -1,6 +1,7 @@
 plugins {
     kotlin("jvm") version kotlinVersion
     kotlin("kapt") version kotlinVersion
+    kotlin("plugin.serialization") version kotlinVersion
     id("com.github.johnrengelman.shadow") version shadowJarVersion
     `maven-publish`
 }
@@ -23,6 +24,7 @@ subprojects {
     apply(plugin = "org.jetbrains.kotlin.kapt")
     apply(plugin = "com.github.johnrengelman.shadow")
     apply(plugin = "maven-publish")
+    apply(plugin = "org.jetbrains.kotlin.plugin.serialization")
 
     dependencies {
         compileOnly(kotlin("stdlib"))

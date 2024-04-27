@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/module/module-database/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/module-database/src/main/kotlin/Database.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/module-database/src/main/kotlin/DatabaseOptions.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/module/module-database/src/main/kotlin/DbRow.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/module-menu/menu-velocity/src/main/kotlin/InventoryExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/module/module-menu/menu-velocity/src/main/kotlin/InventoryExtension.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/module-menu/menu-velocity/src/main/kotlin/MenuDSL.kt" beforeDir="false" afterPath="$PROJECT_DIR$/module/module-menu/menu-velocity/src/main/kotlin/MenuDSL.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/module-menu/menu-velocity/src/main/kotlin/VelocityMenu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/module/module-menu/menu-velocity/src/main/kotlin/VelocityMenu.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,7 +131,7 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;1.1&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -416,6 +410,12 @@
       <workItem from="1713173399940" duration="2416000" />
       <workItem from="1713278219286" duration="1023000" />
       <workItem from="1713980315273" duration="1687000" />
+      <workItem from="1714193458878" duration="1973000" />
+      <workItem from="1714196790085" duration="2487000" />
+      <workItem from="1714224052940" duration="62000" />
+      <workItem from="1714224716564" duration="2719000" />
+      <workItem from="1714230236911" duration="1455000" />
+      <workItem from="1714239943469" duration="301000" />
     </task>
     <servers />
   </component>
