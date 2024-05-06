@@ -7,6 +7,7 @@ dependencies {
     implementateCommon()
     implementation("co.aikar:acf-bukkit:$acfVersion")
     implementateModule("module-menu:menu-bukkit")
+    compileOnly("space.arim.dazzleconf:dazzleconf-ext-snakeyaml:$dazzleConfVersion")
 }
 
 bukkit {

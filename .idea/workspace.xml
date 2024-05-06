@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +66,8 @@
         <option value="JUnit5 Test Class" />
         <option value="Kotlin Worksheet" />
         <option value="Kotlin Object" />
-        <option value="Kotlin Enum" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Enum" />
         <option value="Kotlin File" />
       </list>
     </option>
@@ -135,7 +133,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/SnapiX/SourceCode/Plugin/library/module/module-database/src/main/kotlin&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/SnapiX Project/Исходники/[Old] SnapiSourceCode/AdminGames&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -415,7 +413,12 @@
       <workItem from="1714224052940" duration="62000" />
       <workItem from="1714224716564" duration="2719000" />
       <workItem from="1714230236911" duration="1455000" />
-      <workItem from="1714239943469" duration="301000" />
+      <workItem from="1714239943469" duration="925000" />
+      <workItem from="1714816223273" duration="7495000" />
+      <workItem from="1714899807533" duration="1477000" />
+      <workItem from="1714919899406" duration="755000" />
+      <workItem from="1714925375145" duration="602000" />
+      <workItem from="1714999194783" duration="1933000" />
     </task>
     <servers />
   </component>
