@@ -6,8 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,7 +132,7 @@
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;11&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/SnapiX Project/Исходники/[Old] SnapiSourceCode/AdminGames&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/SnapiX/SourceCode/Plugin/balancer&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -419,6 +418,11 @@
       <workItem from="1714919899406" duration="755000" />
       <workItem from="1714925375145" duration="602000" />
       <workItem from="1714999194783" duration="1933000" />
+      <workItem from="1715007718132" duration="472000" />
+      <workItem from="1715008524648" duration="373000" />
+      <workItem from="1715010560320" duration="1339000" />
+      <workItem from="1715088292588" duration="18000" />
+      <workItem from="1716885213317" duration="1884000" />
     </task>
     <servers />
   </component>

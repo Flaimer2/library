@@ -11,6 +11,7 @@ dependencies {
 }
 
 bukkit {
+    name = rootName
     main = "ru.snapix.library.SnapiLibraryBukkit"
     author = "Flaimer"
     website = "https://mcsnapix.ru"

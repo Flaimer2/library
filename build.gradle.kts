@@ -42,7 +42,7 @@ subprojects {
 }
 
 subprojects
-    .filter { it.name.startsWith("platform") }
+    .filter { it.name.startsWith("platform-") }
     .forEach { proj ->
         proj.publishing { applyToSub(proj) }
     }
