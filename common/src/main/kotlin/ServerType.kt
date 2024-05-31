@@ -24,7 +24,7 @@ enum class ServerType(val compactName: String) {
             var result = UNKNOWN
 
             for (mode in entries) {
-                if (mode.name.startsWith(server, ignoreCase = true) || mode.compactName.startsWith(server, ignoreCase = true)) {
+                if (server.startsWith(mode.name, ignoreCase = true) || server.startsWith(mode.compactName, ignoreCase = true)) {
                     result = mode
                     break
                 }

@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/ServerType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/ServerType.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,9 +65,9 @@
         <option value="JUnit5 Test Class" />
         <option value="Kotlin Worksheet" />
         <option value="Kotlin Object" />
-        <option value="Kotlin Class" />
         <option value="Kotlin Enum" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -422,7 +422,8 @@
       <workItem from="1715008524648" duration="373000" />
       <workItem from="1715010560320" duration="1339000" />
       <workItem from="1715088292588" duration="18000" />
-      <workItem from="1716885213317" duration="1884000" />
+      <workItem from="1716885213317" duration="6942000" />
+      <workItem from="1717141503049" duration="3371000" />
     </task>
     <servers />
   </component>
