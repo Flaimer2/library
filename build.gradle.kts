@@ -36,6 +36,7 @@ subprojects {
     }
 
     tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
+        archiveFileName.set("$rootName-${project.name.removePrefix("platform-").uppercaseFirstChar()}.jar")
         archiveAppendix.set("")
         archiveClassifier.set("")
     }

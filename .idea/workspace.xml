@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -421,7 +420,7 @@
       <workItem from="1717234717662" duration="25000" />
       <workItem from="1717263214580" duration="1373000" />
       <workItem from="1717266114138" duration="1123000" />
-      <workItem from="1717393993941" duration="2373000" />
+      <workItem from="1717393993941" duration="3292000" />
     </task>
     <servers />
   </component>
