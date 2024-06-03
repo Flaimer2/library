@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/ServerType.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/ServerType.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,8 +66,8 @@
         <option value="Kotlin Worksheet" />
         <option value="Kotlin Object" />
         <option value="Kotlin Enum" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -315,14 +315,6 @@
       </list>
     </recent_temporary>
   </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-18abd8497189-intellij.indexing.shared.core-IU-241.14494.240" />
-        <option value="bundled-js-predefined-1d06a55b98c1-74d2a5396914-JavaScript-IU-241.14494.240" />
-      </set>
-    </attachedChunks>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="StandaloneScriptsStorage">
     <option name="files">
@@ -423,7 +415,13 @@
       <workItem from="1715010560320" duration="1339000" />
       <workItem from="1715088292588" duration="18000" />
       <workItem from="1716885213317" duration="6942000" />
-      <workItem from="1717141503049" duration="3371000" />
+      <workItem from="1717141503049" duration="4840000" />
+      <workItem from="1717172747242" duration="2936000" />
+      <workItem from="1717229054002" duration="1220000" />
+      <workItem from="1717234717662" duration="25000" />
+      <workItem from="1717263214580" duration="1373000" />
+      <workItem from="1717266114138" duration="1123000" />
+      <workItem from="1717393993941" duration="2373000" />
     </task>
     <servers />
   </component>
