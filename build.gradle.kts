@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.support.uppercaseFirstChar
+
 plugins {
     kotlin("jvm") version kotlinVersion
     kotlin("kapt") version kotlinVersion

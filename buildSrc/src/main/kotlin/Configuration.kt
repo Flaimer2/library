@@ -1,6 +1,6 @@
 const val rootName = "SnapiLibrary"
 const val rootGroup = "ru.snapix"
-const val rootVersion = "1.2"
+const val rootVersion = "1.3"
 
 const val kotlinVersion = "2.0.0"
 const val kotlinSerializationVersion = "1.6.3"

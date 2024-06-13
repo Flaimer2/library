@@ -5,7 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/RedisExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/RedisExtension.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/module-database/src/main/kotlin/Database.kt" beforeDir="false" afterPath="$PROJECT_DIR$/module/module-database/src/main/kotlin/Database.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/module-database/src/main/kotlin/DbRow.kt" beforeDir="false" afterPath="$PROJECT_DIR$/module/module-database/src/main/kotlin/DbRow.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/module-database/src/test/kotlin/DatabaseTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/module/module-database/src/test/kotlin/DatabaseTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/SnapiLibraryVelocity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/SnapiLibraryVelocity.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,10 +71,10 @@
         <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="Kotlin Worksheet" />
-        <option value="Kotlin Object" />
         <option value="Kotlin Enum" />
-        <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -75,6 +83,39 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/project/menu/menu-common/src/main/kotlin/ru/snapix/library/menu/MenuItem.kt" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="InstanceColorv3">
+    <option name="map">
+      <map>
+        <entry key="$PROJECT_DIR$/Writerside/library.tree">
+          <value>
+            <ColorState>
+              <option name="customOrder" value="1" />
+              <option name="first">
+                <RgbState>
+                  <option name="blue" value="60" />
+                  <option name="darkBlue" value="60" />
+                  <option name="darkGreen" value="68" />
+                  <option name="darkRed" value="206" />
+                  <option name="green" value="68" />
+                  <option name="red" value="206" />
+                </RgbState>
+              </option>
+              <option name="second">
+                <RgbState>
+                  <option name="blue" value="65" />
+                  <option name="darkBlue" value="65" />
+                  <option name="darkGreen" value="126" />
+                  <option name="darkRed" value="231" />
+                  <option name="green" value="126" />
+                  <option name="red" value="231" />
+                </RgbState>
+              </option>
+            </ColorState>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="KotlinScriptingSettings">
     <scriptDefinition className="org.jetbrains.kotlin.scripting.resolve.KotlinScriptDefinitionFromAnnotatedTemplate" definitionName="KotlinBuildScript">
@@ -102,6 +143,7 @@
     &quot;Gradle.DatabaseTest.Connection Test.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.DatabaseTest.Database Stress Test.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.DatabaseTest.Speed Test.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.DatabaseTest.Test transaction.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.DatabaseTest.connection.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.DatabaseTest.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.SnapiLibrary [Build and Publish].executor&quot;: &quot;Run&quot;,
@@ -141,8 +183,9 @@
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.45842695&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;,
+    &quot;writerside.last.selected.productlibrary&quot;: &quot;library&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -150,7 +193,8 @@
     ],
     &quot;kotlin-gradle-user-dirs&quot;: [
       &quot;C:\\Users\\danuu\\.gradle&quot;
-    ]
+    ],
+    &quot;stardust.markdown.MarkdownSplitEditorSuppressor:keyList&quot;: []
   }
 }</component>
   <component name="RecentsManager">
@@ -186,6 +230,30 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.SnapiLibrary [Publish]">
+    <configuration name="DatabaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":module:module-database:test" />
+            <option value="--tests" />
+            <option value="&quot;ru.snapix.library.database.DatabaseTest&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="DatabaseTest.Connection Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -224,6 +292,30 @@
             <option value=":module:module-database:test" />
             <option value="--tests" />
             <option value="&quot;ru.snapix.library.database.DatabaseTest.Database Stress Test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="DatabaseTest.Test transaction" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":module:module-database:test" />
+            <option value="--tests" />
+            <option value="&quot;ru.snapix.library.database.DatabaseTest.Test transaction&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -304,6 +396,8 @@
       <item itemvalue="Gradle.SnapiLibrary [Publish]" />
       <item itemvalue="Gradle.SnapiLibrary [Build]" />
       <item itemvalue="Gradle.SnapiLibrary [Clean]" />
+      <item itemvalue="Gradle.DatabaseTest" />
+      <item itemvalue="Gradle.DatabaseTest.Test transaction" />
       <item itemvalue="Gradle.DatabaseTest.Database Stress Test" />
       <item itemvalue="Gradle.DatabaseTest.Connection Test" />
     </list>
@@ -311,6 +405,8 @@
       <list>
         <item itemvalue="Gradle.DatabaseTest.Database Stress Test" />
         <item itemvalue="Gradle.DatabaseTest.Connection Test" />
+        <item itemvalue="Gradle.DatabaseTest" />
+        <item itemvalue="Gradle.DatabaseTest.Test transaction" />
       </list>
     </recent_temporary>
   </component>
@@ -420,7 +516,20 @@
       <workItem from="1717234717662" duration="25000" />
       <workItem from="1717263214580" duration="1373000" />
       <workItem from="1717266114138" duration="1123000" />
-      <workItem from="1717393993941" duration="3292000" />
+      <workItem from="1717393993941" duration="6421000" />
+      <workItem from="1717405294352" duration="637000" />
+      <workItem from="1717497778517" duration="61000" />
+      <workItem from="1717497882181" duration="4233000" />
+      <workItem from="1717515849885" duration="3151000" />
+      <workItem from="1717569321742" duration="401000" />
+      <workItem from="1717670419279" duration="712000" />
+      <workItem from="1717673574222" duration="684000" />
+      <workItem from="1717696700859" duration="4771000" />
+      <workItem from="1717776993130" duration="1781000" />
+      <workItem from="1717840510573" duration="4099000" />
+      <workItem from="1718014319418" duration="1943000" />
+      <workItem from="1718118568933" duration="609000" />
+      <workItem from="1718306822325" duration="3309000" />
     </task>
     <servers />
   </component>

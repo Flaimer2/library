@@ -4,14 +4,9 @@ import kotlinx.coroutines.*
 import redis.clients.jedis.Jedis
 
 fun Jedis.useAsync(dispatcher: CoroutineDispatcher = Dispatchers.Main, block: Jedis.() -> Unit) {
-    CoroutineScope(dispatcher).async {
-        block()
-    }
+    CoroutineScope(dispatcher).async { block() }
 }
 
 fun <V> Jedis.async(block: Jedis.() -> V): V = runBlocking {
-    val result = async {
-        block()
-    }
-    return@runBlocking result.await()
+    async { block() }.await()
 }
