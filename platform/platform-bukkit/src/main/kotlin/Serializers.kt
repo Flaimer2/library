@@ -5,10 +5,11 @@ import kotlinx.serialization.descriptors.PrimitiveKind
 import kotlinx.serialization.descriptors.PrimitiveSerialDescriptor
 import kotlinx.serialization.encoding.Decoder
 import kotlinx.serialization.encoding.Encoder
-import java.util.*
+import org.bukkit.Bukkit
+import org.bukkit.entity.Player
 
-object UUIDSerializer : KSerializer<UUID> {
+object PlayerSerializer : KSerializer<Player> {
     override val descriptor = PrimitiveSerialDescriptor("UUID", PrimitiveKind.STRING)
-    override fun deserialize(decoder: Decoder) = UUID.fromString(decoder.decodeString())
-    override fun serialize(encoder: Encoder, value: UUID) = encoder.encodeString(value.toString())
+    override fun deserialize(decoder: Decoder) = Bukkit.getPlayer(decoder.decodeString())
+    override fun serialize(encoder: Encoder, value: Player) = encoder.encodeString(value.name)
 }

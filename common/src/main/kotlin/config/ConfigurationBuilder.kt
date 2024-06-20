@@ -1,4 +1,4 @@
-package ru.snapix.library
+package ru.snapix.library.config
 
 import space.arim.dazzleconf.ConfigurationOptions
 import space.arim.dazzleconf.serialiser.ValueSerialiser

@@ -23,7 +23,6 @@
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/common" />
             <option value="$PROJECT_DIR$/module" />
-            <option value="$PROJECT_DIR$/module/module-database" />
             <option value="$PROJECT_DIR$/module/module-menu" />
             <option value="$PROJECT_DIR$/module/module-menu/menu-bukkit" />
             <option value="$PROJECT_DIR$/module/module-menu/menu-common" />

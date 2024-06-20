@@ -5,8 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/9809b976-d448-40f8-9d89-8e81ba846bd6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/9809b976-d448-40f8-9d89-8e81ba846bd6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/ConfigurationBuilder.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/config/Configuration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/ConfigurationBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/config/ConfigurationBuilder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/RedisExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/redis/RedisExtension.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/Serializers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/common/src/main/kotlin/Serializers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/module-database/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/module-database/src/main/kotlin/Database.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/module-database/src/main/kotlin/DatabaseOptions.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/module-database/src/main/kotlin/DatabaseUtil.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/module-database/src/main/kotlin/DbRow.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/module-database/src/test/kotlin/DatabaseTest.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/ConfigurationExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/config/ConfigurationExtension.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/PlayerExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/SendMessageExtension.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/SnapiLibraryBukkit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/SnapiLibraryBukkit.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/SnapiLibraryVelocity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/SnapiLibraryVelocity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +68,50 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="runtimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testCompileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="testRuntimeClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+                <item name="org.jetbrains.kotlin:kotlin-stdlib:2.0.0" type="b3323d55:ExternalSystemViewDefaultContributor$DependencyExternalSystemNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
@@ -139,6 +206,12 @@
     "Gradle.DatabaseTest.Test transaction.executor": "Run",
     "Gradle.DatabaseTest.connection.executor": "Run",
     "Gradle.DatabaseTest.executor": "Run",
+    "Gradle.Load Gradle Dependencies.executor": "Run",
+    "Gradle.PubTest.Pub Test.executor": "Run",
+    "Gradle.RedisTest.Connection Test.executor": "Run",
+    "Gradle.RedisTest.Pub Test.executor": "Run",
+    "Gradle.RedisTest.Sub Test.executor": "Run",
+    "Gradle.RedisTest.executor": "Run",
     "Gradle.SnapiLibrary [Build and Publish].executor": "Run",
     "Gradle.SnapiLibrary [Build].executor": "Run",
     "Gradle.SnapiLibrary [Clean].executor": "Run",
@@ -199,18 +272,18 @@
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\configuration" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\config" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\module\module-database\src" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\velocity" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\module\module-menu\velocity\src\main\kotlin" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\common\src\main\kotlin\config" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\common\src\main\kotlin\redis" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\common\src\main\kotlin" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
-      <recent name="" />
       <recent name="config" />
+      <recent name="" />
       <recent name="type" />
       <recent name="extension" />
       <recent name="ru.snapix.library.menu" />
@@ -224,7 +297,7 @@
     </key>
   </component>
   <component name="RunManager" selected="Gradle.SnapiLibrary [Publish]">
-    <configuration name="DatabaseTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PubTest.Pub Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -235,9 +308,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":module:module-database:test" />
+            <option value=":common:test" />
             <option value="--tests" />
-            <option value="&quot;ru.snapix.library.database.DatabaseTest&quot;" />
+            <option value="&quot;ru.snapix.library.PubTest.Pub Test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -248,7 +321,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DatabaseTest.Connection Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RedisTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -259,9 +332,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":module:module-database:test" />
+            <option value=":common:test" />
             <option value="--tests" />
-            <option value="&quot;ru.snapix.library.database.DatabaseTest.Connection Test&quot;" />
+            <option value="&quot;ru.snapix.library.RedisTest&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -272,7 +345,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DatabaseTest.Database Stress Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RedisTest.Connection Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -283,9 +356,9 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":module:module-database:test" />
+            <option value=":common:test" />
             <option value="--tests" />
-            <option value="&quot;ru.snapix.library.database.DatabaseTest.Database Stress Test&quot;" />
+            <option value="&quot;ru.snapix.library.RedisTest.Connection Test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -296,7 +369,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="DatabaseTest.Test transaction" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="RedisTest.Pub Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -307,9 +380,33 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":module:module-database:test" />
+            <option value=":common:test" />
             <option value="--tests" />
-            <option value="&quot;ru.snapix.library.database.DatabaseTest.Test transaction&quot;" />
+            <option value="&quot;ru.snapix.library.RedisTest.Pub Test&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RedisTest.Sub Test" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":common:test" />
+            <option value="--tests" />
+            <option value="&quot;ru.snapix.library.RedisTest.Sub Test&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -390,17 +487,19 @@
       <item itemvalue="Gradle.SnapiLibrary [Publish]" />
       <item itemvalue="Gradle.SnapiLibrary [Build]" />
       <item itemvalue="Gradle.SnapiLibrary [Clean]" />
-      <item itemvalue="Gradle.DatabaseTest" />
-      <item itemvalue="Gradle.DatabaseTest.Test transaction" />
-      <item itemvalue="Gradle.DatabaseTest.Database Stress Test" />
-      <item itemvalue="Gradle.DatabaseTest.Connection Test" />
+      <item itemvalue="Gradle.PubTest.Pub Test" />
+      <item itemvalue="Gradle.RedisTest" />
+      <item itemvalue="Gradle.RedisTest.Connection Test" />
+      <item itemvalue="Gradle.RedisTest.Pub Test" />
+      <item itemvalue="Gradle.RedisTest.Sub Test" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.DatabaseTest.Database Stress Test" />
-        <item itemvalue="Gradle.DatabaseTest.Connection Test" />
-        <item itemvalue="Gradle.DatabaseTest" />
-        <item itemvalue="Gradle.DatabaseTest.Test transaction" />
+        <item itemvalue="Gradle.RedisTest.Connection Test" />
+        <item itemvalue="Gradle.RedisTest.Sub Test" />
+        <item itemvalue="Gradle.RedisTest" />
+        <item itemvalue="Gradle.PubTest.Pub Test" />
+        <item itemvalue="Gradle.RedisTest.Pub Test" />
       </list>
     </recent_temporary>
   </component>
@@ -524,7 +623,15 @@
       <workItem from="1718014319418" duration="1943000" />
       <workItem from="1718118568933" duration="609000" />
       <workItem from="1718306822325" duration="3310000" />
-      <workItem from="1718348607688" duration="2988000" />
+      <workItem from="1718348607688" duration="4684000" />
+      <workItem from="1718562918643" duration="2644000" />
+      <workItem from="1718618503868" duration="7863000" />
+      <workItem from="1718652111140" duration="7228000" />
+      <workItem from="1718696431725" duration="5744000" />
+      <workItem from="1718710220655" duration="873000" />
+      <workItem from="1718741406012" duration="1659000" />
+      <workItem from="1718821993619" duration="48000" />
+      <workItem from="1718886721865" duration="16933000" />
     </task>
     <servers />
   </component>

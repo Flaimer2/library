@@ -1,21 +1,17 @@
-package ru.snapix.library
+package ru.snapix.library.config
 
+import space.arim.dazzleconf.ConfigurationOptions
 import space.arim.dazzleconf.error.ConfigFormatSyntaxException
 import space.arim.dazzleconf.error.InvalidConfigException
-import space.arim.dazzleconf.helper.ConfigurationHelper
-import java.io.IOException
-import java.io.UncheckedIOException
-import org.slf4j.Logger
-import space.arim.dazzleconf.ConfigurationOptions
 import space.arim.dazzleconf.ext.snakeyaml.CommentMode
 import space.arim.dazzleconf.ext.snakeyaml.SnakeYamlConfigurationFactory
 import space.arim.dazzleconf.ext.snakeyaml.SnakeYamlOptions
+import space.arim.dazzleconf.helper.ConfigurationHelper
+import java.io.IOException
+import java.io.UncheckedIOException
 import java.nio.file.Path
 
-class Configuration<C> private constructor(
-    private val logger: Logger,
-    private val configHelper: ConfigurationHelper<C>,
-) {
+class Configuration<C> private constructor(private val configHelper: ConfigurationHelper<C>) {
     private var configData: C? = null
 
     init {
@@ -29,10 +25,10 @@ class Configuration<C> private constructor(
             throw UncheckedIOException(ex)
         } catch (ex: ConfigFormatSyntaxException) {
             configData = configHelper.factory.loadDefaults()
-            logger.error("The yaml syntax in your configuration is invalid.", ex)
+            println("The yaml syntax in your configuration is invalid. $ex")
         } catch (ex: InvalidConfigException) {
             configData = configHelper.factory.loadDefaults()
-            logger.error("One of the values in your configuration is not valid.", ex)
+            println("One of the values in your configuration is not valid. $ex")
         }
     }
 
@@ -49,14 +45,13 @@ class Configuration<C> private constructor(
             fileName: String,
             configFolder: Path,
             configClass: Class<C>,
-            logger: Logger,
             options: ConfigurationOptions = ConfigurationOptions.defaults(),
         ): Configuration<C> {
             val yamlOptions = SnakeYamlOptions.Builder()
                 .commentMode(CommentMode.alternativeWriter())
                 .build()
             val configFactory = SnakeYamlConfigurationFactory.create(configClass, options, yamlOptions)
-            return Configuration(logger, ConfigurationHelper(configFolder, fileName, configFactory))
+            return Configuration(ConfigurationHelper(configFolder, fileName, configFactory))
         }
     }
 }

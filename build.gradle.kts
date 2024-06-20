@@ -18,6 +18,8 @@ allprojects {
         maven("https://repo.papermc.io/repository/maven-public/")
         maven("https://repo.aikar.co/content/groups/aikar/")
         maven("https://mvn.exceptionflug.de/repository/exceptionflug-public/")
+        maven("https://jitpack.io")
+        maven("https://repo.alessiodp.com/releases/")
     }
 }
 
@@ -41,6 +43,15 @@ subprojects {
         archiveFileName.set("$rootName-${project.name.removePrefix("platform-").uppercaseFirstChar()}.jar")
         archiveAppendix.set("")
         archiveClassifier.set("")
+        duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+        exclude("_COROUTINE/**")
+        exclude("org/jetbrains/annotations/**")
+        exclude("org/intellij/lang/annotations/**")
+        exclude("org/slf4j/**")
+    }
+
+    tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
+        kotlinOptions.javaParameters = true
     }
 }
 
