@@ -1,12 +1,15 @@
 package ru.snapix.library
 
 import org.bukkit.entity.Player
-import java.util.concurrent.CompletableFuture
 
-val api = snapiLibraryBukkit.economy
+val api = snapiLibrary.economy
 
 fun Player.hasMoney(amount: Int): Boolean {
     return api.getBalance(this) >= amount
+}
+
+fun Player.getMoney(): Int {
+    return api.getBalance(this).toInt()
 }
 
 fun Player.withdrawMoney(amount: Int, success: (Player) -> Unit = {}, fail: (Player) -> Unit = {}) {

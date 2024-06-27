@@ -7,7 +7,7 @@ import kotlinx.coroutines.*
 val redisClient = newClient(Endpoint.from("127.0.0.1:6379"))
 
 fun subscribe(handler: KredsSubscriber, channel: String) {
-    CoroutineScope(Dispatchers.IO).async {
+    CoroutineScope(Dispatchers.Default).launch {
         newSubscriberClient(Endpoint.from("127.0.0.1:6379"), handler).subscribe(channel)
     }
 }

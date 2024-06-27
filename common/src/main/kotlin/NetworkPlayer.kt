@@ -8,7 +8,7 @@ enum class PlayerStatus {
     NOT_FOUND
 }
 
-class StatusPlayer(private val name: String) {
+class NetworkPlayer(private val name: String) {
     private val player = LastLogin.getApi().getPlayerByName(name)?.firstOrNull()
 
     fun playerStatus(): PlayerStatus {
@@ -31,5 +31,11 @@ class StatusPlayer(private val name: String) {
 
     fun isOnline(): Boolean {
         return player?.isOnline == true
+    }
+
+    fun getLevel(): Int {
+        return SnapiLibrary.globalDatabase.executeQuery("SELECT * FROM `account_levels` WHERE `playername` = '${name()}'") {
+            it.getInt("lastlevel")
+        }.firstOrNull() ?: 0
     }
 }

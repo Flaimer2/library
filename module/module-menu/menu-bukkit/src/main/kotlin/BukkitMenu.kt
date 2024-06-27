@@ -1,18 +1,13 @@
 package ru.snapix.library.menu
 
+import org.bukkit.Bukkit
+import org.bukkit.event.inventory.InventoryType
+import org.bukkit.inventory.Inventory
+import org.bukkit.inventory.InventoryHolder
 import org.bukkit.inventory.ItemStack
 
-class BukkitMenu : Menu<ItemStack>() {
-    override val type: MenuType
-        get() = TODO("Not yet implemented")
-    override var title: String
-        get() = TODO("Not yet implemented")
-        set(value) {}
-    override var rows: Int
-        get() = TODO("Not yet implemented")
-        set(value) {}
-
-    override fun removeItem(slot: Int) {
+class BukkitMenu(override val type: MenuType, override var title: String, override var rows: Int) : Menu<ItemStack>(), InventoryHolder {
+    override fun addItem(item: ItemStack) {
         TODO("Not yet implemented")
     }
 
@@ -20,8 +15,11 @@ class BukkitMenu : Menu<ItemStack>() {
         TODO("Not yet implemented")
     }
 
-    override fun addItem(item: ItemStack) {
+    override fun removeItem(slot: Int) {
         TODO("Not yet implemented")
     }
 
+    override fun getInventory(): Inventory {
+        TODO("Not yet implemented")
+    }
 }
