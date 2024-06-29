@@ -20,6 +20,7 @@ allprojects {
         maven("https://mvn.exceptionflug.de/repository/exceptionflug-public/")
         maven("https://jitpack.io")
         maven("https://repo.alessiodp.com/releases/")
+        maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
     }
 }
 
@@ -48,6 +49,9 @@ subprojects {
         exclude("org/jetbrains/annotations/**")
         exclude("org/intellij/lang/annotations/**")
         exclude("org/slf4j/**")
+        exclude("META-INF/maven/**")
+        exclude("META-INF/tf/**")
+        exclude("module-info.java")
     }
 
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {

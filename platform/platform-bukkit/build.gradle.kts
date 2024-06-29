@@ -10,10 +10,11 @@ dependencies {
     compileOnly("space.arim.dazzleconf:dazzleconf-ext-snakeyaml:$dazzleConfVersion")
     compileOnly("com.github.MilkBowl:VaultAPI:1.7")
     compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinSerializationVersion")
+    compileOnly("me.clip:placeholderapi:2.11.6")
 
     implementateCommon()
     implementation("co.aikar:acf-paper:$acfVersion")
-    implementateModule("module-menu:menu-bukkit")
+    implementation("com.github.cryptomorin:XSeries:11.2.0")
 }
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
@@ -22,6 +23,7 @@ tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
     relocateDependency("mu")
     relocateDependency("space.arim")
     relocateDependency("net.kyori")
+    relocateDependency("com.cryptomorin")
 }
 
 fun com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar.relocateDependency(pkg: String) {

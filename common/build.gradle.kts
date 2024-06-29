@@ -1,3 +1,4 @@
+// TODO: Remake dependencies
 dependencies {
     implementation(kotlin("stdlib"))
     implementation("space.arim.dazzleconf:dazzleconf-ext-snakeyaml:$dazzleConfVersion") {

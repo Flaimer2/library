@@ -3,6 +3,7 @@ package ru.snapix.library
 import net.kyori.adventure.platform.bukkit.BukkitAudiences
 import net.milkbowl.vault.economy.Economy
 import org.bukkit.plugin.java.JavaPlugin
+import ru.snapix.library.menu.InventoryListener
 import ru.snapix.library.plugin.Settings
 
 class SnapiLibraryBukkit : JavaPlugin() {
@@ -22,6 +23,7 @@ class SnapiLibraryBukkit : JavaPlugin() {
     override fun onEnable() {
         adventure = BukkitAudiences.create(this)
         setupEconomy()
+        server.pluginManager.registerEvents(InventoryListener(), this)
     }
 
     override fun onDisable() {

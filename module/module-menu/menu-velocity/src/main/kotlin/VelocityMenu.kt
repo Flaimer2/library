@@ -8,13 +8,12 @@ import dev.simplix.protocolize.api.item.ItemStack
 import dev.simplix.protocolize.data.inventory.InventoryType
 
 class VelocityMenu : Menu<ItemStack>() {
-    override val type = MenuType.DEFAULT
     override var title: String = ""
         set(value) {
             inventory.title(value.toChatElement())
             field = value
         }
-    override var rows = 5
+    override var rows: Int = 5
         set(value) {
             inventory.type(InventoryType.chestInventoryWithRows(field))
             field = value

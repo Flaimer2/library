@@ -4,8 +4,8 @@ import dev.simplix.protocolize.api.inventory.InventoryClick
 import dev.simplix.protocolize.api.item.ItemStack
 import dev.simplix.protocolize.data.ItemType
 
-fun menu(menuType: MenuType = MenuType.DEFAULT, block: VelocityMenu.() -> Unit): VelocityMenu =
-    MenuFactory.createMenu(menuType).apply(block)
+fun menu(block: VelocityMenu.() -> Unit): VelocityMenu =
+    VelocityMenu().apply(block)
 
 fun VelocityMenu.items(block: Items.() -> Unit) = Items(this).apply(block)
 
