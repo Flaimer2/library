@@ -6,5 +6,3 @@ rootProject.name = "SnapiLibrary"
 include("common")
 include("platform:platform-bukkit")
 include("platform:platform-velocity")
-include("module:module-menu:menu-common")
-include("module:module-menu:menu-velocity")

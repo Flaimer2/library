@@ -7,28 +7,29 @@ import dev.simplix.protocolize.api.inventory.InventoryClick
 import dev.simplix.protocolize.api.item.ItemStack
 import dev.simplix.protocolize.data.inventory.InventoryType
 
-class VelocityMenu : Menu<ItemStack>() {
-    override var title: String = ""
+// TODO: Need to rework
+class VelocityMenu {
+    var title: String = ""
         set(value) {
             inventory.title(value.toChatElement())
             field = value
         }
-    override var rows: Int = 5
+    var rows: Int = 5
         set(value) {
             inventory.type(InventoryType.chestInventoryWithRows(field))
             field = value
         }
     private val inventory = Inventory(InventoryType.chestInventoryWithRows(rows))
 
-    override fun addItem(item: ItemStack) {
+    fun addItem(item: ItemStack) {
         setItem(item, inventory.firstEmpty())
     }
 
-    override fun setItem(item: ItemStack, slot: Int) {
+    fun setItem(item: ItemStack, slot: Int) {
         inventory.item(slot, item)
     }
 
-    override fun removeItem(slot: Int) {
+    fun removeItem(slot: Int) {
         inventory.removeItem(slot)
     }
 

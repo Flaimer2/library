@@ -3,18 +3,18 @@ plugins {
 }
 
 dependencies {
-    implementation("net.kyori:adventure-platform-bukkit:4.3.3")
-    implementation("net.kyori:adventure-text-minimessage:4.17.0")
+    implementate("common")
 
-    compileSpigotApi()
-    compileOnly("space.arim.dazzleconf:dazzleconf-ext-snakeyaml:$dazzleConfVersion")
-    compileOnly("com.github.MilkBowl:VaultAPI:1.7")
-    compileOnly("org.jetbrains.kotlinx:kotlinx-serialization-json:$kotlinSerializationVersion")
-    compileOnly("me.clip:placeholderapi:2.11.6")
+    implementation(libs.adventure.minimessage)
+    implementation(libs.adventure.bukkit)
+    implementation(libs.acf.paper)
+    implementation(libs.xseries)
 
-    implementateCommon()
-    implementation("co.aikar:acf-paper:$acfVersion")
-    implementation("com.github.cryptomorin:XSeries:11.2.0")
+    compileOnly(libs.bukkit)
+    compileOnly(libs.dazzleConf)
+    compileOnly(libs.vault)
+    compileOnly(libs.serialization)
+    compileOnly(libs.placeholderapi)
 }
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {

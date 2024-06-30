@@ -22,10 +22,6 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/buildSrc" />
             <option value="$PROJECT_DIR$/common" />
-            <option value="$PROJECT_DIR$/module" />
-            <option value="$PROJECT_DIR$/module/module-menu" />
-            <option value="$PROJECT_DIR$/module/module-menu/menu-common" />
-            <option value="$PROJECT_DIR$/module/module-menu/menu-velocity" />
             <option value="$PROJECT_DIR$/platform" />
             <option value="$PROJECT_DIR$/platform/platform-bukkit" />
             <option value="$PROJECT_DIR$/platform/platform-velocity" />

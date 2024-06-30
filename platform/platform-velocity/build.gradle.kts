@@ -1,8 +1,10 @@
 dependencies {
-    compileVelocityApi()
-    implementateCommon()
-    implementation("co.aikar:acf-velocity:$acfVersion")
-    implementateModule("module-menu:menu-velocity")
+    implementation(libs.acf.velocity)
+
+    compile("common")
+    compileOnly(libs.velocityapi)
+    kapt(libs.velocityapi)
+    compileOnly(libs.protocolize)
 }
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
