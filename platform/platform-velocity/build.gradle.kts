@@ -2,9 +2,11 @@ dependencies {
     implementation(libs.acf.velocity)
 
     compile("common")
-    compileOnly(libs.velocityapi)
+
     kapt(libs.velocityapi)
+    compileOnly(libs.velocityapi)
     compileOnly(libs.protocolize)
+    compileOnly(libs.coroutines)
 }
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
