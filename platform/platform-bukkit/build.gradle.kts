@@ -15,6 +15,7 @@ dependencies {
     compileOnly(libs.vault)
     compileOnly(libs.serialization)
     compileOnly(libs.placeholderapi)
+    compileOnly(libs.coroutines)
 }
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {

@@ -4,7 +4,7 @@ import com.cryptomorin.xseries.XMaterial
 import org.bukkit.inventory.ItemFlag
 import org.bukkit.inventory.ItemStack
 
-class Item(val index: Char, var name: String? = null, var material: XMaterial = XMaterial.AIR, var amount: Int = 1, var lore: MutableList<String> = mutableListOf(), var itemFlag: MutableList<ItemFlag> = mutableListOf(), var clickAction: (ClickAction.() -> Unit)? = null) : Cloneable {
+class Item(val index: Char, var name: String? = null, var material: XMaterial = XMaterial.AIR, var amount: Int = 1, var lore: List<String> = emptyList(), var itemFlag: List<ItemFlag> = emptyList(), var clickAction: ClickAction? = null) : Cloneable {
     fun item(): ItemStack {
         val item = ItemStack(material.parseMaterial(), amount)
         val meta = item.itemMeta
@@ -22,14 +22,6 @@ class Item(val index: Char, var name: String? = null, var material: XMaterial = 
         item.itemMeta = meta
 
         return item
-    }
-
-    fun addLore(vararg lore: String) {
-        this.lore.addAll(lore)
-    }
-
-    fun addItemFlag(vararg itemFlag: ItemFlag) {
-        this.itemFlag.addAll(itemFlag)
     }
 
     public override fun clone(): Item {

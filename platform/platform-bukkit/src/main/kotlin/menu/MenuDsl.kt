@@ -3,19 +3,18 @@ package ru.snapix.library.menu
 import com.cryptomorin.xseries.XMaterial
 import org.bukkit.entity.Player
 import org.bukkit.inventory.ItemFlag
-import ru.snapix.library.players
-import java.util.function.Supplier
+import kotlin.time.Duration
 
 fun menu(player: Player? = null, builder: MenuBuilder.() -> Unit): BukkitInventory {
     return MenuBuilder(player).apply(builder).build()
 }
 
 class MenuBuilder(val player: Player?) {
-    val layout = mutableListOf<String>()
-    val items = mutableListOf<Item>()
-    val replacements = mutableListOf<Pair<String, () -> Any>>()
     var title: String? = null
-    var update: Int = -1
+    val items = mutableListOf<Item>()
+    val layout = mutableListOf<String>()
+    val replacements = mutableListOf<Pair<String, () -> Any>>()
+    var update: Duration? = null
 
     fun MenuBuilder.layout(setup: LayoutBuilder.() -> Unit) {
         layout.addAll(LayoutBuilder().apply(setup).list)
@@ -46,7 +45,7 @@ class MenuBuilder(val player: Player?) {
     }
 
     fun build(): BukkitInventory {
-        return BukkitInventory(title ?: "DefaultSnapTitle", layout, items, replacements, update)
+        return BukkitInventory(title ?: "DefaultSnapTitle", items, layout, replacements, update)
     }
 }
 
@@ -63,7 +62,7 @@ class ItemsBuilder {
         var amount: Int = 1
         var lore = mutableListOf<String>()
         var itemFlag = mutableListOf<ItemFlag>()
-        var actions: (ClickAction.() -> Unit)? = null
+        var actions: ClickAction? = null
 
         fun lore(setup: LoreBuilder.() -> Unit) {
             lore = LoreBuilder().apply(setup).list
@@ -73,7 +72,7 @@ class ItemsBuilder {
             itemFlag = ItemFlagBuilder().apply(setup).list
         }
 
-        fun actions(actions: ClickAction.() -> Unit) {
+        fun actions(actions: ClickAction) {
             this.actions = actions
         }
 
@@ -94,7 +93,7 @@ class ItemsBuilder {
         }
 
         fun build(): Item {
-            return Item(index, name, material, amount, lore, clickAction = actions)
+            return Item(index, name, material, amount, lore, itemFlag, actions)
         }
     }
 }

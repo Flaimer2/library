@@ -5,85 +5,81 @@ import org.bukkit.Bukkit
 import org.bukkit.entity.Player
 import org.bukkit.inventory.Inventory
 import org.bukkit.inventory.InventoryHolder
-import org.bukkit.inventory.ItemStack
-import ru.snapix.library.snapiLibrary
+import ru.snapix.library.runTaskTimer
+import kotlinx.coroutines.channels.ReceiveChannel
+import org.bukkit.event.inventory.ClickType
+import kotlin.time.Duration
 
-// TODO: Add base class of Inventory (module-common)
-open class BukkitInventory(title: String = "DefaultSnapTitle", private var layout: List<String> = listOf(), private val items: List<Item> = emptyList(), private var replacements: List<Pair<String, () -> Any>> = emptyList(), private var update: Int) : InventoryHolder {
-    val bukkitInventory: Inventory = Bukkit.createInventory(this, layout.size * 9, title)
+class BukkitInventory : InventoryHolder {
+    private val players = mutableSetOf<Player>()
+    private val bukkitInventory: Inventory
+    private val itemMap = emptyItemMap()
+    private val replacements: List<Replacement>
+    private val updateTimer: ReceiveChannel<Unit>?
 
-    init {
-        // TODO: Make load replacements on load!!!
+    internal constructor(title: String = "DefaultSnapTitle", items: List<Item> = emptyList(), layout: List<String> = emptyList(), replacements: List<Replacement> = emptyList(), update: Duration? = null) {
+        bukkitInventory = Bukkit.createInventory(this, layout.size * 9, title)
+
         items.forEach { item ->
             for (line in layout.withIndex()) {
                 for (slot in line.value.withIndex()) {
                     if (slot.value == item.index) {
-                        bukkitInventory.setItem(9 * line.index + slot.index, item.item())
+                        itemMap[9 * line.index + slot.index] = item
                     }
                 }
             }
         }
+        this.replacements = replacements
+
+        updateTimer = if (update != null) {
+            runTaskTimer(update) { update() }
+        } else {
+            null
+        }
+    }
+
+    fun disable() {
+        updateTimer?.cancel()
+    }
+
+    internal fun onOpen(player: Player) {
+        players.add(player)
+        update()
+    }
+
+    internal fun onClose(player: Player) {
+        players.remove(player)
+    }
+
+    internal fun click(player: Player, slot: Int, type: ClickType) {
+        val item = itemMap[slot] ?: return
+        val clickAction = item.clickAction ?: return
+
+        val click = Click(player, type, item, slot)
+
+        click.clickAction()
+    }
+
+    fun update() {
+        for (viewer in players) {
+            val items = itemMap.mapValues { it.value.clone() }
+            for ((slot, item) in items) {
+                for (replace in replacements) {
+                    item.name = item.name?.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true)
+                    item.lore = item.lore.map { it.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true) }
+                }
+                item.name?.let { item.name = PlaceholderAPI.setPlaceholders(viewer, it) }
+                item.lore = item.lore.map { PlaceholderAPI.setPlaceholders(viewer, it) }
+                inventory.setItem(slot, item.item())
+            }
+        }
+    }
+
+    fun openForPlayer(player: Player) {
+        player.openInventory(inventory)
     }
 
     override fun getInventory(): Inventory {
         return bukkitInventory
-    }
-
-    private fun getItemOnSlot(slotIndex: Int): Item? {
-        var char: Char? = null
-        for (line in layout.withIndex()) {
-            for (slot in line.value.withIndex()) {
-                if (9 * line.index + slot.index == slotIndex) {
-                    char = slot.value
-                }
-            }
-        }
-        return items.find { it.index == char }
-    }
-
-    fun executeClickAction(action: ClickAction) {
-        getItemOnSlot(action.slot)?.clickAction?.let {
-            it(action)
-        }
-    }
-
-    private fun update(player: Player) {
-        val inventory = player.openInventory.topInventory ?: return
-
-        if (inventory.holder is BukkitInventory) {
-            val map = mutableMapOf<Int, ItemStack>()
-            val items = items.map { it.clone() }
-            items.forEach { item ->
-                replacements.forEach {
-                    item.name = item.name?.replace("{${it.first}}", it.second().toString(), ignoreCase = true)
-                }
-                replacements.forEach { replace ->
-                    item.lore = item.lore.map {
-                        it.replace(
-                            "{${replace.first}}",
-                            replace.second().toString(),
-                            ignoreCase = true
-                        )
-                    }.toMutableList()
-                }
-                item.lore = item.lore.map { PlaceholderAPI.setPlaceholders(player, it) }.toMutableList()
-                for (line in layout.withIndex()) {
-                    for (slot in line.value.withIndex()) {
-                        if (slot.value == item.index) {
-                            map[9 * line.index + slot.index] = item.item()
-                        }
-                    }
-                }
-            }
-            map.forEach {
-                inventory.setItem(it.key, it.value)
-            }
-        }
-    }
-
-    fun openFor(player: Player) {
-        player.openInventory(bukkitInventory)
-        // TODO: DONT MAKE THIS (Maybe do by viewers update???)
-        Bukkit.getScheduler().runTaskTimerAsynchronously(snapiLibrary, { update(player) }, 1L, update.toLong())
     }
 }

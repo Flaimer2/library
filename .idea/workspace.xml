@@ -5,21 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Dependencies.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Dependencies.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/module-menu/menu-common/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/module/module-menu/menu-common/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/module-menu/menu-velocity/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/module/module-menu/menu-velocity/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/module-menu/menu-velocity/src/main/kotlin/ActionsMenu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/ActionsMenu.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/module-menu/menu-velocity/src/main/kotlin/InventoryExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/InventoryExtension.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/module-menu/menu-velocity/src/main/kotlin/MenuDSL.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/MenuDSL.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/module-menu/menu-velocity/src/main/kotlin/VelocityMenu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/VelocityMenu.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/SnapiLibraryBukkit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/SnapiLibraryBukkit.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/BukkitInventory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/ClickAction.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/InventoryListener.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/InventoryType.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/Item.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/Item.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/MenuDsl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/MenuDsl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/ActionsMenu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menuold/ActionsMenu.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/InventoryExtension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menuold/InventoryExtension.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/MenuDSL.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menuold/MenuDSL.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/VelocityMenu.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menuold/VelocityMenu.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,8 +71,8 @@
         <option value="Kotlin Worksheet" />
         <option value="Kotlin Object" />
         <option value="Class" />
-        <option value="Kotlin File" />
         <option value="Kotlin Enum" />
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -129,7 +127,7 @@
     </scriptDefinition>
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
@@ -218,21 +216,21 @@
       <recent name="C:\SnapiX\SourceCode\Plugin\library\module\module-database" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\common\src\main\kotlin\script" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\configuration" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\common\src\main\kotlin\config" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="menu" />
       <recent name="config" />
       <recent name="" />
       <recent name="type" />
       <recent name="extension" />
-      <recent name="ru.snapix.library.menu" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ru.snapix.library.common.database" />
@@ -621,7 +619,7 @@
       <workItem from="1719644924772" duration="28405000" />
       <workItem from="1719748463970" duration="2516000" />
       <workItem from="1719753974390" duration="1311000" />
-      <workItem from="1719757138530" duration="3053000" />
+      <workItem from="1719757138530" duration="13551000" />
     </task>
     <servers />
   </component>
