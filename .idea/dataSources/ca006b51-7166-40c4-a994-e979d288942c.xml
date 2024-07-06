@@ -24,11 +24,9 @@
     <schema id="17" parent="1" name="15"/>
     <hash-table id="18" parent="2" name="account-coins"/>
     <hash-table id="19" parent="2" name="balancer-server:lobby"/>
-    <hash-table id="20" parent="2" name="clan-clans"/>
-    <hash-table id="21" parent="2" name="clan-users"/>
-    <hash-table id="22" parent="2" name="friends"/>
-    <hash-table id="23" parent="2" name="parties"/>
-    <hash-table id="24" parent="2" name="player-connected-server"/>
-    <hash-table id="25" parent="2" name="statistic"/>
+    <hash-table id="20" parent="2" name="friends"/>
+    <hash-table id="21" parent="2" name="player-connected-server"/>
+    <hash-table id="22" parent="2" name="statistic"/>
+    <set id="23" parent="2" name="proxy-player"/>
   </database-model>
 </dataSource>

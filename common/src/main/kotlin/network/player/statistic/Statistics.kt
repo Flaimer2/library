@@ -22,7 +22,6 @@ object Statistics {
         replacements.putAll(SkyWars.get(username))
         replacements.putAll(BedWars.get(username))
         replacements.putAll(getDatabaseReplacement(username))
-        println("skywars,bedwars,database - ${replacements.toMap().mapKeys { it.key.lowercase() }}")
 
         val statistic = Statistic(username, replacements)
         StatisticCache.update(statistic)

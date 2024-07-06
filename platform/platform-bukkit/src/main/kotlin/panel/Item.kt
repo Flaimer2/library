@@ -34,7 +34,9 @@ class Item(
 
         val lore = buildList {
             for (lore in lore) {
-                lore.split("\n").forEach { add(it) }
+                if (!lore.contains("\\")) {
+                  lore.split("\n").forEach { add(it) }
+                }
             }
         }
 
