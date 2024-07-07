@@ -11,8 +11,7 @@ import ru.snapix.library.menu.items.Item
 import ru.snapix.library.snapiLibrary
 import kotlin.time.Duration
 
-// TODO: REMOVE OPEN
-open class StandardPanel(
+class StandardPanel(
     player: Player,
     title: String = "Kotlin Standard Panel",
     update: Duration? = null,
@@ -21,7 +20,7 @@ open class StandardPanel(
     items: List<Item> = emptyList(),
 ) : BukkitPanel(player, title, update, replacements) {
     override val bukkitInventory: Inventory = Bukkit.createInventory(this, layout.size * 9, title)
-    override var updateTimer: BukkitTask? = null
+    override val updateTimer: BukkitTask?
     private val itemMap = emptyItemMap()
 
     init {

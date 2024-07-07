@@ -13,7 +13,7 @@ import ru.snapix.library.menu.Replacement
 import ru.snapix.library.menu.items.Item
 import kotlin.time.Duration
 
-abstract class BukkitPanel(
+abstract class BukkitPanel internal constructor(
     val player: Player,
     override val title: String,
     override val update: Duration?,

@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/items/Item.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/CoroutinesExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/SnapiLibraryBukkit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/SnapiLibraryBukkit.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/BukkitInventory.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/ClickAction.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/InventoryListener.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/Item.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/ItemMap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/ItemMap.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/MenuDsl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menuold/MenuDsl.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/Replacement.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/MenuDsl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/MenuDsl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/BukkitPanel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/BukkitPanel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/GeneratorPanel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/GeneratorPanel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/PagedPanel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/PagedPanel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/StandardPanel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/StandardPanel.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -628,7 +620,7 @@
       <workItem from="1719989328215" duration="24070000" />
       <workItem from="1720100380233" duration="4043000" />
       <workItem from="1720118204288" duration="9920000" />
-      <workItem from="1720341293714" duration="756000" />
+      <workItem from="1720341293714" duration="1104000" />
     </task>
     <servers />
   </component>

@@ -10,21 +10,18 @@ import ru.snapix.library.menu.ItemMap
 import ru.snapix.library.menu.emptyItemMap
 import ru.snapix.library.snapiLibrary
 import java.util.concurrent.atomic.AtomicInteger
-import kotlin.math.ceil
 import kotlin.time.Duration
-import kotlin.time.Duration.Companion.milliseconds
 
-// TODO: REMOVE OPEN
-open class PagedPanel(
+class PagedPanel internal constructor(
     player: Player,
-    title: String = "Kotlin Paged Panel",
-    update: Duration? = null,
-    replacements: List<Replacement> = emptyList(),
+    title: String,
+    update: Duration?,
+    replacements: List<Replacement>,
     val pages: List<Layout>,
-    items: List<Item> = emptyList(),
+    items: List<Item>
 ) : BukkitPanel(player, title, update, replacements) {
     override val bukkitInventory: Inventory = Bukkit.createInventory(this, pages[0].size * 9, title)
-    override var updateTimer: BukkitTask? = null
+    override val updateTimer: BukkitTask?
     private val pageMap = PageList()
     private val currentPage = AtomicInteger(0)
 

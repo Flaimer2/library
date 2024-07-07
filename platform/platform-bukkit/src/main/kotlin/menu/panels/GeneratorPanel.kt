@@ -12,7 +12,7 @@ import java.util.concurrent.atomic.AtomicInteger
 import kotlin.math.ceil
 import kotlin.time.Duration
 
-open class GeneratorPanel<T>(
+class GeneratorPanel<T> internal constructor(
     player: Player,
     title: String = "Kotlin Generator Panel",
     update: Duration? = null,
@@ -25,7 +25,7 @@ open class GeneratorPanel<T>(
     var comparator: Comparator<T> = compareBy { 0 }
 ) : BukkitPanel(player, title, update, replacements) {
     override val bukkitInventory: Inventory = Bukkit.createInventory(this, layout.size * 9, title)
-    override var updateTimer: BukkitTask? = null
+    override val updateTimer: BukkitTask?
     private val itemMap = emptyItemMap()
     private val currentPage = AtomicInteger(0)
     private val lastPage = AtomicInteger(0)
