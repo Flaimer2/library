@@ -1,5 +1,5 @@
 plugins {
-    id("net.minecrell.plugin-yml.bukkit") version "0.6.0"
+    alias(libs.plugins.plugin.yml.bukkit)
 }
 
 dependencies {
@@ -11,7 +11,7 @@ dependencies {
     implementation(libs.xseries)
 
     compileOnly(libs.bukkit)
-    compileOnly(libs.dazzleConf)
+    compileOnly(libs.dazzleconf)
     compileOnly(libs.vault)
     compileOnly(libs.serialization)
     compileOnly(libs.placeholderapi)
