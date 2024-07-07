@@ -1,14 +1,13 @@
 package ru.snapix.library.menu
 
-import com.velocitypowered.api.proxy.Player
 import dev.simplix.protocolize.api.item.ItemFlag
 import kotlin.time.Duration
 
-fun menu(player: Player? = null, builder: MenuBuilder.() -> Unit): VelocityInventory {
-    return MenuBuilder(player).apply(builder).build()
+fun menu(builder: MenuBuilder.() -> Unit): VelocityInventory {
+    return MenuBuilder().apply(builder).build()
 }
 
-class MenuBuilder(val player: Player?) {
+class MenuBuilder {
     var title: String? = null
     val items = mutableListOf<Item>()
     val layout = mutableListOf<String>()

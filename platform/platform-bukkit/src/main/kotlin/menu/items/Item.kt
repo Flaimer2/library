@@ -1,10 +1,11 @@
-package ru.snapix.library.menu
+package ru.snapix.library.menu.items
 
 import com.cryptomorin.xseries.XMaterial
 import org.bukkit.inventory.ItemFlag
 import org.bukkit.inventory.ItemStack
+import ru.snapix.library.menu.ClickAction
 
-class Item(val index: Char, var name: String? = null, var material: XMaterial = XMaterial.AIR, var amount: Int = 1, var lore: List<String> = emptyList(), var itemFlag: List<ItemFlag> = emptyList(), var clickAction: ClickAction? = null) : Cloneable {
+class Item(val index: Char? = null, var name: String? = null, val material: XMaterial = XMaterial.AIR, val amount: Int = 1, var lore: List<String> = emptyList(), val itemFlag: List<ItemFlag> = emptyList(), val clickAction: ClickAction? = null) : Cloneable {
     fun item(): ItemStack {
         val item = ItemStack(material.parseMaterial(), amount)
         val meta = item.itemMeta

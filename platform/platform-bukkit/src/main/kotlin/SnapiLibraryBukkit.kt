@@ -2,14 +2,10 @@ package ru.snapix.library
 
 import net.kyori.adventure.platform.bukkit.BukkitAudiences
 import net.milkbowl.vault.economy.Economy
-import org.bukkit.Bukkit
-import org.bukkit.entity.Player
 import org.bukkit.plugin.java.JavaPlugin
-import ru.snapix.library.menu.BukkitInventory
 import ru.snapix.library.menu.InventoryListener
-//import ru.snapix.library.menu.InventoryListener
+import ru.snapix.library.menu.panels.BukkitPanel
 import ru.snapix.library.plugin.Settings
-
 
 class SnapiLibraryBukkit : JavaPlugin() {
     private var adventure: BukkitAudiences? = null
@@ -33,7 +29,7 @@ class SnapiLibraryBukkit : JavaPlugin() {
 
     override fun onDisable() {
         server.onlinePlayers.forEach { p ->
-            if (p.openInventory.topInventory.holder is BukkitInventory)
+            if (p.openInventory.topInventory.holder is BukkitPanel)
                 p.closeInventory()
         }
         adventure?.let {

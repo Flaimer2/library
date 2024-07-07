@@ -5,14 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/items/Item.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/BukkitInventory.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/BukkitInventory.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/SnapiLibraryVelocity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/SnapiLibraryVelocity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menuold/ActionsMenu.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menuold/InventoryExtension.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menuold/MenuDSL.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menuold/VelocityMenu.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/common/src/main/kotlin/CoroutinesExtension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/SnapiLibraryBukkit.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/SnapiLibraryBukkit.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/BukkitInventory.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/ClickAction.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/InventoryListener.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/Item.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/ItemMap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/ItemMap.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/MenuDsl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menuold/MenuDsl.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/Replacement.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/MenuDsl.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/MenuDsl.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,8 +71,9 @@
         <option value="Kotlin Object" />
         <option value="Class" />
         <option value="Kotlin Enum" />
-        <option value="Kotlin Class" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -178,7 +183,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/SnapiX/SourceCode/Plugin/library/platform/platform-velocity/src/main/kotlin/menu",
+    "last_opened_file_path": "C:/SnapiX/SourceCode/Plugin/library/platform/platform-bukkit/src/main/kotlin/menu/dsl",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -204,33 +209,35 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\menu\dsl" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\common\src\main\kotlin\menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\common\src\main\kotlin" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\module\module-menu\menu-velocity\src" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\module\module-database\src\main\kotlin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\menu" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\menuold" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\common\src\main\kotlin\script" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\configuration" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="menu.panels" />
+      <recent name="menu.items" />
       <recent name="menu" />
       <recent name="config" />
       <recent name="" />
-      <recent name="type" />
-      <recent name="extension" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ru.snapix.library.common.database" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="menu.dsl" />
+      <recent name="menu" />
       <recent name="" />
       <recent name="type" />
       <recent name="ru.snapix.library.menu" />
@@ -616,7 +623,12 @@
       <workItem from="1719753974390" duration="1311000" />
       <workItem from="1719757138530" duration="13551000" />
       <workItem from="1719781937102" duration="52000" />
-      <workItem from="1719784992979" duration="2719000" />
+      <workItem from="1719784992979" duration="2893000" />
+      <workItem from="1719823996125" duration="9072000" />
+      <workItem from="1719989328215" duration="24070000" />
+      <workItem from="1720100380233" duration="4043000" />
+      <workItem from="1720118204288" duration="9920000" />
+      <workItem from="1720341293714" duration="756000" />
     </task>
     <servers />
   </component>
