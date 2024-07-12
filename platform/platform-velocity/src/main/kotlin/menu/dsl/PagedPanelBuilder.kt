@@ -1,6 +1,6 @@
 package ru.snapix.library.menu.dsl
 
-import org.bukkit.entity.Player
+import com.velocitypowered.api.proxy.Player
 import ru.snapix.library.menu.Item
 import ru.snapix.library.menu.Replacement
 import ru.snapix.library.menu.panels.PagedPanel
@@ -30,6 +30,6 @@ class PagedPanelBuilder(val player: Player) {
     }
 
     fun build(): PagedPanel {
-        return PagedPanel(player, title ?: "Kotlin Paged Panel", update, replacements, layout, items)
+        return PagedPanel(player, title ?: "Kotlin Proxy Paged Panel", update, replacements, layout, items)
     }
 }

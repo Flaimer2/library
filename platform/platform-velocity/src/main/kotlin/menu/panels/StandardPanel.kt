@@ -1,13 +1,11 @@
 package ru.snapix.library.menu.panels
 
-import org.bukkit.Bukkit
-import org.bukkit.entity.Player
-import org.bukkit.inventory.Inventory
-import org.bukkit.scheduler.BukkitTask
-import ru.snapix.library.menu.Item
-import ru.snapix.library.menu.Layout
-import ru.snapix.library.menu.Replacement
-import ru.snapix.library.menu.emptyItemMap
+import com.velocitypowered.api.proxy.Player
+import com.velocitypowered.api.scheduler.ScheduledTask
+import dev.simplix.protocolize.api.inventory.Inventory
+import dev.simplix.protocolize.data.inventory.InventoryType
+import ru.snapix.library.menu.*
+import ru.snapix.library.repeatTask
 import ru.snapix.library.snapiLibrary
 import kotlin.time.Duration
 
@@ -18,12 +16,14 @@ class StandardPanel internal constructor(
     replacements: List<Replacement>,
     layout: Layout,
     items: List<Item>
-) : BukkitPanel(player, title, update, replacements) {
-    override val bukkitInventory: Inventory = Bukkit.createInventory(this, layout.size * 9, title)
-    override val updateTimer: BukkitTask?
+) : VelocityPanel(player, title, update, replacements) {
+    override val inventory: Inventory
+    override val updateTimer: ScheduledTask?
     private val itemMap = emptyItemMap()
 
     init {
+        inventory = Inventory(InventoryType.chestInventoryWithRows(layout.size))
+        inventory.title(title.toChatElement())
         items.forEach { item ->
             for (line in layout.withIndex()) {
                 for (slot in line.value.withIndex()) {
@@ -33,11 +33,20 @@ class StandardPanel internal constructor(
                 }
             }
         }
+
         updateTimer = if (update != null) {
-            Bukkit.getScheduler().runTaskTimerAsynchronously(snapiLibrary, { render() }, 0L, update.inWholeMilliseconds)
+            snapiLibrary.server.repeatTask(update) { render() }
         } else {
             render()
             null
+        }
+
+        // register listeners
+        inventory.onClick {
+            runClickCallbacks(it.slot(), it.clickType())
+        }
+        inventory.onClose {
+            onClose()
         }
     }
 
@@ -45,13 +54,13 @@ class StandardPanel internal constructor(
         render(itemMap)
     }
 
+    override fun getItemBySlot(slot: Int): Item? {
+        return itemMap[slot]
+    }
+
     override fun onOpen() {}
 
     override fun onClose() {
         disable()
-    }
-
-    override fun getItemBySlot(slot: Int): Item? {
-        return itemMap[slot]
     }
 }

@@ -4,9 +4,7 @@ import dev.simplix.protocolize.api.item.ItemFlag
 import dev.simplix.protocolize.api.item.ItemStack
 import dev.simplix.protocolize.data.ItemType
 
-typealias Material = ItemType
-
-class Item(val index: Char, var name: String? = null, var material: Material = Material.AIR, var amount: Int = 1, var lore: List<String> = emptyList(), var itemFlag: List<ItemFlag> = emptyList(), var clickAction: ClickAction? = null) : Cloneable {
+class Item(val index: Char? = null, var name: String? = null, val material: ItemType = ItemType.AIR, val amount: Int = 1, var lore: List<String> = emptyList(), val itemFlag: List<ItemFlag> = emptyList(), val clickAction: ClickAction? = null) : Cloneable {
     fun item(): ItemStack {
         val item = ItemStack(material, amount)
 

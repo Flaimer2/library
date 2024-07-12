@@ -1,7 +1,7 @@
 dependencies {
     implementation(libs.acf.velocity)
 
-    compile("common")
+    implementate("common")
 
     kapt(libs.velocityapi)
     compileOnly(libs.velocityapi)

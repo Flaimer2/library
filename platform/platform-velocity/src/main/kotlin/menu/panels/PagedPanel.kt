@@ -1,10 +1,11 @@
 package ru.snapix.library.menu.panels
 
-import org.bukkit.Bukkit
-import org.bukkit.entity.Player
-import org.bukkit.inventory.Inventory
-import org.bukkit.scheduler.BukkitTask
+import com.velocitypowered.api.proxy.Player
+import com.velocitypowered.api.scheduler.ScheduledTask
+import dev.simplix.protocolize.api.inventory.Inventory
+import dev.simplix.protocolize.data.inventory.InventoryType
 import ru.snapix.library.menu.*
+import ru.snapix.library.repeatTask
 import ru.snapix.library.snapiLibrary
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.time.Duration
@@ -16,13 +17,15 @@ class PagedPanel internal constructor(
     replacements: List<Replacement>,
     val pages: List<Layout>,
     items: List<Item>
-) : BukkitPanel(player, title, update, replacements) {
-    override val bukkitInventory: Inventory = Bukkit.createInventory(this, pages[0].size * 9, title)
-    override val updateTimer: BukkitTask?
+) : VelocityPanel(player, title, update, replacements) {
+    override val inventory: Inventory
+    override val updateTimer: ScheduledTask?
     private val pageMap = PageList()
     private val currentPage = AtomicInteger(0)
 
     init {
+        inventory = Inventory(InventoryType.chestInventoryWithRows(pages[0].size))
+        inventory.title(title.toChatElement())
         items.forEach { item ->
             for (page in pages.withIndex()) {
                 for (line in page.value.withIndex()) {
@@ -34,11 +37,20 @@ class PagedPanel internal constructor(
                 }
             }
         }
+
         updateTimer = if (update != null) {
-            Bukkit.getScheduler().runTaskTimerAsynchronously(snapiLibrary, { render() }, 0L, update.inWholeMilliseconds)
+            snapiLibrary.server.repeatTask(update) { render() }
         } else {
             render()
             null
+        }
+
+        // register listeners
+        inventory.onClick {
+            runClickCallbacks(it.slot(), it.clickType())
+        }
+        inventory.onClose {
+            onClose()
         }
     }
 
@@ -46,18 +58,8 @@ class PagedPanel internal constructor(
         render(getCurrentItemMap())
     }
 
-    override fun onOpen() {}
-
-    override fun onClose() {
-        disable()
-    }
-
     override fun getItemBySlot(slot: Int): Item? {
         return getCurrentItemMap()[slot]
-    }
-
-    fun getCurrentPage(): Int {
-        return currentPage.get()
     }
 
     fun getCurrentItemMap(): ItemMap {
@@ -75,5 +77,15 @@ class PagedPanel internal constructor(
 
     fun getLastPage(): Int {
         return pages.size - 1
+    }
+
+    fun getCurrentPage(): Int {
+        return currentPage.get()
+    }
+
+    override fun onOpen() {}
+
+    override fun onClose() {
+        disable()
     }
 }

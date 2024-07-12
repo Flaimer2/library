@@ -1,9 +1,9 @@
 package ru.snapix.library.menu.dsl
 
-import com.cryptomorin.xseries.XMaterial
-import org.bukkit.inventory.ItemFlag
-import ru.snapix.library.menu.ClickAction
+import dev.simplix.protocolize.api.item.ItemFlag
+import dev.simplix.protocolize.data.ItemType
 import ru.snapix.library.menu.Item
+import ru.snapix.library.menu.ClickAction
 
 class ItemsBuilder {
     val items = mutableListOf<Item>()
@@ -54,4 +54,4 @@ class ItemBuilder(val index: Char? = null) {
     }
 }
 
-typealias Material = XMaterial
+typealias Material = ItemType

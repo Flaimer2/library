@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7517359a-6b06-418d-b14c-8bdcb5060c3d" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/common/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/common/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/libs.versions.toml" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" beforeDir="false" afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/Configuration.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/Serializers.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/Serializers.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/ClickAction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/ClickAction.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/ItemMap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/ItemMap.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/PageList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/PageList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/dsl/GeneratorBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/dsl/GeneratorBuilder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/dsl/ItemsBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/dsl/ItemsBuilder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/dsl/PagedPanelBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/dsl/PagedPanelBuilder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/dsl/PanelBuilder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/dsl/PanelBuilder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/items/Item.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/Item.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/BukkitPanel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/BukkitPanel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/GeneratorPanel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/GeneratorPanel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/PagedPanel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/PagedPanel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/StandardPanel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-bukkit/src/main/kotlin/menu/panels/StandardPanel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/SnapiLibraryVelocity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/SnapiLibraryVelocity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/ClickAction.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/InventoryExtension.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/Item.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/ItemMap.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/MenuDsl.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/Replacement.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/platform/platform-velocity/src/main/kotlin/menu/VelocityInventory.kt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,8 +85,8 @@
         <option value="Class" />
         <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin File" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -175,7 +196,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/SnapiX/SourceCode/Plugin/BukkitPlugin",
+    "last_opened_file_path": "C:/SnapiX/SourceCode/Plugin/library/platform/platform-velocity/src/main/kotlin/menu/dsl",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -191,9 +212,11 @@
   },
   "keyToStringList": {
     "DatabaseDriversLRU": [
-      "mariadb"
+      "mariadb",
+      "redis"
     ],
     "kotlin-gradle-user-dirs": [
+      "C:\\Users\\Flaimer\\.gradle",
       "C:\\Users\\danuu\\.gradle"
     ],
     "stardust.markdown.MarkdownSplitEditorSuppressor:keyList": []
@@ -201,26 +224,26 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\menu\dsl" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\menu\dsl" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\common\src\main\kotlin\menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\menu" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\common\src\main\kotlin" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\menuold" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\menuold" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\menu" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\common\src\main\kotlin\script" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\configuration" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="menu" />
       <recent name="menu.panels" />
       <recent name="menu.items" />
-      <recent name="menu" />
       <recent name="config" />
       <recent name="" />
     </key>
@@ -228,11 +251,11 @@
       <recent name="ru.snapix.library.common.database" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="menu.dsl" />
+      <recent name="menu.panels" />
       <recent name="menu" />
+      <recent name="menu.dsl" />
       <recent name="" />
       <recent name="type" />
-      <recent name="ru.snapix.library.menu" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.SnapiLibrary [Publish]">
@@ -457,13 +480,21 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.NativeSqlTest.Test value" />
-        <item itemvalue="Gradle.ScriptTest.Engine test (1)" />
         <item itemvalue="Gradle.ScriptTest.Engine test" />
-        <item itemvalue="Gradle.RedisTest.Connection Test" />
+        <item itemvalue="Gradle.ScriptTest.Engine test (1)" />
         <item itemvalue="Gradle.RedisTest.Sub Test" />
+        <item itemvalue="Gradle.RedisTest.Connection Test" />
+        <item itemvalue="Gradle.NativeSqlTest.Test value" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="StandaloneScriptsStorage">
@@ -620,7 +651,24 @@
       <workItem from="1719989328215" duration="24070000" />
       <workItem from="1720100380233" duration="4043000" />
       <workItem from="1720118204288" duration="9920000" />
-      <workItem from="1720341293714" duration="3914000" />
+      <workItem from="1720341293714" duration="5969000" />
+      <workItem from="1720353584568" duration="727000" />
+      <workItem from="1720360490790" duration="2212000" />
+      <workItem from="1720384279580" duration="610000" />
+      <workItem from="1720427461083" duration="611000" />
+      <workItem from="1720589741698" duration="12215000" />
+      <workItem from="1720621957084" duration="3210000" />
+      <workItem from="1720773753336" duration="22000" />
+      <workItem from="1720773787056" duration="94000" />
+      <workItem from="1720773891284" duration="353000" />
+      <workItem from="1720774260255" duration="266000" />
+      <workItem from="1720774540760" duration="526000" />
+      <workItem from="1720775084549" duration="229000" />
+      <workItem from="1720775336848" duration="47000" />
+      <workItem from="1720775393320" duration="263000" />
+      <workItem from="1720775671982" duration="46000" />
+      <workItem from="1720775728422" duration="41000" />
+      <workItem from="1720775790800" duration="4953000" />
     </task>
     <servers />
   </component>

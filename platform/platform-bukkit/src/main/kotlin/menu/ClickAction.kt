@@ -2,7 +2,6 @@ package ru.snapix.library.menu
 
 import org.bukkit.entity.Player
 import org.bukkit.event.inventory.ClickType
-import ru.snapix.library.menu.items.Item
 import ru.snapix.library.menu.panels.BukkitPanel
 import ru.snapix.library.menu.panels.GeneratorPanel
 import ru.snapix.library.menu.panels.PagedPanel

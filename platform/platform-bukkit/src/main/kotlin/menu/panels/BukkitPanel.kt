@@ -6,11 +6,7 @@ import org.bukkit.event.inventory.ClickType
 import org.bukkit.inventory.Inventory
 import org.bukkit.inventory.InventoryHolder
 import org.bukkit.scheduler.BukkitTask
-import ru.snapix.library.menu.Click
-import ru.snapix.library.menu.ItemMap
-import ru.snapix.library.menu.Panel
-import ru.snapix.library.menu.Replacement
-import ru.snapix.library.menu.items.Item
+import ru.snapix.library.menu.*
 import kotlin.time.Duration
 
 abstract class BukkitPanel internal constructor(

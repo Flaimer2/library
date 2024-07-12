@@ -1,8 +1,8 @@
 package ru.snapix.library.menu.dsl
 
-import org.bukkit.entity.Player
-import ru.snapix.library.menu.Item
+import com.velocitypowered.api.proxy.Player
 import ru.snapix.library.menu.Replacement
+import ru.snapix.library.menu.Item
 import ru.snapix.library.menu.panels.StandardPanel
 import kotlin.time.Duration
 
@@ -30,6 +30,6 @@ class PanelBuilder(val player: Player) {
     }
 
     fun build(): StandardPanel {
-        return StandardPanel(player, title ?: "Kotlin Standard Panel", update, replacements, layout, items)
+        return StandardPanel(player, title ?: "Kotlin Proxy Standard Panel", update, replacements, layout, items)
     }
 }
