@@ -65,13 +65,7 @@ class GeneratorPanel<T> internal constructor(
     }
 
     override fun render(itemMap: ItemMap) {
-        fun replace(item: Item) {
-            for (replace in replacements) {
-                item.name = item.name?.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true)
-                item.lore = item.lore.map { it.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true) }
-            }
-        }
-        val player = Protocolize.playerProvider().player(player.uniqueId)
+        val player = Protocolize.playerProvider().player(player.uniqueId) ?: return
 
         var windowId = -1
 
@@ -93,20 +87,20 @@ class GeneratorPanel<T> internal constructor(
 
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
-            if (item != null) {
-                replace(item)
+            if (item != null && item.condition(Conditions(this, item, slot))) {
+                item.replace(replacements)
                 inventory.item(slot, item.item())
                 player.sendPacket(SetSlot(windowId.toByte(), slot.toShort(), item.item(), 1))
-            } else {
+            } else if (inventory.item(slot) != null) {
                 if (generator.hasNext()) {
                     val value = generator.next()
                     val itemGen = generatorOutput(value)
-                    if (itemGen != null) {
-                        replace(itemGen)
+                    if (itemGen != null && itemGen.condition(Conditions(this, itemGen, slot))) {
+                        itemGen.replace(replacements)
                         inventory.item(slot, itemGen.item())
                         player.sendPacket(SetSlot(windowId.toByte(), slot.toShort(), itemGen.item(), 1))
                     }
-                } else {
+                } else if (inventory.item(slot) != null) {
                     inventory.removeItem(slot)
                     player.sendPacket(SetSlot(windowId.toByte(), slot.toShort(), null, 1))
                 }

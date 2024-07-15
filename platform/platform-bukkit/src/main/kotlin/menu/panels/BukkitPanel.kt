@@ -21,17 +21,8 @@ abstract class BukkitPanel internal constructor(
     open fun render(itemMap: ItemMap) {
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
-            if (item != null) {
-                for (replace in replacements) {
-                    item.name = item.name?.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true)
-                    item.lore = item.lore.map { it.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true) }
-                }
-                item.name?.let {
-                    item.name = PlaceholderAPI.setPlaceholders(player, it)
-                }
-
-                item.lore = item.lore.map { PlaceholderAPI.setPlaceholders(player, it) }
-
+            if (item != null && item.condition(Conditions(this, item, slot))) {
+                item.replace(player, replacements)
                 inventory.setItem(slot, item.item())
             } else {
                 inventory.setItem(slot, null)

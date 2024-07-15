@@ -6,7 +6,6 @@ import dev.simplix.protocolize.api.ClickType
 import dev.simplix.protocolize.api.Protocolize
 import dev.simplix.protocolize.api.inventory.Inventory
 import dev.simplix.protocolize.api.item.BaseItemStack
-import dev.simplix.protocolize.data.packets.OpenWindow
 import dev.simplix.protocolize.data.packets.SetSlot
 import dev.simplix.protocolize.data.packets.WindowItems
 import ru.snapix.library.menu.*
@@ -23,7 +22,7 @@ abstract class VelocityPanel internal constructor(
     abstract val updateTimer: ScheduledTask?
 
     open fun render(itemMap: ItemMap) {
-        val player = Protocolize.playerProvider().player(player.uniqueId)
+        val player = Protocolize.playerProvider().player(player.uniqueId) ?: return
 
         var windowId = -1
 
@@ -38,21 +37,11 @@ abstract class VelocityPanel internal constructor(
 
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
-            if (item != null) {
-                for (replace in replacements) {
-                    item.name = item.name?.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true)
-                    item.lore = item.lore.map {
-                        it.replace(
-                            "{${replace.first}}",
-                            replace.second().toString(),
-                            ignoreCase = true
-                        )
-                    }
-                }
-
+            if (item != null && item.condition(Conditions(this, item, slot))) {
+                item.replace(replacements)
                 inventory.item(slot, item.item())
                 player.sendPacket(SetSlot(windowId.toByte(), slot.toShort(), item.item(), 1))
-            } else {
+            } else if (inventory.item(slot) != null) {
                 inventory.removeItem(slot)
                 player.sendPacket(SetSlot(windowId.toByte(), slot.toShort(), null, 1))
             }

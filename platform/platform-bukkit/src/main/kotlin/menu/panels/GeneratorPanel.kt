@@ -56,18 +56,6 @@ class GeneratorPanel<T> internal constructor(
     }
 
     override fun render(itemMap: ItemMap) {
-        fun replace(item: Item) {
-            for (replace in replacements) {
-                item.name = item.name?.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true)
-                item.lore = item.lore.map { it.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true) }
-            }
-            item.name?.let {
-                item.name = PlaceholderAPI.setPlaceholders(player, it)
-            }
-
-            item.lore = item.lore.map { PlaceholderAPI.setPlaceholders(player, it) }
-        }
-
         val size = layout.size * 9 - itemMap.size
         val currentPage = if (getCurrentPage() < 0) 0 else getCurrentPage()
         val generatorSource = generatorSource().filter(filter).sortedWith(comparator)
@@ -77,15 +65,15 @@ class GeneratorPanel<T> internal constructor(
 
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
-            if (item != null) {
-                replace(item)
+            if (item != null && item.condition(Conditions(this, item, slot))) {
+                item.replace(player, replacements)
                 inventory.setItem(slot, item.item())
             } else {
                 if (generator.hasNext()) {
                     val value = generator.next()
                     val itemGen = generatorOutput(value)
-                    if (itemGen != null) {
-                        replace(itemGen)
+                    if (itemGen != null && itemGen.condition(Conditions(this, itemGen, slot))) {
+                        itemGen.replace(player, replacements)
                         inventory.setItem(slot, itemGen.item())
                     }
                 } else {

@@ -6,7 +6,7 @@ import ru.snapix.library.menu.Replacement
 import ru.snapix.library.menu.panels.GeneratorPanel
 import kotlin.time.Duration
 
-fun <T> generator(player: Player, builder: GeneratorBuilder<T>.() -> Unit): GeneratorPanel<T> {
+fun <T> generatorPanel(player: Player, builder: GeneratorBuilder<T>.() -> Unit): GeneratorPanel<T> {
     return GeneratorBuilder<T>(player).apply(builder).build()
 }
 
@@ -16,9 +16,9 @@ class GeneratorBuilder<T>(val player: Player) {
     val layout = mutableListOf<String>()
     val replacements = mutableListOf<Replacement>()
     var update: Duration? = null
-    var generatorSource: () -> List<T> = { emptyList() }
+    private var generatorSource: () -> List<T> = { emptyList() }
     var generatorOutput: (T) -> Item? = { null }
-    var filter: (T) -> Boolean = { true }
+    private var filter: (T) -> Boolean = { true }
     var comparator: Comparator<T> = compareBy { 0 }
 
     fun GeneratorBuilder<T>.layout(setup: LayoutBuilder.() -> Unit) {
@@ -31,6 +31,14 @@ class GeneratorBuilder<T>(val player: Player) {
 
     fun GeneratorBuilder<T>.replacements(setup: ReplacementsBuilder.() -> Unit) {
         replacements.addAll(ReplacementsBuilder().apply(setup).list)
+    }
+
+    fun GeneratorBuilder<T>.generatorSource(setup: () -> List<T>) {
+        generatorSource = setup
+    }
+
+    fun GeneratorBuilder<T>.filter(setup: (T) -> Boolean) {
+        filter = setup
     }
 
     fun build(): GeneratorPanel<T> {

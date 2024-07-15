@@ -4,6 +4,7 @@ import dev.simplix.protocolize.api.item.ItemFlag
 import dev.simplix.protocolize.data.ItemType
 import ru.snapix.library.menu.Item
 import ru.snapix.library.menu.ClickAction
+import ru.snapix.library.menu.Condition
 
 class ItemsBuilder {
     val items = mutableListOf<Item>()
@@ -20,6 +21,8 @@ class ItemBuilder(val index: Char? = null) {
     var lore = mutableListOf<String>()
     var itemFlag = mutableListOf<ItemFlag>()
     var actions: ClickAction? = null
+    var head: String? = null
+    var condition: Condition = { true }
 
     fun lore(setup: LoreBuilder.() -> Unit) {
         lore = LoreBuilder().apply(setup).list
@@ -31,6 +34,10 @@ class ItemBuilder(val index: Char? = null) {
 
     fun actions(actions: ClickAction) {
         this.actions = actions
+    }
+
+    fun condition(condition: Condition) {
+        this.condition = condition
     }
 
     class LoreBuilder {
@@ -50,7 +57,7 @@ class ItemBuilder(val index: Char? = null) {
     }
 
     fun build(): Item {
-        return Item(index, name, material, amount, lore, itemFlag, actions)
+        return Item(index, name, material, amount, lore, itemFlag, actions, head, condition)
     }
 }
 

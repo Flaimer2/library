@@ -21,6 +21,7 @@ allprojects {
         maven("https://jitpack.io")
         maven("https://repo.alessiodp.com/releases/")
         maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
+        maven("https://repo.tabooproject.org/repository/releases/")
     }
 }
 
@@ -55,7 +56,10 @@ subprojects {
     }
 
     tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
-        kotlinOptions.javaParameters = true
+        kotlinOptions {
+            javaParameters = true
+            freeCompilerArgs = listOf("-Xcontext-receivers")
+        }
     }
 }
 

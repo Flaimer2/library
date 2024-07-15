@@ -85,8 +85,9 @@
         <option value="Class" />
         <option value="Kotlin Enum" />
         <option value="Kotlin Interface" />
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
+        <option value="package-info" />
       </list>
     </option>
   </component>
@@ -196,7 +197,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "11",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/SnapiX/SourceCode/Plugin/library/platform/platform-velocity/src/main/kotlin/menu/dsl",
+    "last_opened_file_path": "C:/SnapiX/SourceCode/Plugin/library",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -224,11 +225,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\menu" />
+      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\utils" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\menu\dsl" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\menu\dsl" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\common\src\main\kotlin\menu" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\menu" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin\menu" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\menuold" />
@@ -241,11 +242,11 @@
       <recent name="" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="caches" />
       <recent name="menu" />
       <recent name="menu.panels" />
       <recent name="menu.items" />
       <recent name="config" />
-      <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ru.snapix.library.common.database" />
@@ -668,7 +669,10 @@
       <workItem from="1720775393320" duration="263000" />
       <workItem from="1720775671982" duration="46000" />
       <workItem from="1720775728422" duration="41000" />
-      <workItem from="1720775790800" duration="4953000" />
+      <workItem from="1720775790800" duration="12981000" />
+      <workItem from="1720859046575" duration="6526000" />
+      <workItem from="1720950585532" duration="19810000" />
+      <workItem from="1721027453125" duration="34000" />
     </task>
     <servers />
   </component>

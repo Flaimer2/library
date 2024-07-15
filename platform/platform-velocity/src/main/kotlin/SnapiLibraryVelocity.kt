@@ -9,7 +9,7 @@ import org.slf4j.Logger
 import ru.snapix.library.velocity.VelocityPlugin
 import java.nio.file.Path
 
-@Plugin(id = "snapilibrary", name = "SnapiLibrary", version = "1.9", authors = ["Flaimer"], dependencies = [Dependency(id = "lastloginapi", optional = true)])
+@Plugin(id = "snapilibrary", name = "SnapiLibrary", version = "1.10", authors = ["Flaimer"], dependencies = [Dependency(id = "lastloginapi", optional = true)])
 class SnapiLibraryVelocity @Inject constructor(
     server: ProxyServer,
     logger: Logger,

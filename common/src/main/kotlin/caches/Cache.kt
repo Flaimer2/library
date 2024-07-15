@@ -1,4 +1,4 @@
-package ru.snapix.library
+package ru.snapix.library.caches
 
 interface Cache<T> {
     val KEY_REDIS: String
