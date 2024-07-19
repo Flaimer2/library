@@ -2,6 +2,7 @@ package ru.snapix.library.menu.panels
 
 import com.velocitypowered.api.proxy.Player
 import com.velocitypowered.api.scheduler.ScheduledTask
+import dev.simplix.protocolize.api.Protocolize
 import dev.simplix.protocolize.api.inventory.Inventory
 import dev.simplix.protocolize.data.inventory.InventoryType
 import ru.snapix.library.menu.*
@@ -33,6 +34,9 @@ class StandardPanel internal constructor(
                 }
             }
         }
+
+        Protocolize.playerProvider().player(player.uniqueId).openInventory(inventory)
+        onOpen()
 
         updateTimer = if (update != null) {
             snapiLibrary.server.repeatTask(update) { render() }

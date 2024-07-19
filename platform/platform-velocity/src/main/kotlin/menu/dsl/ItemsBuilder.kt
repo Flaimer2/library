@@ -2,9 +2,9 @@ package ru.snapix.library.menu.dsl
 
 import dev.simplix.protocolize.api.item.ItemFlag
 import dev.simplix.protocolize.data.ItemType
-import ru.snapix.library.menu.Item
 import ru.snapix.library.menu.ClickAction
 import ru.snapix.library.menu.Condition
+import ru.snapix.library.menu.Item
 
 class ItemsBuilder {
     val items = mutableListOf<Item>()

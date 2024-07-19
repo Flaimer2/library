@@ -22,6 +22,11 @@ class Item(
         if (name != null) {
             item.displayName(name!!.toChatElement())
         }
+        val lore = buildList {
+            for (lore in lore) {
+                lore.split("\n").forEach { add(it) }
+            }
+        }
 
         item.lore(lore.map { it.toChatElement() })
 

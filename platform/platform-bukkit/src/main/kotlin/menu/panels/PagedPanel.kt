@@ -13,7 +13,7 @@ class PagedPanel internal constructor(
     player: Player,
     title: String,
     update: Duration?,
-    replacements: List<Replacement>,
+    replacements: MutableList<Replacement>,
     val pages: List<Layout>,
     items: List<Item>
 ) : BukkitPanel(player, title, update, replacements) {
@@ -34,6 +34,14 @@ class PagedPanel internal constructor(
                 }
             }
         }
+        replacements.add("current_page" to { getCurrentPage() })
+        replacements.add("current_display_page" to { getCurrentPage() + 1 })
+        replacements.add("next_page" to { getCurrentPage() + 1 })
+        replacements.add("next_display_page" to { getCurrentPage() + 2 })
+
+        player.openInventory(inventory)
+        onOpen()
+
         updateTimer = if (update != null) {
             Bukkit.getScheduler().runTaskTimerAsynchronously(snapiLibrary, { render() }, 0L, update.inWholeMilliseconds)
         } else {

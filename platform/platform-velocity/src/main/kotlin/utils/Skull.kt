@@ -32,7 +32,8 @@ fun ItemStack.modifyHeadTexture(input: String): ItemStack {
     }
 
     val texture = if (input.length in 60..100)
-        Base64.getEncoder().encodeToString("{\"textures\":{\"SKIN\":{\"url\":\"http://textures.minecraft.net/texture/$input\"}}}".toByteArray())
+        Base64.getEncoder()
+            .encodeToString("{\"textures\":{\"SKIN\":{\"url\":\"http://textures.minecraft.net/texture/$input\"}}}".toByteArray())
     else input
     val skullOwnerTag = tag.getCompoundTag("SkullOwner") ?: CompoundTag()
     val propertiesTag = tag.getCompoundTag("Properties") ?: CompoundTag()

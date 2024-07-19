@@ -6,7 +6,13 @@ import ru.snapix.library.menu.panels.BukkitPanel
 import ru.snapix.library.menu.panels.GeneratorPanel
 import ru.snapix.library.menu.panels.PagedPanel
 
-data class Click(val player: Player, val inventory: BukkitPanel, val type: ClickType, val clickedItem: Item, val slot: Int)
+data class Click(
+    val player: Player,
+    val inventory: BukkitPanel,
+    val type: ClickType,
+    val clickedItem: Item,
+    val slot: Int
+)
 
 typealias ClickAction = Click.() -> Unit
 

@@ -17,6 +17,7 @@ dependencies {
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 
     compileOnly(libs.lastloginapi)
+    compileOnly(libs.luckperms)
 }
 
 tasks.test {

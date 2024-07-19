@@ -33,6 +33,10 @@ class StandardPanel internal constructor(
                 }
             }
         }
+
+        player.openInventory(inventory)
+        onOpen()
+
         updateTimer = if (update != null) {
             Bukkit.getScheduler().runTaskTimerAsynchronously(snapiLibrary, { render() }, 0L, update.inWholeMilliseconds)
         } else {

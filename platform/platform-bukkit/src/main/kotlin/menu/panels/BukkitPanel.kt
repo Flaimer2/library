@@ -1,6 +1,5 @@
 package ru.snapix.library.menu.panels
 
-import me.clip.placeholderapi.PlaceholderAPI
 import org.bukkit.entity.Player
 import org.bukkit.event.inventory.ClickType
 import org.bukkit.inventory.Inventory
@@ -35,11 +34,6 @@ abstract class BukkitPanel internal constructor(
 
     override fun disable() {
         updateTimer?.cancel()
-    }
-
-    fun open() {
-        onOpen()
-        player.openInventory(inventory)
     }
 
     fun runClickCallbacks(slot: Int, type: ClickType) {

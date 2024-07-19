@@ -1,6 +1,5 @@
 package ru.snapix.library.menu.panels
 
-import me.clip.placeholderapi.PlaceholderAPI
 import org.bukkit.Bukkit
 import org.bukkit.entity.Player
 import org.bukkit.inventory.Inventory
@@ -43,6 +42,10 @@ class GeneratorPanel<T> internal constructor(
         replacements.add("current_display_page" to { getCurrentPage() + 1 })
         replacements.add("next_page" to { getCurrentPage() + 1 })
         replacements.add("next_display_page" to { getCurrentPage() + 2 })
+
+        player.openInventory(inventory)
+        onOpen()
+
         updateTimer = if (update != null) {
             Bukkit.getScheduler().runTaskTimerAsynchronously(snapiLibrary, { render() }, 0L, update.inWholeMilliseconds)
         } else {

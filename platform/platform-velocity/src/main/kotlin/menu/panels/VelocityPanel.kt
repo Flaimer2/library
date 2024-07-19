@@ -5,9 +5,7 @@ import com.velocitypowered.api.scheduler.ScheduledTask
 import dev.simplix.protocolize.api.ClickType
 import dev.simplix.protocolize.api.Protocolize
 import dev.simplix.protocolize.api.inventory.Inventory
-import dev.simplix.protocolize.api.item.BaseItemStack
 import dev.simplix.protocolize.data.packets.SetSlot
-import dev.simplix.protocolize.data.packets.WindowItems
 import ru.snapix.library.menu.*
 import kotlin.time.Duration
 
@@ -35,6 +33,11 @@ abstract class VelocityPanel internal constructor(
         }
         if (windowId == -1) return
 
+        var title = title
+        for (replacement in replacements) {
+            title = title.replace("{${replacement.first}}", replacement.second().toString())
+        }
+
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
             if (item != null && item.condition(Conditions(this, item, slot))) {
@@ -50,11 +53,6 @@ abstract class VelocityPanel internal constructor(
 
     override fun disable() {
         updateTimer?.cancel()
-    }
-
-    fun open() {
-        onOpen()
-        Protocolize.playerProvider().player(player.uniqueId).openInventory(inventory)
     }
 
     fun runClickCallbacks(slot: Int, type: ClickType) {

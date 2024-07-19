@@ -5,7 +5,8 @@ import com.google.gson.JsonObject
 import com.google.gson.JsonParser
 import com.mojang.authlib.GameProfile
 import com.mojang.authlib.properties.Property
-import kotlinx.coroutines.*
+import kotlinx.coroutines.async
+import kotlinx.coroutines.runBlocking
 import org.bukkit.inventory.ItemStack
 import org.bukkit.inventory.meta.SkullMeta
 import java.lang.reflect.Field
@@ -69,8 +70,9 @@ private fun requestPlayerHead(name: String): ItemStack {
 fun ItemStack.modifyHeadTexture(input: String): ItemStack {
     val profile = GameProfile(UUID.randomUUID(), null)
     val texture = if (input.length in 60..100)
-        Base64.getEncoder().encodeToString("{\"textures\":{\"SKIN\":{\"url\":\"http://textures.minecraft.net/texture/$input\"}}}".toByteArray())
-        else input
+        Base64.getEncoder()
+            .encodeToString("{\"textures\":{\"SKIN\":{\"url\":\"http://textures.minecraft.net/texture/$input\"}}}".toByteArray())
+    else input
     profile.properties.put("textures", Property("textures", texture, "SnapiX_TexturedSkull"))
 
     val meta = itemMeta as SkullMeta

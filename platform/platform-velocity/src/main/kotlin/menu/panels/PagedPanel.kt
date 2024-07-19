@@ -2,6 +2,7 @@ package ru.snapix.library.menu.panels
 
 import com.velocitypowered.api.proxy.Player
 import com.velocitypowered.api.scheduler.ScheduledTask
+import dev.simplix.protocolize.api.Protocolize
 import dev.simplix.protocolize.api.inventory.Inventory
 import dev.simplix.protocolize.data.inventory.InventoryType
 import ru.snapix.library.menu.*
@@ -14,7 +15,7 @@ class PagedPanel internal constructor(
     player: Player,
     title: String,
     update: Duration?,
-    replacements: List<Replacement>,
+    replacements: MutableList<Replacement>,
     val pages: List<Layout>,
     items: List<Item>
 ) : VelocityPanel(player, title, update, replacements) {
@@ -37,6 +38,13 @@ class PagedPanel internal constructor(
                 }
             }
         }
+        replacements.add("current_page" to { getCurrentPage() })
+        replacements.add("current_display_page" to { getCurrentPage() + 1 })
+        replacements.add("next_page" to { getCurrentPage() + 1 })
+        replacements.add("next_display_page" to { getCurrentPage() + 2 })
+
+        Protocolize.playerProvider().player(player.uniqueId).openInventory(inventory)
+        onOpen()
 
         updateTimer = if (update != null) {
             snapiLibrary.server.repeatTask(update) { render() }

@@ -17,7 +17,7 @@ class GeneratorPanel<T> internal constructor(
     player: Player,
     title: String,
     update: Duration?,
-    replacements: List<Replacement>,
+    replacements: MutableList<Replacement>,
     val layout: Layout,
     items: List<Item>,
     var generatorSource: () -> List<T>,
@@ -43,6 +43,13 @@ class GeneratorPanel<T> internal constructor(
                 }
             }
         }
+        replacements.add("current_page" to { getCurrentPage() })
+        replacements.add("current_display_page" to { getCurrentPage() + 1 })
+        replacements.add("next_page" to { getCurrentPage() + 1 })
+        replacements.add("next_display_page" to { getCurrentPage() + 2 })
+
+        Protocolize.playerProvider().player(player.uniqueId).openInventory(inventory)
+        onOpen()
 
         updateTimer = if (update != null) {
             snapiLibrary.server.repeatTask(update) { render() }
@@ -78,6 +85,11 @@ class GeneratorPanel<T> internal constructor(
         }
         if (windowId == -1) return
 
+        var title = title
+        for (replacement in replacements) {
+            title = title.replace("{${replacement.first}}", replacement.second().toString())
+        }
+
         val size = layout.size * 9 - itemMap.size
         val currentPage = if (getCurrentPage() < 0) 0 else getCurrentPage()
         val generatorSource = generatorSource().filter(filter).sortedWith(comparator)
@@ -91,7 +103,7 @@ class GeneratorPanel<T> internal constructor(
                 item.replace(replacements)
                 inventory.item(slot, item.item())
                 player.sendPacket(SetSlot(windowId.toByte(), slot.toShort(), item.item(), 1))
-            } else if (inventory.item(slot) != null) {
+            } else {
                 if (generator.hasNext()) {
                     val value = generator.next()
                     val itemGen = generatorOutput(value)

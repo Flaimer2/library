@@ -14,3 +14,7 @@ fun translateAlternateColorCodes(altColorChar: Char, textToTranslate: String): S
 fun translateAlternateColorCodes(textToTranslate: String): String {
     return translateAlternateColorCodes('&', textToTranslate)
 }
+
+fun stripColor(input: String): String {
+    return "(?i)[&|§][0-9A-FK-OR]".toRegex().replace(input, "")
+}

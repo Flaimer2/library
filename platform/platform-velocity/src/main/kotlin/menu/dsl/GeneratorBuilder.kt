@@ -42,6 +42,17 @@ class GeneratorBuilder<T>(val player: Player) {
     }
 
     fun build(): GeneratorPanel<T> {
-        return GeneratorPanel(player, title ?: "Kotlin Generator Panel", update, replacements, layout, items, generatorSource, generatorOutput, filter, comparator)
+        return GeneratorPanel(
+            player,
+            title ?: "Kotlin Generator Panel",
+            update,
+            replacements,
+            layout,
+            items,
+            generatorSource,
+            generatorOutput,
+            filter,
+            comparator
+        )
     }
 }

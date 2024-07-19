@@ -1,8 +1,8 @@
 package ru.snapix.library.menu.dsl
 
 import com.velocitypowered.api.proxy.Player
-import ru.snapix.library.menu.Replacement
 import ru.snapix.library.menu.Item
+import ru.snapix.library.menu.Replacement
 import ru.snapix.library.menu.panels.StandardPanel
 import kotlin.time.Duration
 
