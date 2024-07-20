@@ -15,8 +15,9 @@ class PagedPanel internal constructor(
     update: Duration?,
     replacements: MutableList<Replacement>,
     val pages: List<Layout>,
-    items: List<Item>
-) : BukkitPanel(player, title, update, replacements) {
+    items: List<Item>,
+    updateReplacements: (String) -> String
+) : BukkitPanel(player, title, update, replacements, updateReplacements) {
     override val bukkitInventory: Inventory = Bukkit.createInventory(this, pages[0].size * 9, title)
     override val updateTimer: BukkitTask?
     private val pageMap = PageList()

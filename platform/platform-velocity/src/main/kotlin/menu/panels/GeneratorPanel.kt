@@ -23,8 +23,9 @@ class GeneratorPanel<T> internal constructor(
     var generatorSource: () -> List<T>,
     var generatorOutput: (T) -> Item?,
     var filter: (T) -> Boolean,
-    var comparator: Comparator<T>
-) : VelocityPanel(player, title, update, replacements) {
+    var comparator: Comparator<T>,
+    override val updateReplacements: (String) -> String
+) : VelocityPanel(player, title, update, replacements, updateReplacements) {
     override val inventory: Inventory
     override val updateTimer: ScheduledTask?
     private val itemMap = emptyItemMap()
@@ -85,11 +86,6 @@ class GeneratorPanel<T> internal constructor(
         }
         if (windowId == -1) return
 
-        var title = title
-        for (replacement in replacements) {
-            title = title.replace("{${replacement.first}}", replacement.second().toString())
-        }
-
         val size = layout.size * 9 - itemMap.size
         val currentPage = if (getCurrentPage() < 0) 0 else getCurrentPage()
         val generatorSource = generatorSource().filter(filter).sortedWith(comparator)
@@ -100,7 +96,7 @@ class GeneratorPanel<T> internal constructor(
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
             if (item != null && item.condition(Conditions(this, item, slot))) {
-                item.replace(replacements)
+                item.replace(replacements, updateReplacements)
                 inventory.item(slot, item.item())
                 player.sendPacket(SetSlot(windowId.toByte(), slot.toShort(), item.item(), 1))
             } else {
@@ -108,7 +104,7 @@ class GeneratorPanel<T> internal constructor(
                     val value = generator.next()
                     val itemGen = generatorOutput(value)
                     if (itemGen != null && itemGen.condition(Conditions(this, itemGen, slot))) {
-                        itemGen.replace(replacements)
+                        itemGen.replace(replacements, updateReplacements)
                         inventory.item(slot, itemGen.item())
                         player.sendPacket(SetSlot(windowId.toByte(), slot.toShort(), itemGen.item(), 1))
                     }

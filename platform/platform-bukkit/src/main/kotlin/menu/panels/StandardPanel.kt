@@ -17,8 +17,9 @@ class StandardPanel internal constructor(
     update: Duration?,
     replacements: List<Replacement>,
     layout: Layout,
-    items: List<Item>
-) : BukkitPanel(player, title, update, replacements) {
+    items: List<Item>,
+    updateReplacements: (String) -> String
+) : BukkitPanel(player, title, update, replacements, updateReplacements) {
     override val bukkitInventory: Inventory = Bukkit.createInventory(this, layout.size * 9, title)
     override val updateTimer: BukkitTask?
     private val itemMap = emptyItemMap()

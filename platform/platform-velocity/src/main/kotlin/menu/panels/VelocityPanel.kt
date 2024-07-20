@@ -14,7 +14,8 @@ abstract class VelocityPanel internal constructor(
     val player: Player,
     override val title: String,
     override val update: Duration?,
-    override val replacements: List<Replacement>
+    override val replacements: List<Replacement>,
+    override val updateReplacements: (String) -> String
 ) : Panel {
     abstract val inventory: Inventory
     abstract val updateTimer: ScheduledTask?
@@ -33,15 +34,10 @@ abstract class VelocityPanel internal constructor(
         }
         if (windowId == -1) return
 
-        var title = title
-        for (replacement in replacements) {
-            title = title.replace("{${replacement.first}}", replacement.second().toString())
-        }
-
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
             if (item != null && item.condition(Conditions(this, item, slot))) {
-                item.replace(replacements)
+                item.replace(replacements, updateReplacements)
                 inventory.item(slot, item.item())
                 player.sendPacket(SetSlot(windowId.toByte(), slot.toShort(), item.item(), 1))
             } else if (inventory.item(slot) != null) {

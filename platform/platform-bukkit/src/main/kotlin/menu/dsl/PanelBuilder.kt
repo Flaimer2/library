@@ -16,6 +16,7 @@ class PanelBuilder(val player: Player) {
     val layout = mutableListOf<String>()
     val replacements = mutableListOf<Replacement>()
     var update: Duration? = null
+    var updateReplacements: (String) -> String = { it }
 
     fun PanelBuilder.layout(setup: LayoutBuilder.() -> Unit) {
         layout.addAll(LayoutBuilder().apply(setup).list)
@@ -30,6 +31,6 @@ class PanelBuilder(val player: Player) {
     }
 
     fun build(): StandardPanel {
-        return StandardPanel(player, title ?: "Kotlin Standard Panel", update, replacements, layout, items)
+        return StandardPanel(player, title ?: "Kotlin Standard Panel", update, replacements, layout, items, updateReplacements)
     }
 }

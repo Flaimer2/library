@@ -20,6 +20,7 @@ class GeneratorBuilder<T>(val player: Player) {
     var generatorOutput: (T) -> Item? = { null }
     private var filter: (T) -> Boolean = { true }
     var comparator: Comparator<T> = compareBy { 0 }
+    var updateReplacements: (String) -> String = { it }
 
     fun GeneratorBuilder<T>.layout(setup: LayoutBuilder.() -> Unit) {
         layout.addAll(LayoutBuilder().apply(setup).list)
@@ -52,7 +53,8 @@ class GeneratorBuilder<T>(val player: Player) {
             generatorSource,
             generatorOutput,
             filter,
-            comparator
+            comparator,
+            updateReplacements
         )
     }
 }

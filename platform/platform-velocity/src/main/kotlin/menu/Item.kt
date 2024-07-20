@@ -37,7 +37,10 @@ class Item(
         return item
     }
 
-    fun replace(replacements: List<Replacement>) {
+    fun replace(replacements: List<Replacement>, updateReplacements: (String) -> String) {
+        name = name?.let { updateReplacements(it) }
+        lore = lore.map { updateReplacements(it) }
+
         for (replace in replacements) {
             name = name?.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true)
             lore = lore.map {

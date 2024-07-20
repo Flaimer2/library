@@ -17,8 +17,9 @@ class PagedPanel internal constructor(
     update: Duration?,
     replacements: MutableList<Replacement>,
     val pages: List<Layout>,
-    items: List<Item>
-) : VelocityPanel(player, title, update, replacements) {
+    items: List<Item>,
+    updateReplacements: (String) -> String
+) : VelocityPanel(player, title, update, replacements, updateReplacements) {
     override val inventory: Inventory
     override val updateTimer: ScheduledTask?
     private val pageMap = PageList()

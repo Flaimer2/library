@@ -20,8 +20,9 @@ class GeneratorPanel<T> internal constructor(
     var generatorSource: () -> List<T>,
     var generatorOutput: (T) -> Item?,
     var filter: (T) -> Boolean,
-    var comparator: Comparator<T>
-) : BukkitPanel(player, title, update, replacements) {
+    var comparator: Comparator<T>,
+    override val updateReplacements: (String) -> String
+) : BukkitPanel(player, title, update, replacements, updateReplacements) {
     override val bukkitInventory: Inventory = Bukkit.createInventory(this, layout.size * 9, title)
     override val updateTimer: BukkitTask?
     private val itemMap = emptyItemMap()
@@ -69,14 +70,14 @@ class GeneratorPanel<T> internal constructor(
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
             if (item != null && item.condition(Conditions(this, item, slot))) {
-                item.replace(player, replacements)
+                item.replace(player, replacements, updateReplacements)
                 inventory.setItem(slot, item.item())
             } else {
                 if (generator.hasNext()) {
                     val value = generator.next()
                     val itemGen = generatorOutput(value)
                     if (itemGen != null && itemGen.condition(Conditions(this, itemGen, slot))) {
-                        itemGen.replace(player, replacements)
+                        itemGen.replace(player, replacements, updateReplacements)
                         inventory.setItem(slot, itemGen.item())
                     }
                 } else {
