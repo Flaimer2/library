@@ -15,7 +15,7 @@ class PagedPanel internal constructor(
     player: Player,
     title: String,
     update: Duration?,
-    replacements: MutableList<Replacement>,
+    replacements: Replacement,
     val pages: List<Layout>,
     items: List<Item>,
     updateReplacements: (String) -> String
@@ -39,18 +39,17 @@ class PagedPanel internal constructor(
                 }
             }
         }
-        replacements.add("current_page" to { getCurrentPage() })
-        replacements.add("current_display_page" to { getCurrentPage() + 1 })
-        replacements.add("next_page" to { getCurrentPage() + 1 })
-        replacements.add("next_display_page" to { getCurrentPage() + 2 })
+        replacements["current_page"] = { getCurrentPage() }
+        replacements["current_display_page"] = { getCurrentPage() + 1 }
+        replacements["next_page"] = { getCurrentPage() + 1 }
+        replacements["next_display_page"] = { getCurrentPage() + 2 }
 
-        Protocolize.playerProvider().player(player.uniqueId).openInventory(inventory)
+        render()
         onOpen()
 
         updateTimer = if (update != null) {
             snapiLibrary.server.repeatTask(update) { render() }
         } else {
-            render()
             null
         }
 

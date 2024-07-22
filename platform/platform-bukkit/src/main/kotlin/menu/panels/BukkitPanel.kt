@@ -12,13 +12,15 @@ abstract class BukkitPanel internal constructor(
     val player: Player,
     override val title: String,
     override val update: Duration?,
-    override val replacements: List<Replacement>,
+    override val replacements: Replacement,
     override val updateReplacements: (String) -> String
 ) : Panel, InventoryHolder {
     abstract val bukkitInventory: Inventory
     abstract val updateTimer: BukkitTask?
 
     open fun render(itemMap: ItemMap) {
+        val replacements = replacements.mapValues { it.value().toString() }.toMutableMap()
+
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
             if (item != null && item.condition(Conditions(this, item, slot))) {

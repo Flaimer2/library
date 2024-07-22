@@ -14,7 +14,7 @@ class GeneratorBuilder<T>(val player: Player) {
     var title: String? = null
     val items = mutableListOf<Item>()
     val layout = mutableListOf<String>()
-    val replacements = mutableListOf<Replacement>()
+    var replacements: Replacement = Replacement()
     var update: Duration? = null
     private var generatorSource: () -> List<T> = { emptyList() }
     var generatorOutput: (T) -> Item? = { null }
@@ -31,7 +31,7 @@ class GeneratorBuilder<T>(val player: Player) {
     }
 
     fun GeneratorBuilder<T>.replacements(setup: ReplacementsBuilder.() -> Unit) {
-        replacements.addAll(ReplacementsBuilder().apply(setup).list)
+        replacements.putAll(ReplacementsBuilder().apply(setup).list)
     }
 
     fun GeneratorBuilder<T>.generatorSource(setup: () -> List<T>) {
@@ -47,13 +47,13 @@ class GeneratorBuilder<T>(val player: Player) {
             player,
             title ?: "Kotlin Generator Panel",
             update,
-            replacements,
             layout,
             items,
             generatorSource,
             generatorOutput,
             filter,
             comparator,
+            replacements,
             updateReplacements
         )
     }

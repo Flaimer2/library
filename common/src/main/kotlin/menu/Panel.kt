@@ -5,7 +5,7 @@ import kotlin.time.Duration
 interface Panel {
     val title: String
     val update: Duration?
-    val replacements: List<Replacement>
+    val replacements: Replacement
     val updateReplacements: (String) -> String
 
     fun disable()

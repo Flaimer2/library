@@ -13,9 +13,9 @@ class PagedPanel internal constructor(
     player: Player,
     title: String,
     update: Duration?,
-    replacements: MutableList<Replacement>,
     val pages: List<Layout>,
     items: List<Item>,
+    override var replacements: Replacement,
     updateReplacements: (String) -> String
 ) : BukkitPanel(player, title, update, replacements, updateReplacements) {
     override val bukkitInventory: Inventory = Bukkit.createInventory(this, pages[0].size * 9, title)
@@ -35,10 +35,10 @@ class PagedPanel internal constructor(
                 }
             }
         }
-        replacements.add("current_page" to { getCurrentPage() })
-        replacements.add("current_display_page" to { getCurrentPage() + 1 })
-        replacements.add("next_page" to { getCurrentPage() + 1 })
-        replacements.add("next_display_page" to { getCurrentPage() + 2 })
+        replacements["current_page"] = { getCurrentPage() }
+        replacements["current_display_page"] = { getCurrentPage() + 1 }
+        replacements["next_page"] = { getCurrentPage() + 1 }
+        replacements["next_display_page"] = { getCurrentPage() + 2 }
 
         player.openInventory(inventory)
         onOpen()

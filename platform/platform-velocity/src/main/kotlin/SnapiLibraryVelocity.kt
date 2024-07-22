@@ -12,7 +12,7 @@ import java.nio.file.Path
 @Plugin(
     id = "snapilibrary",
     name = "SnapiLibrary",
-    version = "1.11.1",
+    version = "1.11.2",
     authors = ["Flaimer"],
     dependencies = [Dependency(id = "lastloginapi", optional = true)]
 )

@@ -15,7 +15,7 @@ class StandardPanel internal constructor(
     player: Player,
     title: String,
     update: Duration?,
-    replacements: List<Replacement>,
+    replacements: Replacement,
     layout: Layout,
     items: List<Item>,
     updateReplacements: (String) -> String

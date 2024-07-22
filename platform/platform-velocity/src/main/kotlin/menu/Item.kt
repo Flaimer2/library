@@ -37,20 +37,17 @@ class Item(
         return item
     }
 
-    fun replace(replacements: List<Replacement>, updateReplacements: (String) -> String) {
-        name = name?.let { updateReplacements(it) }
-        lore = lore.map { updateReplacements(it) }
-
-        for (replace in replacements) {
-            name = name?.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true)
-            lore = lore.map {
-                it.replace(
-                    "{${replace.first}}",
-                    replace.second().toString(),
-                    ignoreCase = true
-                )
-            }
+    fun replace(replacements: Map<String, String>, updateReplacements: (String) -> String) {
+        var name = name
+        if (name != null) {
+            name = updateReplacements(name)
+            name = replacements.replace(name)
         }
+
+        this.name = name
+
+        lore = replacements.replace(lore)
+        lore = lore.map(updateReplacements)
     }
 
     public override fun clone(): Item {

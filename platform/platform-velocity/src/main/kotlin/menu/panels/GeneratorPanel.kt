@@ -4,9 +4,14 @@ import com.velocitypowered.api.proxy.Player
 import com.velocitypowered.api.scheduler.ScheduledTask
 import dev.simplix.protocolize.api.Protocolize
 import dev.simplix.protocolize.api.inventory.Inventory
+import dev.simplix.protocolize.api.item.BaseItemStack
+import dev.simplix.protocolize.api.item.ItemStack
 import dev.simplix.protocolize.data.inventory.InventoryType
+import dev.simplix.protocolize.data.packets.OpenWindow
 import dev.simplix.protocolize.data.packets.SetSlot
+import dev.simplix.protocolize.data.packets.WindowItems
 import ru.snapix.library.menu.*
+import ru.snapix.library.menu.dsl.Material
 import ru.snapix.library.repeatTask
 import ru.snapix.library.snapiLibrary
 import java.util.concurrent.atomic.AtomicInteger
@@ -17,7 +22,7 @@ class GeneratorPanel<T> internal constructor(
     player: Player,
     title: String,
     update: Duration?,
-    replacements: MutableList<Replacement>,
+    replacements: Replacement,
     val layout: Layout,
     items: List<Item>,
     var generatorSource: () -> List<T>,
@@ -44,12 +49,12 @@ class GeneratorPanel<T> internal constructor(
                 }
             }
         }
-        replacements.add("current_page" to { getCurrentPage() })
-        replacements.add("current_display_page" to { getCurrentPage() + 1 })
-        replacements.add("next_page" to { getCurrentPage() + 1 })
-        replacements.add("next_display_page" to { getCurrentPage() + 2 })
+        replacements["current_page"] = { getCurrentPage() }
+        replacements["current_display_page"] = { getCurrentPage() + 1 }
+        replacements["next_page"] = { getCurrentPage() + 1 }
+        replacements["next_display_page"] = { getCurrentPage() + 2 }
 
-        Protocolize.playerProvider().player(player.uniqueId).openInventory(inventory)
+        render()
         onOpen()
 
         updateTimer = if (update != null) {
@@ -76,15 +81,21 @@ class GeneratorPanel<T> internal constructor(
         val player = Protocolize.playerProvider().player(player.uniqueId) ?: return
 
         var windowId = -1
+        var alreadyOpen = false
 
         for (id in player.registeredInventories().keys) {
             val value = player.registeredInventories()[id]
             if (value == inventory) {
                 windowId = id
+                alreadyOpen = true
                 break
             }
         }
-        if (windowId == -1) return
+
+        if (windowId == -1) {
+            windowId = player.generateWindowId()
+            player.registerInventory(windowId, inventory)
+        }
 
         val size = layout.size * 9 - itemMap.size
         val currentPage = if (getCurrentPage() < 0) 0 else getCurrentPage()
@@ -93,27 +104,34 @@ class GeneratorPanel<T> internal constructor(
 
         lastPage.set(ceil(generatorSource.size / size.toFloat()).toInt() - 1)
 
+        val items = ArrayList<ItemStack>(inventory.size)
+        val replacements = replacements.mapValues { it.value().toString() }.toMutableMap()
+
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
-            if (item != null && item.condition(Conditions(this, item, slot))) {
+            if (item != null) {
+                if (!item.condition(Conditions(this, item, slot))) continue
                 item.replace(replacements, updateReplacements)
-                inventory.item(slot, item.item())
-                player.sendPacket(SetSlot(windowId.toByte(), slot.toShort(), item.item(), 1))
+                items.add(item.item())
             } else {
                 if (generator.hasNext()) {
                     val value = generator.next()
                     val itemGen = generatorOutput(value)
                     if (itemGen != null && itemGen.condition(Conditions(this, itemGen, slot))) {
                         itemGen.replace(replacements, updateReplacements)
-                        inventory.item(slot, itemGen.item())
-                        player.sendPacket(SetSlot(windowId.toByte(), slot.toShort(), itemGen.item(), 1))
+                        items.add(itemGen.item())
                     }
-                } else if (inventory.item(slot) != null) {
-                    inventory.removeItem(slot)
-                    player.sendPacket(SetSlot(windowId.toByte(), slot.toShort(), null, 1))
+                } else {
+                    items.add(ItemStack(Material.AIR))
                 }
             }
         }
+
+        if (!alreadyOpen) {
+            player.sendPacket(OpenWindow(windowId, inventory.type(), inventory.title()))
+        }
+
+        player.sendPacket(WindowItems(windowId.toShort(), items as List<BaseItemStack>, 1))
     }
 
     override fun getItemBySlot(slot: Int): Item? {

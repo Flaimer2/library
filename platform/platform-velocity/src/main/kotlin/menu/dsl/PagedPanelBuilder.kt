@@ -14,7 +14,7 @@ class PagedPanelBuilder(val player: Player) {
     var title: String? = null
     val items = mutableListOf<Item>()
     val layout = mutableListOf<List<String>>()
-    val replacements = mutableListOf<Replacement>()
+    val replacements: Replacement = Replacement()
     var update: Duration? = null
     var updateReplacements: (String) -> String = { it }
 
@@ -27,7 +27,7 @@ class PagedPanelBuilder(val player: Player) {
     }
 
     fun PagedPanelBuilder.replacements(setup: ReplacementsBuilder.() -> Unit) {
-        replacements.addAll(ReplacementsBuilder().apply(setup).list)
+        replacements.putAll(ReplacementsBuilder().apply(setup).list)
     }
 
     fun build(): PagedPanel {

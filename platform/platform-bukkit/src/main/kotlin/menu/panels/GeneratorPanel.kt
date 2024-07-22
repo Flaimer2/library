@@ -14,13 +14,13 @@ class GeneratorPanel<T> internal constructor(
     player: Player,
     title: String,
     update: Duration? = null,
-    replacements: MutableList<Replacement>,
     val layout: Layout,
     items: List<Item>,
     var generatorSource: () -> List<T>,
     var generatorOutput: (T) -> Item?,
     var filter: (T) -> Boolean,
     var comparator: Comparator<T>,
+    override var replacements: Replacement,
     override val updateReplacements: (String) -> String
 ) : BukkitPanel(player, title, update, replacements, updateReplacements) {
     override val bukkitInventory: Inventory = Bukkit.createInventory(this, layout.size * 9, title)
@@ -39,10 +39,10 @@ class GeneratorPanel<T> internal constructor(
                 }
             }
         }
-        replacements.add("current_page" to { getCurrentPage() })
-        replacements.add("current_display_page" to { getCurrentPage() + 1 })
-        replacements.add("next_page" to { getCurrentPage() + 1 })
-        replacements.add("next_display_page" to { getCurrentPage() + 2 })
+        replacements["current_page"] = { getCurrentPage() }
+        replacements["current_display_page"] = { getCurrentPage() + 1 }
+        replacements["next_page"] = { getCurrentPage() + 1 }
+        replacements["next_display_page"] = { getCurrentPage() + 2 }
 
         player.openInventory(inventory)
         onOpen()
@@ -67,9 +67,12 @@ class GeneratorPanel<T> internal constructor(
 
         lastPage.set(ceil(generatorSource.size / size.toFloat()).toInt() - 1)
 
+        val replacements = replacements.mapValues { it.value().toString() }.toMutableMap()
+
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
-            if (item != null && item.condition(Conditions(this, item, slot))) {
+            if (item != null) {
+                if (!item.condition(Conditions(this, item, slot))) continue
                 item.replace(player, replacements, updateReplacements)
                 inventory.setItem(slot, item.item())
             } else {

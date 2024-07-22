@@ -41,14 +41,17 @@ class Item(
         return item
     }
 
-    fun replace(player: Player, replacements: List<Replacement>, updateReplacements: (String) -> String) {
-        name = name?.let { PlaceholderAPI.setPlaceholders(player, updateReplacements(it)) }
-        lore = lore.map { PlaceholderAPI.setPlaceholders(player, updateReplacements(it)) }
-
-        for (replace in replacements) {
-            name = name?.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true)
-            lore = lore.map { it.replace("{${replace.first}}", replace.second().toString(), ignoreCase = true) }
+    fun replace(player: Player, replacements: Map<String, String>, updateReplacements: (String) -> String) {
+        var name = name
+        if (name != null) {
+            name = PlaceholderAPI.setPlaceholders(player, updateReplacements(name))
+            name = replacements.replace(name)
         }
+
+        this.name = name
+
+        lore = replacements.replace(lore)
+        lore = lore.map(updateReplacements)
     }
 
     public override fun clone(): Item {

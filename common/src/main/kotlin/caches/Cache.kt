@@ -42,5 +42,5 @@ abstract class Cache<T> {
     protected abstract fun decode(value: String): T
     protected abstract fun encode(value: T): String
     protected abstract fun key(value: T): String
-    protected abstract fun valueFromDatabase(key: String): T
+    protected abstract fun valueFromDatabase(key: String): T?
 }
