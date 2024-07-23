@@ -5,8 +5,6 @@ plugins {
 dependencies {
     implementate("common")
 
-    implementation(libs.adventure.minimessage)
-    implementation(libs.adventure.bukkit)
     implementation(libs.acf.paper)
     implementation(libs.xseries)
 
@@ -16,6 +14,8 @@ dependencies {
     compileOnly(libs.serialization)
     compileOnly(libs.placeholderapi)
     compileOnly(libs.coroutines)
+    compileOnly(libs.adventure.minimessage)
+    compileOnly(libs.adventure.bukkit)
 }
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
@@ -33,7 +33,7 @@ fun com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar.relocateDependenc
 
 bukkit {
     name = rootName
-    main = "ru.snapix.library.SnapiLibraryBukkit"
+    main = "ru.snapix.library.bukkit.SnapiLibraryBukkit"
     author = "Flaimer"
     website = "https://mcsnapix.ru"
     depend = listOf("Vault")

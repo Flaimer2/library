@@ -1,0 +1,50 @@
+package ru.snapix.library.network.player
+
+import kotlinx.serialization.Serializable
+import net.kyori.adventure.text.minimessage.MiniMessage.miniMessage
+import org.bukkit.entity.Player
+import ru.snapix.library.Replacement
+import ru.snapix.library.SnapiLibrary
+import ru.snapix.library.adventure
+import ru.snapix.library.network.Platform
+import ru.snapix.library.utils.toComponent
+import ru.snapix.library.utils.translateAlternateColorCodes
+
+@Serializable
+sealed interface NetworkPlayer {
+    fun getName(): String
+    fun sendMessage(message: String, vararg pairs: Pair<String, Any>) {
+        if (message == "" || message == "null") return
+        if (SnapiLibrary.platform == Platform.UNKNOWN) return
+
+        var result = message
+
+        pairs.forEach { (key, value) -> result = result.replace("%$key%", value.toString()) }
+
+        if (SnapiLibrary.platform == Platform.BUKKIT) {
+            val player = getBukkitPlayer() ?: return
+            if (result.startsWith("<mm>", ignoreCase = true)) {
+                result = result.replace("<mm>", "", ignoreCase = true)
+                val audience = adventure.player(player)
+                audience.sendMessage(miniMessage().deserialize(result))
+            } else {
+                player.sendMessage(translateAlternateColorCodes('&', result))
+            }
+        }
+        if (SnapiLibrary.platform == Platform.VELOCITY) {
+            val player = getProxyPlayer() ?: return
+            if (result.startsWith("<mm>", ignoreCase = true)) {
+                result = result.replace("<mm>", "", ignoreCase = true)
+                player.sendMessage(miniMessage().deserialize(result))
+            } else {
+                player.sendMessage(translateAlternateColorCodes(result).toComponent())
+            }
+        }
+    }
+    fun hasPlayedBefore(): Boolean
+    fun isOnline(): Boolean
+    fun getStatistics(): Replacement
+    fun getPlayer(): Any?
+    fun getBukkitPlayer(): Player?
+    fun getProxyPlayer(): com.velocitypowered.api.proxy.Player?
+}

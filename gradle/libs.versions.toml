@@ -42,6 +42,9 @@ placeholderapi = { module = "me.clip:placeholderapi", version.ref = "placeholder
 xseries = { module = "com.github.cryptomorin:XSeries", version.ref = "xseries" }
 luckperms = { module = "net.luckperms:api", version.ref = "luckperms" }
 
+[bundles]
+exposed = ["exposed-core", "exposed-dao", "exposed-jdbc"]
+
 [plugins]
 jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
 kapt = { id = "org.jetbrains.kotlin.kapt", version.ref = "kotlin" }

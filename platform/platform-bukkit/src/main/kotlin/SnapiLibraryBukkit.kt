@@ -1,19 +1,17 @@
-package ru.snapix.library
+package ru.snapix.library.bukkit
 
-import net.kyori.adventure.platform.bukkit.BukkitAudiences
 import net.milkbowl.vault.economy.Economy
 import org.bukkit.plugin.java.JavaPlugin
-import ru.snapix.library.menu.InventoryListener
-import ru.snapix.library.menu.panels.BukkitPanel
-import ru.snapix.library.plugin.Settings
+import ru.snapix.library.SnapiLibrary
+import ru.snapix.library.bukkit.settings.Settings
+import ru.snapix.library.network.ServerType
 
 class SnapiLibraryBukkit : JavaPlugin() {
-    private var adventure: BukkitAudiences? = null
     lateinit var economy: Economy
     lateinit var serverType: ServerType
 
     init {
-        SnapiLibrary.platform = Platform.BUKKIT
+        SnapiLibrary.initBukkit(this)
     }
 
     override fun onLoad() {
@@ -22,20 +20,8 @@ class SnapiLibraryBukkit : JavaPlugin() {
     }
 
     override fun onEnable() {
-        adventure = BukkitAudiences.create(this)
         setupEconomy()
         server.pluginManager.registerEvents(InventoryListener(), this)
-    }
-
-    override fun onDisable() {
-        server.onlinePlayers.forEach { p ->
-            if (p.openInventory.topInventory.holder is BukkitPanel)
-                p.closeInventory()
-        }
-        adventure?.let {
-            it.close()
-            adventure = null
-        }
     }
 
     private fun setupEconomy() {
@@ -48,12 +34,6 @@ class SnapiLibraryBukkit : JavaPlugin() {
         economy = rsp.provider
     }
 
-    fun adventure(): BukkitAudiences {
-        checkNotNull(adventure) { "Tried to access Adventure when the plugin was disabled!" }
-        return adventure as BukkitAudiences
-    }
-
-
     companion object {
         @JvmStatic
         lateinit var instance: SnapiLibraryBukkit
@@ -61,6 +41,4 @@ class SnapiLibraryBukkit : JavaPlugin() {
     }
 }
 
-val snapiLibrary = SnapiLibraryBukkit.instance
-val adventure
-    get() = snapiLibrary.adventure()
+val plugin = SnapiLibraryBukkit.instance
