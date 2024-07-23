@@ -29,19 +29,17 @@ abstract class BukkitPanel internal constructor(
     open fun render(itemMap: ItemMap) {
         println(measureTime {
             val replacements = replacements.mapValues { it.value().toString() }.toMutableMap()
-            val itemStacks = ArrayList<ItemStack>(inventory.size)
 
             for (slot in 0..<inventory.size) {
                 val item = itemMap[slot]?.clone()
                 if (item != null && item.condition(Conditions(this, item, slot))) {
                     item.replace(player, replacements, updateReplacements)
-                    itemStacks.add(item.item())
+                    inventory.setItem(slot, item.item())
                 } else {
-                    itemStacks.add(ItemStack(Material.AIR))
+                    inventory.setItem(slot, null)
                 }
             }
 
-            inventory.contents = itemStacks.toTypedArray()
             player.updateInventory()
         })
     }

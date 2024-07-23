@@ -80,29 +80,27 @@ class GeneratorPanel<T> internal constructor(
         lastPage.set(ceil(generatorSource.size / size.toFloat()).toInt() - 1)
 
         val replacements = replacements.mapValues { it.value().toString() }.toMutableMap()
-        val itemStacks = ArrayList<ItemStack>(inventory.size)
 
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
             if (item != null) {
                 if (!item.condition(Conditions(this, item, slot))) continue
                 item.replace(player, replacements, updateReplacements)
-                itemStacks.add(item.item())
+                inventory.setItem(slot, item.item())
             } else {
                 if (generator.hasNext()) {
                     val value = generator.next()
                     val itemGen = generatorOutput(value)
                     if (itemGen != null && itemGen.condition(Conditions(this, itemGen, slot))) {
                         itemGen.replace(player, replacements, updateReplacements)
-                        itemStacks.add(itemGen.item())
+                        inventory.setItem(slot, itemGen.item())
                     }
                 } else {
-                    itemStacks.add(ItemStack(Material.AIR))
+                    inventory.setItem(slot, null)
                 }
             }
         }
 
-        inventory.contents = itemStacks.toTypedArray()
         player.updateInventory()
     }
 
