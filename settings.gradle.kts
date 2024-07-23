@@ -6,3 +6,4 @@ rootProject.name = "SnapiLibrary"
 include("common")
 include("platform:platform-bukkit")
 include("platform:platform-velocity")
+include("universal")

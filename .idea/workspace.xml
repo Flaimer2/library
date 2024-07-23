@@ -227,11 +227,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\SnapiX\SourceCode\Plugin\library" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-bukkit\src\main\kotlin" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\libs" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin" />
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\menu" />
-      <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\src\main\kotlin\utils" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\SnapiX\SourceCode\Plugin\library\platform\platform-velocity\libs" />
@@ -414,6 +414,7 @@
         <option name="taskNames">
           <list>
             <option value="publishToMavenLocal" />
+            <option value="universal:shadowJar" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -679,7 +680,7 @@
       <workItem from="1721491262168" duration="1458000" />
       <workItem from="1721546017357" duration="4568000" />
       <workItem from="1721634121504" duration="24157000" />
-      <workItem from="1721715175456" duration="4363000" />
+      <workItem from="1721715175456" duration="4809000" />
     </task>
     <servers />
   </component>
