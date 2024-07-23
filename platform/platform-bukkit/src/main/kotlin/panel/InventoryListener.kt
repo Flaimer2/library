@@ -1,11 +1,12 @@
 package ru.snapix.library.bukkit.panel
 
-import org.bukkit.entity.Player
 import org.bukkit.event.EventHandler
+import org.bukkit.event.EventPriority
 import org.bukkit.event.Listener
 import org.bukkit.event.inventory.InventoryClickEvent
 import org.bukkit.event.inventory.InventoryCloseEvent
 import org.bukkit.event.player.PlayerQuitEvent
+import ru.snapix.library.bukkit.panel.type.BukkitPanel
 
 class InventoryListener : Listener {
     @EventHandler
@@ -28,7 +29,7 @@ class InventoryListener : Listener {
         holder.onClose()
     }
 
-    @EventHandler
+    @EventHandler(priority = EventPriority.MONITOR)
     fun onQuit(event: PlayerQuitEvent) {
         event.player.closeInventory()
     }

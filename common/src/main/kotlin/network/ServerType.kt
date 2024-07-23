@@ -23,7 +23,11 @@ enum class ServerType(val compactName: String) {
             var result = UNKNOWN
 
             for (type in entries) {
-                if (server.startsWith(type.name, ignoreCase = true) || server.startsWith(type.compactName, ignoreCase = true)) {
+                if (server.startsWith(type.name, ignoreCase = true) || server.startsWith(
+                        type.compactName,
+                        ignoreCase = true
+                    )
+                ) {
                     result = type
                     break
                 }

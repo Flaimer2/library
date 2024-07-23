@@ -41,6 +41,7 @@ sealed interface NetworkPlayer {
             }
         }
     }
+
     fun hasPlayedBefore(): Boolean
     fun isOnline(): Boolean
     fun getStatistics(): Replacement

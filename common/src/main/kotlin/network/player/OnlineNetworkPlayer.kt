@@ -13,7 +13,7 @@ import kotlin.jvm.optionals.getOrNull
 
 @Serializable
 @SerialName("network_player")
-class OnlineNetworkPlayer(val name: String) : NetworkPlayer {
+class OnlineNetworkPlayer(private val name: String) : NetworkPlayer {
     override fun getName(): String {
         return name
     }

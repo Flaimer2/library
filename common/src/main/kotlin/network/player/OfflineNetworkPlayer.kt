@@ -10,7 +10,7 @@ import ru.snapix.library.network.Platform
 import ru.snapix.library.network.player.statistic.Statistics
 import kotlin.jvm.optionals.getOrNull
 
-class OfflineNetworkPlayer(val name: String) : NetworkPlayer {
+class OfflineNetworkPlayer(private val name: String) : NetworkPlayer {
     val player = LastLogin.getApi().getPlayerByName(name)?.firstOrNull()
 
     override fun getName(): String {

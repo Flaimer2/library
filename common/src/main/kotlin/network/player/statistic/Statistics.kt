@@ -55,6 +55,7 @@ object Statistics {
 }
 
 typealias ResultRow = MutableMap<String, Int>
+
 fun rowOf(vararg pairs: Pair<String, Int>): ResultRow {
     return mutableMapOf(*pairs)
 }

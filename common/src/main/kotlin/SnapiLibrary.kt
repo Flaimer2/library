@@ -29,6 +29,13 @@ object SnapiLibrary {
         this.server = server
     }
 
+    fun disableBukkit() {
+        adventure?.let {
+            it.close()
+            adventure = null
+        }
+    }
+
     fun adventure(): BukkitAudiences {
         checkNotNull(adventure) { "Tried to access Adventure when the plugin was disabled!" }
         return adventure as BukkitAudiences

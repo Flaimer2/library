@@ -3,6 +3,8 @@ package ru.snapix.library.bukkit
 import net.milkbowl.vault.economy.Economy
 import org.bukkit.plugin.java.JavaPlugin
 import ru.snapix.library.SnapiLibrary
+import ru.snapix.library.bukkit.panel.InventoryListener
+import ru.snapix.library.bukkit.panel.type.BukkitPanel
 import ru.snapix.library.bukkit.settings.Settings
 import ru.snapix.library.network.ServerType
 
@@ -22,6 +24,14 @@ class SnapiLibraryBukkit : JavaPlugin() {
     override fun onEnable() {
         setupEconomy()
         server.pluginManager.registerEvents(InventoryListener(), this)
+    }
+
+    override fun onDisable() {
+        server.onlinePlayers.forEach { p ->
+            if (p.openInventory.topInventory.holder is BukkitPanel)
+                p.closeInventory()
+        }
+        SnapiLibrary.disableBukkit()
     }
 
     private fun setupEconomy() {
