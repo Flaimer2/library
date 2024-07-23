@@ -11,6 +11,7 @@ dependencies {
     compileOnly(libs.serialization)
     compileOnly(libs.adventure.minimessage)
     compileOnly(libs.dazzleconf)
+    compileOnly(libs.kreds)
 }
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {

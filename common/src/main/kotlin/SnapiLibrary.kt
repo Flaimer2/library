@@ -6,6 +6,11 @@ import net.kyori.adventure.platform.bukkit.BukkitAudiences
 import org.bukkit.plugin.Plugin
 import org.jetbrains.exposed.sql.Database
 import ru.snapix.library.network.Platform
+import ru.snapix.library.network.player.NetworkPlayer
+import ru.snapix.library.network.player.OfflineNetworkPlayer
+import ru.snapix.library.network.player.OnlineNetworkPlayer
+import ru.snapix.library.utils.async
+import ru.snapix.library.utils.redisClient
 
 object SnapiLibrary {
     private var adventure: AudienceProvider? = null
@@ -40,6 +45,18 @@ object SnapiLibrary {
         checkNotNull(adventure) { "Tried to access Adventure when the plugin was disabled!" }
         return adventure as BukkitAudiences
     }
+
+    fun getPlayer(name: String): NetworkPlayer {
+        return redisClient.async {
+            val value = smembers(KEY_REDIS_PLAYER).firstOrNull { it.equals(name, ignoreCase = true) }
+            if (value != null) {
+                OnlineNetworkPlayer(value)
+            } else {
+                OfflineNetworkPlayer(name)
+            }
+        }
+    }
 }
 
 val adventure get() = SnapiLibrary.adventure()
+const val KEY_REDIS_PLAYER = "proxy-player"
