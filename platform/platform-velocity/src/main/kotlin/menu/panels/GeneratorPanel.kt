@@ -66,6 +66,7 @@ class GeneratorPanel<T> internal constructor(
 
         // register listeners
         inventory.onClick {
+            it.cancelled(true)
             runClickCallbacks(it.slot(), it.clickType())
         }
         inventory.onClose {

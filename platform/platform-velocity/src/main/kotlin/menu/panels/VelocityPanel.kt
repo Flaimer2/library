@@ -54,7 +54,7 @@ abstract class VelocityPanel internal constructor(
                     item.replace(replacements, updateReplacements)
                     items.add(item.item())
                 } else {
-                    items.add(ItemStack(Material.AIR))
+                    items.add(ItemStack.NO_DATA)
                 }
             }
 
@@ -71,12 +71,13 @@ abstract class VelocityPanel internal constructor(
     }
 
     fun runClickCallbacks(slot: Int, type: ClickType) {
-        val item = getItemBySlot(slot) ?: return
-        val clickAction = item.clickAction ?: return
+        val item = getItemBySlot(slot)
+        val clickAction = item?.clickAction
 
-        val click = Click(player, this, type, item, slot)
-
-        click.clickAction()
+        if (clickAction != null) {
+            val click = Click(player, this, type, item, slot)
+            click.clickAction()
+        }
     }
 
     abstract fun getItemBySlot(slot: Int): Item?

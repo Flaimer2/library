@@ -22,6 +22,7 @@ allprojects {
         maven("https://repo.alessiodp.com/releases/")
         maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
         maven("https://repo.tabooproject.org/repository/releases/")
+        maven("https://repo.dmulloy2.net/repository/public/")
     }
 }
 

@@ -2,9 +2,13 @@ package ru.snapix.library.menu.panels
 
 import com.velocitypowered.api.proxy.Player
 import com.velocitypowered.api.scheduler.ScheduledTask
+import com.velocitypowered.proxy.connection.backend.VelocityServerConnection
 import dev.simplix.protocolize.api.Protocolize
 import dev.simplix.protocolize.api.inventory.Inventory
+import dev.simplix.protocolize.api.item.BaseItemStack
+import dev.simplix.protocolize.api.item.ItemStack
 import dev.simplix.protocolize.data.inventory.InventoryType
+import dev.simplix.protocolize.data.packets.ClickWindow
 import ru.snapix.library.menu.*
 import ru.snapix.library.repeatTask
 import ru.snapix.library.snapiLibrary
@@ -45,9 +49,20 @@ class StandardPanel internal constructor(
             null
         }
 
-        // register listeners
-        inventory.onClick {
-            runClickCallbacks(it.slot(), it.clickType())
+//         register listeners
+        inventory.onClick { click ->
+//            val item: BaseItemStack? = click.clickedItem()
+//            click.player().sendPacketToServer(ClickWindow(
+//                inventory.items().mapKeys { it.key.toShort() }.mapValues { it.value as ItemStack },
+//                click.windowId(),
+//                click.actionNumber(),
+//                click.slot().toShort(),
+//                click.actionNumber().toByte(),
+//                1,
+//                item as? ItemStack,
+//                1
+//            ))
+            runClickCallbacks(click.slot(), click.clickType())
         }
         inventory.onClose {
             onClose()
