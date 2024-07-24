@@ -3,6 +3,8 @@ package ru.snapix.library.bukkit.panel
 import org.bukkit.entity.Player
 import org.bukkit.event.inventory.ClickType
 import ru.snapix.library.bukkit.panel.type.BukkitPanel
+import ru.snapix.library.bukkit.panel.type.GeneratorPanel
+import ru.snapix.library.bukkit.panel.type.PagedPanel
 
 data class Click(
     val player: Player,
@@ -14,34 +16,34 @@ data class Click(
 
 typealias ClickAction = Click.() -> Unit
 
-//fun Click.nextPage() {
-//    if (inventory is PagedPanel) {
-//        val lastPage = inventory.getLastPage()
-//        val nextPage = inventory.getCurrentPage() + 1
-//        if (lastPage >= nextPage) {
-//            inventory.setPage(nextPage)
-//        }
-//    }
-//    if (inventory is GeneratorPanel<*>) {
-//        val lastPage = inventory.getLastPage()
-//        val nextPage = inventory.getCurrentPage() + 1
-//        if (lastPage >= nextPage) {
-//            inventory.setPage(nextPage)
-//        }
-//    }
-//}
-//
-//fun Click.prevPage() {
-//    if (inventory is PagedPanel) {
-//        val page = inventory.getCurrentPage()
-//        if (page > 0) {
-//            inventory.setPage(page - 1)
-//        }
-//    }
-//    if (inventory is GeneratorPanel<*>) {
-//        val page = inventory.getCurrentPage()
-//        if (page > 0) {
-//            inventory.setPage(page - 1)
-//        }
-//    }
-//}
+fun Click.nextPage() {
+    if (inventory is PagedPanel) {
+        val lastPage = inventory.getLastPage()
+        val nextPage = inventory.getCurrentPage() + 1
+        if (lastPage >= nextPage) {
+            inventory.setPage(nextPage)
+        }
+    }
+    if (inventory is GeneratorPanel<*>) {
+        val lastPage = inventory.getLastPage()
+        val nextPage = inventory.getCurrentPage() + 1
+        if (lastPage >= nextPage) {
+            inventory.setPage(nextPage)
+        }
+    }
+}
+
+fun Click.prevPage() {
+    if (inventory is PagedPanel) {
+        val page = inventory.getCurrentPage()
+        if (page > 0) {
+            inventory.setPage(page - 1)
+        }
+    }
+    if (inventory is GeneratorPanel<*>) {
+        val page = inventory.getCurrentPage()
+        if (page > 0) {
+            inventory.setPage(page - 1)
+        }
+    }
+}
