@@ -19,7 +19,6 @@ tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
     relocateDependency("io.github.crackthecodeabhi")
     relocateDependency("mu")
     relocateDependency("space.arim")
-    relocateDependency("org.jetbrains.kotlin")
 }
 
 kotlin {

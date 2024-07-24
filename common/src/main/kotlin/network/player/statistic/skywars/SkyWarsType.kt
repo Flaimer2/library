@@ -1,4 +1,4 @@
-package ru.snapix.profile.statistics.skywars
+package ru.snapix.library.network.player.statistic.skywars
 
 enum class SkyWarsType {
     ASSISTS,

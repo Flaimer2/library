@@ -56,6 +56,12 @@ object SnapiLibrary {
             }
         }
     }
+
+    fun getOnlinePlayers(): List<NetworkPlayer> {
+        return redisClient.async {
+            smembers(KEY_REDIS_PLAYER).map { OnlineNetworkPlayer(it) }
+        }
+    }
 }
 
 val adventure get() = SnapiLibrary.adventure()

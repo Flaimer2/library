@@ -11,6 +11,7 @@ import com.velocitypowered.api.proxy.ProxyServer
 import org.slf4j.Logger
 import ru.snapix.library.KEY_REDIS_PLAYER
 import ru.snapix.library.SnapiLibrary
+import ru.snapix.library.network.messenger.Messenger
 import ru.snapix.library.network.player.statistic.Statistics
 import ru.snapix.library.utils.async
 import ru.snapix.library.utils.redisClient
@@ -40,6 +41,7 @@ class SnapiLibraryVelocity @Inject constructor(
     @Subscribe
     fun onEnable(event: ProxyInitializeEvent) {
         plugin.server.eventManager.register(this, ConnectionListener())
+        Messenger.enable()
         plugin.server.repeatTask(120.seconds) {
             plugin.server.allPlayers.forEach {
                 Statistics.update(it.username)

@@ -3,9 +3,9 @@ package ru.snapix.library.network.player.statistic
 import ru.snapix.library.Replacement
 import ru.snapix.library.SnapiLibrary
 import ru.snapix.library.network.player.statistic.bedwars.BedWars
+import ru.snapix.library.network.player.statistic.skywars.SkyWars
 import ru.snapix.library.utils.executeQuery
 import ru.snapix.library.utils.toShortTime
-import ru.snapix.profile.statistics.skywars.SkyWars
 
 object Statistics {
     fun getReplacements(username: String): Replacement {

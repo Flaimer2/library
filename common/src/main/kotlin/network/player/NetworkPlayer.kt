@@ -7,6 +7,8 @@ import ru.snapix.library.Replacement
 import ru.snapix.library.SnapiLibrary
 import ru.snapix.library.adventure
 import ru.snapix.library.network.Platform
+import ru.snapix.library.network.messenger.Messenger
+import ru.snapix.library.network.messenger.SendMessageAction
 import ru.snapix.library.utils.toComponent
 import ru.snapix.library.utils.translateAlternateColorCodes
 
@@ -22,7 +24,12 @@ sealed interface NetworkPlayer {
         pairs.forEach { (key, value) -> result = result.replace("%$key%", value.toString()) }
 
         if (SnapiLibrary.platform == Platform.BUKKIT) {
-            val player = getBukkitPlayer() ?: return
+            if (!isOnline()) return
+            val player = getBukkitPlayer()
+            if (player == null) {
+                Messenger.sendOutgoingMessage(SendMessageAction(this, result))
+                return
+            }
             if (result.startsWith("<mm>", ignoreCase = true)) {
                 result = result.replace("<mm>", "", ignoreCase = true)
                 val audience = adventure.player(player)
