@@ -2,6 +2,9 @@ package ru.snapix.library.network.player
 
 import com.alessiodp.lastloginapi.api.LastLogin
 import com.velocitypowered.api.proxy.ProxyServer
+import kotlinx.serialization.SerialName
+import kotlinx.serialization.Serializable
+import kotlinx.serialization.Transient
 import org.bukkit.Bukkit
 import org.bukkit.entity.Player
 import ru.snapix.library.Replacement
@@ -10,8 +13,10 @@ import ru.snapix.library.network.Platform
 import ru.snapix.library.network.player.statistic.Statistics
 import kotlin.jvm.optionals.getOrNull
 
+@Serializable
+@SerialName("offline_network_player")
 class OfflineNetworkPlayer(private val name: String) : NetworkPlayer {
-    val player = LastLogin.getApi().getPlayerByName(name)?.firstOrNull()
+    @Transient private val player = LastLogin.getApi().getPlayerByName(name)?.firstOrNull()
 
     override fun getName(): String {
         val name = player?.name ?: name
@@ -44,5 +49,14 @@ class OfflineNetworkPlayer(private val name: String) : NetworkPlayer {
 
     override fun getProxyPlayer(): com.velocitypowered.api.proxy.Player? {
         return (SnapiLibrary.server!! as ProxyServer).getPlayer(name).getOrNull()
+    }
+
+    override fun equals(other: Any?): Boolean {
+        if (other !is NetworkPlayer) return  false
+        return other.getName().equals(getName(), ignoreCase = true)
+    }
+
+    override fun hashCode(): Int {
+        return name.hashCode()
     }
 }

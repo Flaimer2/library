@@ -12,6 +12,7 @@ import org.slf4j.Logger
 import ru.snapix.library.KEY_REDIS_PLAYER
 import ru.snapix.library.SnapiLibrary
 import ru.snapix.library.network.messenger.Messenger
+import ru.snapix.library.network.player.NetworkPlayer
 import ru.snapix.library.network.player.statistic.Statistics
 import ru.snapix.library.utils.async
 import ru.snapix.library.utils.redisClient

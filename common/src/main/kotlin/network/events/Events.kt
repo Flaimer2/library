@@ -1,17 +1,18 @@
-package ru.snapix.library.network.messenger
+package ru.snapix.library.network.events
 
 import io.github.crackthecodeabhi.kreds.connection.AbstractKredsSubscriber
 import kotlinx.serialization.*
 import kotlinx.serialization.json.*
 import kotlinx.serialization.modules.*
+import ru.snapix.library.network.messenger.Action
 import ru.snapix.library.utils.async
 import ru.snapix.library.utils.redisClient
 import ru.snapix.library.utils.subscribe
 
-object Messenger {
+object Events {
     private val module = SerializersModule {
         polymorphic(Action::class) {
-            subclass(SendMessageAction::class)
+            subclass(PlayerDisconnectEvent::class)
         }
     }
     val json = Json {
@@ -38,14 +39,14 @@ object Messenger {
             override fun onException(ex: Throwable) {
                 println("Exception while handling subscription to redis: ${ex.stackTrace}")
             }
-        }, KEY_REDIS_MESSENGER)
+        }, KEY_REDIS_EVENTS)
     }
 
-    fun sendOutgoingMessage(action: Action) {
+    fun sendEvent(action: Action) {
         redisClient.async {
-            publish(KEY_REDIS_MESSENGER, json.encodeToString(action))
+            publish(KEY_REDIS_EVENTS, json.encodeToString(action))
         }
     }
 }
 
-const val KEY_REDIS_MESSENGER = "library-messenger"
+const val KEY_REDIS_EVENTS = "events-messenger"

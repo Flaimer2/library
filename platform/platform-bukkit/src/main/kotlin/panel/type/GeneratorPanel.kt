@@ -33,6 +33,7 @@ class GeneratorPanel<T> internal constructor(
     override val bukkitInventory: Inventory = Bukkit.createInventory(this, layout.size * 9, title)
     override val updateTimer: BukkitTask?
     private val itemMap = emptyItemMap()
+    private val clickItemMap = emptyItemMap()
     private val currentPage = AtomicInteger(0)
     private val lastPage = AtomicInteger(0)
 
@@ -87,6 +88,7 @@ class GeneratorPanel<T> internal constructor(
                 if (!item.condition(Conditions(this, item, slot))) continue
                 item.replace(player, replacements, updateReplacements)
                 inventory.setItem(slot, item.item())
+                clickItemMap[slot] = item
             } else {
                 if (generator.hasNext()) {
                     val value = generator.next()
@@ -94,9 +96,11 @@ class GeneratorPanel<T> internal constructor(
                     if (itemGen != null && itemGen.condition(Conditions(this, itemGen, slot))) {
                         itemGen.replace(player, replacements, updateReplacements)
                         inventory.setItem(slot, itemGen.item())
+                        clickItemMap[slot] = itemGen
                     }
                 } else {
                     inventory.setItem(slot, null)
+                    clickItemMap[slot] = Item()
                 }
             }
         }
@@ -111,7 +115,7 @@ class GeneratorPanel<T> internal constructor(
     }
 
     override fun getItemBySlot(slot: Int): Item? {
-        return itemMap[slot]
+        return clickItemMap[slot]
     }
 
     fun getCurrentPage(): Int {

@@ -1,5 +1,6 @@
 package ru.snapix.library.network.player.statistic
 
+import kotlinx.serialization.Contextual
 import ru.snapix.library.Replacement
 import ru.snapix.library.SnapiLibrary
 import ru.snapix.library.network.player.statistic.bedwars.BedWars
@@ -9,14 +10,19 @@ import ru.snapix.library.utils.toShortTime
 
 object Statistics {
     fun getReplacements(username: String): Replacement {
-        return (StatisticCache[username] ?: update(username)).statistic
+        val replacement = Replacement()
+        val value = StatisticCache[username]?.statistic ?: update(username).statistic
+        replacement.putAll(value.mapValues { { it.value } })
+        return replacement
     }
 
     fun update(username: String): Statistic {
-        val replacements = Replacement()
+        val replacements = mutableMapOf<String, String>()
 
         replacements.putAll(SkyWars.get(username))
         replacements.putAll(BedWars.get(username))
+        replacements.putAll(getDatabaseReplacement(username))
+        println("skywars,bedwars,database - ${replacements.toMap().mapKeys { it.key.lowercase() }}")
 
         val statistic = Statistic(username, replacements)
         StatisticCache.update(statistic)
@@ -24,18 +30,13 @@ object Statistics {
         return statistic
     }
 
-    private fun getDatabaseReplacement(username: String): Replacement {
-        val replacement = Replacement()
+    private fun getDatabaseReplacement(username: String): MutableMap<String, String> {
+        val replacement = mutableMapOf<String, String>()
         for (plugin in DatabasePlugin.entries) {
             val value: ResultRow = get(username, plugin)
 
             for (type in plugin.column) {
-                if (plugin.name == "PARKOUR" && type.name == "TIME") {
-                    replacement["${plugin.name}_${type.name}"] = {
-                        value[type.name]?.toLong()?.toShortTime("mm мин. ss сек.") ?: "&cНет"
-                    }
-                }
-                replacement["${plugin.name}_${type.name}"] = { value[type.name]?.toString() ?: "0" }
+                replacement["${plugin.name}_${type.name}"] = value[type.name]?.toString() ?: "0"
             }
         }
         return replacement

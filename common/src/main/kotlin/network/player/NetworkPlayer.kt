@@ -4,9 +4,13 @@ import kotlinx.serialization.Serializable
 import net.kyori.adventure.text.minimessage.MiniMessage.miniMessage
 import net.luckperms.api.LuckPermsProvider
 import org.bukkit.entity.Player
+import ru.snapix.balancer.BalancerServer
+import ru.snapix.balancer.PlayerConnect
+import ru.snapix.balancer.PlayerConnectCache
 import ru.snapix.library.Replacement
 import ru.snapix.library.SnapiLibrary
 import ru.snapix.library.adventure
+import ru.snapix.library.cache.RedisCache
 import ru.snapix.library.network.Platform
 import ru.snapix.library.network.messenger.Messenger
 import ru.snapix.library.network.messenger.SendMessageAction
@@ -41,6 +45,11 @@ sealed interface NetworkPlayer {
     fun getPlayer(): Any?
     fun getBukkitPlayer(): Player?
     fun getProxyPlayer(): com.velocitypowered.api.proxy.Player?
+
+    fun getCurrentServer(): BalancerServer? {
+        val value = PlayerConnectCache.get(getName())
+        return value?.server
+    }
 
     fun getPrefix(): String? {
         val api = LuckPermsProvider.get()

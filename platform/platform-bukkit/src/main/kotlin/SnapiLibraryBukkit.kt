@@ -7,6 +7,7 @@ import ru.snapix.library.bukkit.panel.InventoryListener
 import ru.snapix.library.bukkit.panel.type.BukkitPanel
 import ru.snapix.library.bukkit.settings.Settings
 import ru.snapix.library.network.ServerType
+import ru.snapix.library.network.events.Events
 
 class SnapiLibraryBukkit : JavaPlugin() {
     lateinit var economy: Economy
@@ -21,6 +22,7 @@ class SnapiLibraryBukkit : JavaPlugin() {
         SnapiLibrary.initBukkit(this)
         setupEconomy()
         server.pluginManager.registerEvents(InventoryListener(), this)
+        Events.enable()
     }
 
     override fun onDisable() {

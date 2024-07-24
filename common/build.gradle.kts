@@ -14,4 +14,5 @@ dependencies {
     compileOnly(libs.luckperms)
     compileOnly(libs.bukkit)
     compileOnly(libs.velocityapi)
+    compileOnly(libs.balancer)
 }

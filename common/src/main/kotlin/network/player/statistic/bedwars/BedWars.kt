@@ -6,11 +6,12 @@ import ru.snapix.library.Replacement
 import ru.snapix.library.SnapiLibrary
 import ru.snapix.library.utils.executeQuery
 import ru.snapix.library.utils.fieldNames
+import ru.snapix.library.utils.json
 import ru.snapix.library.utils.replaceLast
 
 object BedWars {
-    internal fun get(name: String): Replacement {
-        val replacement = Replacement()
+    internal fun get(name: String): MutableMap<String, String> {
+        val replacement = mutableMapOf<String, String>()
         var result: BedWarsDTO? = null
         SnapiLibrary.globalDatabase.executeQuery("SELECT `data` FROM server_minigames.`bedwars` WHERE `name` = '$name'") {
             val jsonObject = JsonParser().parse(it.getString("data")).asJsonObject
@@ -19,7 +20,7 @@ object BedWars {
                 .replaceLast("\"", "")
                 .replace("\\\\", "")
                 .replace("\\", "")
-            val dto = Json.decodeFromString<BedWarsDTO>(obj)
+            val dto = json.decodeFromString<BedWarsDTO>(obj)
             result = dto
         }
 
@@ -32,7 +33,7 @@ object BedWars {
             } catch (e: Exception) {
                 0
             }
-            replacement["bedwars_${type.lowercase()}"] = { value.toString() }
+            replacement["bedwars_${type.lowercase()}"] = value.toString()
         }
 
         return replacement

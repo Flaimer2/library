@@ -12,7 +12,7 @@ import ru.snapix.library.network.player.statistic.Statistics
 import kotlin.jvm.optionals.getOrNull
 
 @Serializable
-@SerialName("network_player")
+@SerialName("online_network_player")
 class OnlineNetworkPlayer(private val name: String) : NetworkPlayer {
     override fun getName(): String {
         return name
@@ -44,5 +44,14 @@ class OnlineNetworkPlayer(private val name: String) : NetworkPlayer {
 
     override fun getProxyPlayer(): com.velocitypowered.api.proxy.Player? {
         return (SnapiLibrary.server!! as ProxyServer).getPlayer(name).getOrNull()
+    }
+
+    override fun equals(other: Any?): Boolean {
+        if (other !is NetworkPlayer) return  false
+        return other.getName().equals(getName(), ignoreCase = true)
+    }
+
+    override fun hashCode(): Int {
+        return name.hashCode()
     }
 }
