@@ -32,6 +32,12 @@ class Item(
             meta.displayName = name
         }
 
+        val lore = buildList {
+            for (lore in lore) {
+                lore.split("\n").forEach { add(it) }
+            }
+        }
+
         meta.lore = lore
 
         itemFlag.forEach {

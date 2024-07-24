@@ -60,8 +60,8 @@ class GeneratorPanel<T> internal constructor(
             Bukkit.getScheduler().runTaskTimerAsynchronously(
                 plugin,
                 { render() },
-                update.inWholeMilliseconds,
-                update.inWholeMilliseconds
+                update.inWholeSeconds * 20,
+                update.inWholeSeconds * 20
             )
         } else {
             null
@@ -115,7 +115,7 @@ class GeneratorPanel<T> internal constructor(
     }
 
     override fun getItemBySlot(slot: Int): Item? {
-        return clickItemMap[slot]
+        return clickItemMap [slot]
     }
 
     fun getCurrentPage(): Int {

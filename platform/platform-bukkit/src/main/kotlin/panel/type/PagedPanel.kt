@@ -53,8 +53,8 @@ class PagedPanel internal constructor(
             Bukkit.getScheduler().runTaskTimerAsynchronously(
                 plugin,
                 { render() },
-                update.inWholeMilliseconds,
-                update.inWholeMilliseconds
+                update.inWholeSeconds * 20,
+                update.inWholeSeconds * 20
             )
         } else {
             null

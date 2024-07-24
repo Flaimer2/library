@@ -69,6 +69,24 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="common" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="common" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="SnapiLibrary" type="f1a62948:ProjectNode" />
+                <item name="common" type="2d1252cf:ModuleNode" />
+                <item name="Dependencies" type="6de06a37:ExternalSystemViewDefaultContributor$MyDependenciesNode" />
+                <item name="compileClasspath" type="62daadca:ExternalSystemViewDefaultContributor$DependencyScopeExternalSystemNode" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -244,11 +262,11 @@
       <recent name="" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="network.events.bukkit" />
       <recent name="" />
       <recent name="panel.type" />
       <recent name="caches" />
       <recent name="menu" />
-      <recent name="menu.panels" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="ru.snapix.library.common.database" />
@@ -681,7 +699,7 @@
       <workItem from="1721546017357" duration="4568000" />
       <workItem from="1721634121504" duration="24157000" />
       <workItem from="1721715175456" duration="4809000" />
-      <workItem from="1720248774459" duration="5663000" />
+      <workItem from="1720248774459" duration="24517000" />
     </task>
     <servers />
   </component>
