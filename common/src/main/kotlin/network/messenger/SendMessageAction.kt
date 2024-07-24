@@ -6,8 +6,8 @@ import ru.snapix.library.network.player.NetworkPlayer
 
 @Serializable
 @SerialName("sendmessage")
-class SendMessageAction(val networkPlayer: NetworkPlayer, val message: String) : Action() {
+class SendMessageAction(val players: List<NetworkPlayer>, val message: String, vararg val pair: Pair<String, String>) : Action() {
     override fun executeIncomingMessage() {
-        networkPlayer.sendMessage(message)
+        players.forEach { it.sendMessage(message, *pair) }
     }
 }

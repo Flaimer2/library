@@ -2,6 +2,7 @@ package ru.snapix.library.network.player
 
 import kotlinx.serialization.Serializable
 import net.kyori.adventure.text.minimessage.MiniMessage.miniMessage
+import net.luckperms.api.LuckPermsProvider
 import org.bukkit.entity.Player
 import ru.snapix.library.Replacement
 import ru.snapix.library.SnapiLibrary
@@ -23,7 +24,7 @@ sealed interface NetworkPlayer {
             if (!isOnline()) return
             val player = getBukkitPlayer()
             if (player == null) {
-                Messenger.sendOutgoingMessage(SendMessageAction(this, message))
+                Messenger.sendOutgoingMessage(SendMessageAction(listOf(this), message, *pairs.map { it.first to it.second.toString() }.toTypedArray()))
                 return
             }
             player.message(message, *pairs)
@@ -40,4 +41,16 @@ sealed interface NetworkPlayer {
     fun getPlayer(): Any?
     fun getBukkitPlayer(): Player?
     fun getProxyPlayer(): com.velocitypowered.api.proxy.Player?
+
+    fun getPrefix(): String? {
+        val api = LuckPermsProvider.get()
+        val user = api.userManager.getUser(getName()) ?: return null
+        return user.cachedData.metaData.prefix
+    }
+
+    fun getSuffix(): String? {
+        val api = LuckPermsProvider.get()
+        val user = api.userManager.getUser(getName()) ?: return null
+        return user.cachedData.metaData.suffix
+    }
 }
