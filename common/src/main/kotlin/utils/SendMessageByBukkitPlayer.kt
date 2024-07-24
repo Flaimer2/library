@@ -5,6 +5,7 @@ import org.bukkit.entity.Player
 import ru.snapix.library.adventure
 
 fun Player.message(message: String, vararg pairs: Pair<String, Any>) {
+    if (message == "" || message == "null") return
     var result = message
 
     pairs.forEach { (key, value) -> result = result.replace("%$key%", value.toString()) }

@@ -17,7 +17,6 @@ import ru.snapix.library.utils.translateAlternateColorCodes
 sealed interface NetworkPlayer {
     fun getName(): String
     fun sendMessage(message: String, vararg pairs: Pair<String, Any>) {
-        if (message == "" || message == "null") return
         if (SnapiLibrary.platform == Platform.UNKNOWN) return
 
         if (SnapiLibrary.platform == Platform.BUKKIT) {

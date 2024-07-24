@@ -8,6 +8,7 @@ import org.bukkit.inventory.ItemStack
 import org.bukkit.inventory.meta.ItemMeta
 import ru.snapix.library.bukkit.utils.requestHead
 import ru.snapix.library.replace
+import ru.snapix.library.utils.translateAlternateColorCodes
 
 class Item(
     val index: Char? = null,
@@ -45,13 +46,14 @@ class Item(
     fun replace(player: Player, replacements: Map<String, String>, updateReplacements: (String) -> String) {
         var name = name
         if (name != null) {
-            name = PlaceholderAPI.setPlaceholders(player, updateReplacements(name))
+            name = translateAlternateColorCodes(PlaceholderAPI.setPlaceholders(player, updateReplacements(name)))
             name = replacements.replace(name)
         }
 
         this.name = name
 
         lore = replacements.replace(lore)
+        lore = lore.map { translateAlternateColorCodes(PlaceholderAPI.setPlaceholders(player, updateReplacements(it))) }
         lore = lore.map(updateReplacements)
     }
 

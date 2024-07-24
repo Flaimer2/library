@@ -12,16 +12,13 @@ class SnapiLibraryBukkit : JavaPlugin() {
     lateinit var economy: Economy
     lateinit var serverType: ServerType
 
-    init {
-        SnapiLibrary.initBukkit(this)
-    }
-
     override fun onLoad() {
         instance = this
         serverType = Settings.config.gameType()
     }
 
     override fun onEnable() {
+        SnapiLibrary.initBukkit(this)
         setupEconomy()
         server.pluginManager.registerEvents(InventoryListener(), this)
     }
