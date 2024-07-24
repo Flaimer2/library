@@ -9,6 +9,7 @@ import ru.snapix.library.adventure
 import ru.snapix.library.network.Platform
 import ru.snapix.library.network.messenger.Messenger
 import ru.snapix.library.network.messenger.SendMessageAction
+import ru.snapix.library.utils.message
 import ru.snapix.library.utils.toComponent
 import ru.snapix.library.utils.translateAlternateColorCodes
 
@@ -19,33 +20,18 @@ sealed interface NetworkPlayer {
         if (message == "" || message == "null") return
         if (SnapiLibrary.platform == Platform.UNKNOWN) return
 
-        var result = message
-
-        pairs.forEach { (key, value) -> result = result.replace("%$key%", value.toString()) }
-
         if (SnapiLibrary.platform == Platform.BUKKIT) {
             if (!isOnline()) return
             val player = getBukkitPlayer()
             if (player == null) {
-                Messenger.sendOutgoingMessage(SendMessageAction(this, result))
+                Messenger.sendOutgoingMessage(SendMessageAction(this, message))
                 return
             }
-            if (result.startsWith("<mm>", ignoreCase = true)) {
-                result = result.replace("<mm>", "", ignoreCase = true)
-                val audience = adventure.player(player)
-                audience.sendMessage(miniMessage().deserialize(result))
-            } else {
-                player.sendMessage(translateAlternateColorCodes('&', result))
-            }
+            player.message(message, *pairs)
         }
         if (SnapiLibrary.platform == Platform.VELOCITY) {
             val player = getProxyPlayer() ?: return
-            if (result.startsWith("<mm>", ignoreCase = true)) {
-                result = result.replace("<mm>", "", ignoreCase = true)
-                player.sendMessage(miniMessage().deserialize(result))
-            } else {
-                player.sendMessage(translateAlternateColorCodes(result).toComponent())
-            }
+            player.message(message, *pairs)
         }
     }
 
