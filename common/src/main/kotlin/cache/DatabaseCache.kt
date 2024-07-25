@@ -14,7 +14,7 @@ abstract class DatabaseCache<T> : Cache<T> {
 
     override fun update(value: T) {
         redisClient.async {
-            hset(KEY_REDIS, key(value) to encode(value))
+            hset(KEY_REDIS, key(value).lowercase() to encode(value))
         }
     }
 

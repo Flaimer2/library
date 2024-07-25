@@ -1218,7 +1218,7 @@
     </schema>
     <schema id="515" parent="1" name="server_global">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-07-24.13:51:36</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-07-25.07:41:30</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="516" parent="1" name="server_lobby">
@@ -3178,7 +3178,7 @@ year</ColNames>
       <Position>3</Position>
     </column>
     <column id="965" parent="556" name="id">
-      <AutoIncrement>132</AutoIncrement>
+      <AutoIncrement>146</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
@@ -3348,7 +3348,7 @@ year</ColNames>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="999" parent="561" name="id">
-      <AutoIncrement>44</AutoIncrement>
+      <AutoIncrement>51</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>

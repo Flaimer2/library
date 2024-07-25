@@ -23,9 +23,8 @@
     <schema id="16" parent="1" name="8"/>
     <schema id="17" parent="1" name="9"/>
     <hash-table id="18" parent="2" name="balancer-server:lobby"/>
-    <hash-table id="19" parent="2" name="friends"/>
-    <hash-table id="20" parent="2" name="player-connected-server"/>
-    <hash-table id="21" parent="2" name="statistic"/>
-    <set id="22" parent="2" name="proxy-player"/>
+    <hash-table id="19" parent="2" name="player-connected-server"/>
+    <hash-table id="20" parent="2" name="statistic"/>
+    <set id="21" parent="2" name="proxy-player"/>
   </database-model>
 </dataSource>

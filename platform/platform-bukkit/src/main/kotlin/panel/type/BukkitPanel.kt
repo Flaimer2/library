@@ -27,21 +27,19 @@ abstract class BukkitPanel internal constructor(
     abstract val updateTimer: BukkitTask?
 
     open fun render(itemMap: ItemMap) {
-        println(measureTime {
-            val replacements = replacements.mapValues { it.value().toString() }.toMutableMap()
+        val replacements = replacements.mapValues { it.value().toString() }.toMutableMap()
 
-            for (slot in 0..<inventory.size) {
-                val item = itemMap[slot]?.clone()
-                if (item != null && item.condition(Conditions(this, item, slot))) {
-                    item.replace(player, replacements, updateReplacements)
-                    inventory.setItem(slot, item.item())
-                } else {
-                    inventory.setItem(slot, null)
-                }
+        for (slot in 0..<inventory.size) {
+            val item = itemMap[slot]?.clone()
+            if (item != null && item.condition(Conditions(this, item, slot))) {
+                item.replace(player, replacements, updateReplacements)
+                inventory.setItem(slot, item.item())
+            } else {
+                inventory.setItem(slot, null)
             }
+        }
 
-            player.updateInventory()
-        })
+        player.updateInventory()
     }
 
     override fun disable() {
