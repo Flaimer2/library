@@ -32,7 +32,7 @@ class Replacement : MutableMap<String, () -> Any> by mutableMapOf() {
 fun Map<String, String>.replace(text: String): String {
     var result = text
     for ((key, value) in this) {
-        result = result.replace(key, value, ignoreCase = true)
+        result = result.replace("{$key}", value, ignoreCase = true)
     }
     return result
 }
