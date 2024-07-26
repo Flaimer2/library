@@ -49,7 +49,8 @@ abstract class BukkitPanel internal constructor(
     fun runClickCallbacks(slot: Int, type: ClickType) {
         val item = getItemBySlot(slot) ?: return
         val clickAction = item.clickAction ?: return
-
+        if (!item.condition(Conditions(this, item, slot))) return
+        
         val click = Click(player, this, type, item, slot)
 
         click.clickAction()

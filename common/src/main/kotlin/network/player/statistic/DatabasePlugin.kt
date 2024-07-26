@@ -6,6 +6,7 @@ enum class DatabasePlugin(val tableName: String, val nameField: String, val colu
     MINERWARE("server_minigames.minerware_stats", "NAME", MinerWareType.entries),
     MURDERMYSTERY("server_minigames.murdermystery_stats", "name", MurderMysteryType.entries),
     THEBRIDGE("server_minigames.thebridge_stats", "name", TheBridgeType.entries),
+    ALONSOLEVELS("server_global.account_levels", "playername", AlonsoLevelsType.entries)
 }
 
 enum class MinerWareType {
@@ -34,4 +35,9 @@ enum class TheBridgeType {
     KILLS,
     DEATHS,
     POINTS
+}
+
+enum class AlonsoLevelsType {
+    EXPERIENCE,
+    LASTLEVEL,
 }

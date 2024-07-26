@@ -1218,7 +1218,7 @@
     </schema>
     <schema id="515" parent="1" name="server_global">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-07-25.07:41:30</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-07-26.12:25:40</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_general_ci</CollationName>
     </schema>
     <schema id="516" parent="1" name="server_lobby">
@@ -1355,125 +1355,125 @@
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="549" parent="515" name="deathcry">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="550" parent="515" name="default_lhrv_alltime">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="551" parent="515" name="default_lhrv_daily">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="552" parent="515" name="default_lhrv_monthly">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="553" parent="515" name="default_lhrv_weekly">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="554" parent="515" name="default_lhrv_yearly">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="555" parent="515" name="donate">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="556" parent="515" name="global_actions">
+    <table id="549" parent="515" name="cooperation_friend">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="557" parent="515" name="global_group_permissions">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
-    </table>
-    <table id="558" parent="515" name="global_groups">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
-    </table>
-    <table id="559" parent="515" name="global_players">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
-    </table>
-    <table id="560" parent="515" name="global_tracks">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
-    </table>
-    <table id="561" parent="515" name="global_user_permissions">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
-    </table>
-    <table id="562" parent="515" name="killeffect">
+    <table id="550" parent="515" name="deathcry">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <table id="563" parent="515" name="killmessages">
+    <table id="551" parent="515" name="default_lhrv_alltime">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <table id="564" parent="515" name="lastloginapi_players">
+    <table id="552" parent="515" name="default_lhrv_daily">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="553" parent="515" name="default_lhrv_monthly">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="554" parent="515" name="default_lhrv_weekly">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="555" parent="515" name="default_lhrv_yearly">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="556" parent="515" name="donate">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="557" parent="515" name="global_actions">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="565" parent="515" name="lastloginapi_schema_history">
+    <table id="558" parent="515" name="global_group_permissions">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="566" parent="515" name="lhrv_excluded">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="567" parent="515" name="lhrv_excluded_all">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="568" parent="515" name="lhrv_players">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="569" parent="515" name="lhrv_statistics">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="570" parent="515" name="luckperms_tracks">
+    <table id="559" parent="515" name="global_groups">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="571" parent="515" name="money">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="572" parent="515" name="parties_parties">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="573" parent="515" name="parties_players">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="574" parent="515" name="parties_schema_history">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="575" parent="515" name="player_interaction_level">
+    <table id="560" parent="515" name="global_players">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="576" parent="515" name="playerpoints_points">
+    <table id="561" parent="515" name="global_tracks">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="577" parent="515" name="playerpoints_username_cache">
+    <table id="562" parent="515" name="global_user_permissions">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="578" parent="515" name="players">
+    <table id="563" parent="515" name="killeffect">
       <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_unicode_ci</CollationName>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="564" parent="515" name="killmessages">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="565" parent="515" name="lastloginapi_players">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="566" parent="515" name="lastloginapi_schema_history">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="567" parent="515" name="lhrv_excluded">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="568" parent="515" name="lhrv_excluded_all">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="569" parent="515" name="lhrv_players">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="570" parent="515" name="lhrv_statistics">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="571" parent="515" name="luckperms_tracks">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="572" parent="515" name="money">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="573" parent="515" name="parties_parties">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="574" parent="515" name="parties_players">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="575" parent="515" name="parties_schema_history">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="576" parent="515" name="player_interaction_level">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="577" parent="515" name="playerpoints_points">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
+    </table>
+    <table id="578" parent="515" name="playerpoints_username_cache">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb4_general_ci</CollationName>
     </table>
     <table id="579" parent="515" name="premiumvanish_playerdata">
       <Engine>InnoDB</Engine>
@@ -1487,1509 +1487,1494 @@
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <table id="582" parent="515" name="skinrestorer_custom_skins">
+    <table id="582" parent="515" name="skinrestorer_cooldowns">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <table id="583" parent="515" name="skinrestorer_player_skins">
+    <table id="583" parent="515" name="skinrestorer_custom_skins">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <table id="584" parent="515" name="skinrestorer_players">
+    <table id="584" parent="515" name="skinrestorer_player_favourites">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <table id="585" parent="515" name="skinrestorer_url_index">
+    <table id="585" parent="515" name="skinrestorer_player_history">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <table id="586" parent="515" name="skinrestorer_url_skins">
+    <table id="586" parent="515" name="skinrestorer_player_skins">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <table id="587" parent="515" name="skins">
+    <table id="587" parent="515" name="skinrestorer_players">
       <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_unicode_ci</CollationName>
+      <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <table id="588" parent="515" name="snapipass_level">
+    <table id="588" parent="515" name="skinrestorer_url_index">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="589" parent="515" name="skinrestorer_url_skins">
+      <Engine>InnoDB</Engine>
+      <CollationName>utf8mb3_general_ci</CollationName>
+    </table>
+    <table id="590" parent="515" name="tigerreports_comments">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="589" parent="515" name="snapistaff_staffworker">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="590" parent="515" name="sr_cache">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="591" parent="515" name="sr_custom_skins">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="592" parent="515" name="sr_legacy_players">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="593" parent="515" name="sr_legacy_skins">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="594" parent="515" name="sr_player_skins">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="595" parent="515" name="sr_players">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="596" parent="515" name="sr_url_index">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="597" parent="515" name="sr_url_skins">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb3_general_ci</CollationName>
-    </table>
-    <table id="598" parent="515" name="tigerreports_comments">
+    <table id="591" parent="515" name="tigerreports_reports">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="599" parent="515" name="tigerreports_reports">
+    <table id="592" parent="515" name="tigerreports_users">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_general_ci</CollationName>
     </table>
-    <table id="600" parent="515" name="tigerreports_users">
-      <Engine>InnoDB</Engine>
-      <CollationName>utf8mb4_general_ci</CollationName>
-    </table>
-    <table id="601" parent="515" name="victorydance">
+    <table id="593" parent="515" name="victorydance">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <table id="602" parent="515" name="xconomy">
+    <table id="594" parent="515" name="xconomy">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <table id="603" parent="515" name="xconomyrecord">
+    <table id="595" parent="515" name="xconomyrecord">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb3_general_ci</CollationName>
     </table>
-    <column id="604" parent="527" name="id">
+    <column id="596" parent="527" name="id">
       <AutoIncrement>3</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="605" parent="527" name="name">
+    <column id="597" parent="527" name="name">
       <DasType>varchar(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="606" parent="527" name="coin">
+    <column id="598" parent="527" name="coin">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="607" parent="527" name="PRIMARY">
+    <index id="599" parent="527" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="608" parent="527" name="account_coins_name_unique">
+    <index id="600" parent="527" name="account_coins_name_unique">
       <ColNames>name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="609" parent="527" name="PRIMARY">
+    <key id="601" parent="527" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="610" parent="527" name="account_coins_name_unique">
+    <key id="602" parent="527" name="account_coins_name_unique">
       <UnderlyingIndexName>account_coins_name_unique</UnderlyingIndexName>
     </key>
-    <column id="611" parent="528" name="uuid">
+    <column id="603" parent="528" name="uuid">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="612" parent="528" name="playername">
+    <column id="604" parent="528" name="playername">
       <DasType>varchar(16)|0s</DasType>
       <DefaultExpression>&apos;none&apos;</DefaultExpression>
       <Position>2</Position>
     </column>
-    <column id="613" parent="528" name="experience">
+    <column id="605" parent="528" name="experience">
       <DasType>bigint(20)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>3</Position>
     </column>
-    <column id="614" parent="528" name="lastlevel">
+    <column id="606" parent="528" name="lastlevel">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>1</DefaultExpression>
       <Position>4</Position>
     </column>
-    <column id="615" parent="528" name="claimedrewards">
+    <column id="607" parent="528" name="claimedrewards">
       <DasType>varchar(5000)|0s</DasType>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <Position>5</Position>
     </column>
-    <column id="616" parent="528" name="auto_claim">
+    <column id="608" parent="528" name="auto_claim">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>6</Position>
     </column>
-    <index id="617" parent="528" name="PRIMARY">
+    <index id="609" parent="528" name="PRIMARY">
       <ColNames>uuid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="618" parent="528" name="PRIMARY">
+    <key id="610" parent="528" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="619" parent="529" name="uuid">
+    <column id="611" parent="529" name="uuid">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="620" parent="529" name="playername">
+    <column id="612" parent="529" name="playername">
       <DasType>varchar(36)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="621" parent="529" name="youtube">
+    <column id="613" parent="529" name="youtube">
       <DasType>varchar(150)|0s</DasType>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <Position>3</Position>
     </column>
-    <column id="622" parent="529" name="twitter">
+    <column id="614" parent="529" name="twitter">
       <DasType>varchar(150)|0s</DasType>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <Position>4</Position>
     </column>
-    <column id="623" parent="529" name="twitch">
+    <column id="615" parent="529" name="twitch">
       <DasType>varchar(150)|0s</DasType>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <Position>5</Position>
     </column>
-    <column id="624" parent="529" name="discord">
+    <column id="616" parent="529" name="discord">
       <DasType>varchar(150)|0s</DasType>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <Position>6</Position>
     </column>
-    <column id="625" parent="529" name="vk">
+    <column id="617" parent="529" name="vk">
       <DasType>varchar(150)|0s</DasType>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <Position>7</Position>
     </column>
-    <column id="626" parent="529" name="tiktok">
+    <column id="618" parent="529" name="tiktok">
       <DasType>varchar(150)|0s</DasType>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <Position>8</Position>
     </column>
-    <column id="627" parent="529" name="facebook">
+    <column id="619" parent="529" name="facebook">
       <DasType>varchar(150)|0s</DasType>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <Position>9</Position>
     </column>
-    <column id="628" parent="529" name="instagram">
+    <column id="620" parent="529" name="instagram">
       <DasType>varchar(150)|0s</DasType>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <Position>10</Position>
     </column>
-    <index id="629" parent="529" name="PRIMARY">
+    <index id="621" parent="529" name="PRIMARY">
       <ColNames>uuid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="630" parent="529" name="PRIMARY">
+    <key id="622" parent="529" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="631" parent="530" name="id">
+    <column id="623" parent="530" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="632" parent="530" name="value">
+    <column id="624" parent="530" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="633" parent="530" name="hourly_delta">
+    <column id="625" parent="530" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="634" parent="530" name="hourly_lasttotal">
+    <column id="626" parent="530" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="635" parent="530" name="hourly_timestamp">
+    <column id="627" parent="530" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="636" parent="530" name="daily_delta">
+    <column id="628" parent="530" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="637" parent="530" name="daily_lasttotal">
+    <column id="629" parent="530" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="638" parent="530" name="daily_timestamp">
+    <column id="630" parent="530" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="639" parent="530" name="weekly_delta">
+    <column id="631" parent="530" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="640" parent="530" name="weekly_lasttotal">
+    <column id="632" parent="530" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="641" parent="530" name="weekly_timestamp">
+    <column id="633" parent="530" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="642" parent="530" name="monthly_delta">
+    <column id="634" parent="530" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="643" parent="530" name="monthly_lasttotal">
+    <column id="635" parent="530" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="644" parent="530" name="monthly_timestamp">
+    <column id="636" parent="530" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="645" parent="530" name="namecache">
+    <column id="637" parent="530" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="646" parent="530" name="prefixcache">
+    <column id="638" parent="530" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="647" parent="530" name="suffixcache">
+    <column id="639" parent="530" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="648" parent="530" name="PRIMARY">
+    <index id="640" parent="530" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="649" parent="530" name="PRIMARY">
+    <key id="641" parent="530" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="650" parent="531" name="id">
+    <column id="642" parent="531" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="651" parent="531" name="value">
+    <column id="643" parent="531" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="652" parent="531" name="hourly_delta">
+    <column id="644" parent="531" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="653" parent="531" name="hourly_lasttotal">
+    <column id="645" parent="531" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="654" parent="531" name="hourly_timestamp">
+    <column id="646" parent="531" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="655" parent="531" name="daily_delta">
+    <column id="647" parent="531" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="656" parent="531" name="daily_lasttotal">
+    <column id="648" parent="531" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="657" parent="531" name="daily_timestamp">
+    <column id="649" parent="531" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="658" parent="531" name="weekly_delta">
+    <column id="650" parent="531" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="659" parent="531" name="weekly_lasttotal">
+    <column id="651" parent="531" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="660" parent="531" name="weekly_timestamp">
+    <column id="652" parent="531" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="661" parent="531" name="monthly_delta">
+    <column id="653" parent="531" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="662" parent="531" name="monthly_lasttotal">
+    <column id="654" parent="531" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="663" parent="531" name="monthly_timestamp">
+    <column id="655" parent="531" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="664" parent="531" name="namecache">
+    <column id="656" parent="531" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="665" parent="531" name="prefixcache">
+    <column id="657" parent="531" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="666" parent="531" name="suffixcache">
+    <column id="658" parent="531" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="667" parent="531" name="PRIMARY">
+    <index id="659" parent="531" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="668" parent="531" name="PRIMARY">
+    <key id="660" parent="531" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="669" parent="532" name="id">
+    <column id="661" parent="532" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="670" parent="532" name="value">
+    <column id="662" parent="532" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="671" parent="532" name="hourly_delta">
+    <column id="663" parent="532" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="672" parent="532" name="hourly_lasttotal">
+    <column id="664" parent="532" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="673" parent="532" name="hourly_timestamp">
+    <column id="665" parent="532" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="674" parent="532" name="daily_delta">
+    <column id="666" parent="532" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="675" parent="532" name="daily_lasttotal">
+    <column id="667" parent="532" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="676" parent="532" name="daily_timestamp">
+    <column id="668" parent="532" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="677" parent="532" name="weekly_delta">
+    <column id="669" parent="532" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="678" parent="532" name="weekly_lasttotal">
+    <column id="670" parent="532" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="679" parent="532" name="weekly_timestamp">
+    <column id="671" parent="532" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="680" parent="532" name="monthly_delta">
+    <column id="672" parent="532" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="681" parent="532" name="monthly_lasttotal">
+    <column id="673" parent="532" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="682" parent="532" name="monthly_timestamp">
+    <column id="674" parent="532" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="683" parent="532" name="namecache">
+    <column id="675" parent="532" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="684" parent="532" name="prefixcache">
+    <column id="676" parent="532" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="685" parent="532" name="suffixcache">
+    <column id="677" parent="532" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="686" parent="532" name="PRIMARY">
+    <index id="678" parent="532" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="687" parent="532" name="PRIMARY">
+    <key id="679" parent="532" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="688" parent="533" name="id">
+    <column id="680" parent="533" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="689" parent="533" name="value">
+    <column id="681" parent="533" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="690" parent="533" name="hourly_delta">
+    <column id="682" parent="533" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="691" parent="533" name="hourly_lasttotal">
+    <column id="683" parent="533" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="692" parent="533" name="hourly_timestamp">
+    <column id="684" parent="533" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="693" parent="533" name="daily_delta">
+    <column id="685" parent="533" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="694" parent="533" name="daily_lasttotal">
+    <column id="686" parent="533" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="695" parent="533" name="daily_timestamp">
+    <column id="687" parent="533" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="696" parent="533" name="weekly_delta">
+    <column id="688" parent="533" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="697" parent="533" name="weekly_lasttotal">
+    <column id="689" parent="533" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="698" parent="533" name="weekly_timestamp">
+    <column id="690" parent="533" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="699" parent="533" name="monthly_delta">
+    <column id="691" parent="533" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="700" parent="533" name="monthly_lasttotal">
+    <column id="692" parent="533" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="701" parent="533" name="monthly_timestamp">
+    <column id="693" parent="533" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="702" parent="533" name="namecache">
+    <column id="694" parent="533" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="703" parent="533" name="prefixcache">
+    <column id="695" parent="533" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="704" parent="533" name="suffixcache">
+    <column id="696" parent="533" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="705" parent="533" name="PRIMARY">
+    <index id="697" parent="533" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="706" parent="533" name="PRIMARY">
+    <key id="698" parent="533" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="707" parent="534" name="id">
+    <column id="699" parent="534" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="708" parent="534" name="value">
+    <column id="700" parent="534" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="709" parent="534" name="hourly_delta">
+    <column id="701" parent="534" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="710" parent="534" name="hourly_lasttotal">
+    <column id="702" parent="534" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="711" parent="534" name="hourly_timestamp">
+    <column id="703" parent="534" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="712" parent="534" name="daily_delta">
+    <column id="704" parent="534" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="713" parent="534" name="daily_lasttotal">
+    <column id="705" parent="534" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="714" parent="534" name="daily_timestamp">
+    <column id="706" parent="534" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="715" parent="534" name="weekly_delta">
+    <column id="707" parent="534" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="716" parent="534" name="weekly_lasttotal">
+    <column id="708" parent="534" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="717" parent="534" name="weekly_timestamp">
+    <column id="709" parent="534" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="718" parent="534" name="monthly_delta">
+    <column id="710" parent="534" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="719" parent="534" name="monthly_lasttotal">
+    <column id="711" parent="534" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="720" parent="534" name="monthly_timestamp">
+    <column id="712" parent="534" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="721" parent="534" name="namecache">
+    <column id="713" parent="534" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="722" parent="534" name="prefixcache">
+    <column id="714" parent="534" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="723" parent="534" name="suffixcache">
+    <column id="715" parent="534" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="724" parent="534" name="PRIMARY">
+    <index id="716" parent="534" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="725" parent="534" name="PRIMARY">
+    <key id="717" parent="534" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="726" parent="535" name="id">
+    <column id="718" parent="535" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="727" parent="535" name="value">
+    <column id="719" parent="535" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="728" parent="535" name="hourly_delta">
+    <column id="720" parent="535" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="729" parent="535" name="hourly_lasttotal">
+    <column id="721" parent="535" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="730" parent="535" name="hourly_timestamp">
+    <column id="722" parent="535" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="731" parent="535" name="daily_delta">
+    <column id="723" parent="535" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="732" parent="535" name="daily_lasttotal">
+    <column id="724" parent="535" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="733" parent="535" name="daily_timestamp">
+    <column id="725" parent="535" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="734" parent="535" name="weekly_delta">
+    <column id="726" parent="535" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="735" parent="535" name="weekly_lasttotal">
+    <column id="727" parent="535" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="736" parent="535" name="weekly_timestamp">
+    <column id="728" parent="535" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="737" parent="535" name="monthly_delta">
+    <column id="729" parent="535" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="738" parent="535" name="monthly_lasttotal">
+    <column id="730" parent="535" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="739" parent="535" name="monthly_timestamp">
+    <column id="731" parent="535" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="740" parent="535" name="namecache">
+    <column id="732" parent="535" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="741" parent="535" name="prefixcache">
+    <column id="733" parent="535" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="742" parent="535" name="suffixcache">
+    <column id="734" parent="535" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="743" parent="535" name="PRIMARY">
+    <index id="735" parent="535" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="744" parent="535" name="PRIMARY">
+    <key id="736" parent="535" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="745" parent="536" name="id">
+    <column id="737" parent="536" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="746" parent="536" name="value">
+    <column id="738" parent="536" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="747" parent="536" name="hourly_delta">
+    <column id="739" parent="536" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="748" parent="536" name="hourly_lasttotal">
+    <column id="740" parent="536" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="749" parent="536" name="hourly_timestamp">
+    <column id="741" parent="536" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="750" parent="536" name="daily_delta">
+    <column id="742" parent="536" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="751" parent="536" name="daily_lasttotal">
+    <column id="743" parent="536" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="752" parent="536" name="daily_timestamp">
+    <column id="744" parent="536" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="753" parent="536" name="weekly_delta">
+    <column id="745" parent="536" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="754" parent="536" name="weekly_lasttotal">
+    <column id="746" parent="536" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="755" parent="536" name="weekly_timestamp">
+    <column id="747" parent="536" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="756" parent="536" name="monthly_delta">
+    <column id="748" parent="536" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="757" parent="536" name="monthly_lasttotal">
+    <column id="749" parent="536" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="758" parent="536" name="monthly_timestamp">
+    <column id="750" parent="536" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="759" parent="536" name="namecache">
+    <column id="751" parent="536" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="760" parent="536" name="prefixcache">
+    <column id="752" parent="536" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="761" parent="536" name="suffixcache">
+    <column id="753" parent="536" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="762" parent="536" name="PRIMARY">
+    <index id="754" parent="536" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="763" parent="536" name="PRIMARY">
+    <key id="755" parent="536" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="764" parent="537" name="id">
+    <column id="756" parent="537" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="765" parent="537" name="value">
+    <column id="757" parent="537" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="766" parent="537" name="hourly_delta">
+    <column id="758" parent="537" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="767" parent="537" name="hourly_lasttotal">
+    <column id="759" parent="537" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="768" parent="537" name="hourly_timestamp">
+    <column id="760" parent="537" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="769" parent="537" name="daily_delta">
+    <column id="761" parent="537" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="770" parent="537" name="daily_lasttotal">
+    <column id="762" parent="537" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="771" parent="537" name="daily_timestamp">
+    <column id="763" parent="537" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="772" parent="537" name="weekly_delta">
+    <column id="764" parent="537" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="773" parent="537" name="weekly_lasttotal">
+    <column id="765" parent="537" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="774" parent="537" name="weekly_timestamp">
+    <column id="766" parent="537" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="775" parent="537" name="monthly_delta">
+    <column id="767" parent="537" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="776" parent="537" name="monthly_lasttotal">
+    <column id="768" parent="537" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="777" parent="537" name="monthly_timestamp">
+    <column id="769" parent="537" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="778" parent="537" name="namecache">
+    <column id="770" parent="537" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="779" parent="537" name="prefixcache">
+    <column id="771" parent="537" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="780" parent="537" name="suffixcache">
+    <column id="772" parent="537" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="781" parent="537" name="PRIMARY">
+    <index id="773" parent="537" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="782" parent="537" name="PRIMARY">
+    <key id="774" parent="537" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="783" parent="538" name="id">
+    <column id="775" parent="538" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="784" parent="538" name="value">
+    <column id="776" parent="538" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="785" parent="538" name="hourly_delta">
+    <column id="777" parent="538" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="786" parent="538" name="hourly_lasttotal">
+    <column id="778" parent="538" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="787" parent="538" name="hourly_timestamp">
+    <column id="779" parent="538" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="788" parent="538" name="daily_delta">
+    <column id="780" parent="538" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="789" parent="538" name="daily_lasttotal">
+    <column id="781" parent="538" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="790" parent="538" name="daily_timestamp">
+    <column id="782" parent="538" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="791" parent="538" name="weekly_delta">
+    <column id="783" parent="538" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="792" parent="538" name="weekly_lasttotal">
+    <column id="784" parent="538" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="793" parent="538" name="weekly_timestamp">
+    <column id="785" parent="538" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="794" parent="538" name="monthly_delta">
+    <column id="786" parent="538" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="795" parent="538" name="monthly_lasttotal">
+    <column id="787" parent="538" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="796" parent="538" name="monthly_timestamp">
+    <column id="788" parent="538" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="797" parent="538" name="namecache">
+    <column id="789" parent="538" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="798" parent="538" name="prefixcache">
+    <column id="790" parent="538" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="799" parent="538" name="suffixcache">
+    <column id="791" parent="538" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="800" parent="538" name="PRIMARY">
+    <index id="792" parent="538" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="801" parent="538" name="PRIMARY">
+    <key id="793" parent="538" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="802" parent="539" name="id">
+    <column id="794" parent="539" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="803" parent="539" name="value">
+    <column id="795" parent="539" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="804" parent="539" name="hourly_delta">
+    <column id="796" parent="539" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="805" parent="539" name="hourly_lasttotal">
+    <column id="797" parent="539" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="806" parent="539" name="hourly_timestamp">
+    <column id="798" parent="539" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="807" parent="539" name="daily_delta">
+    <column id="799" parent="539" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="808" parent="539" name="daily_lasttotal">
+    <column id="800" parent="539" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="809" parent="539" name="daily_timestamp">
+    <column id="801" parent="539" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="810" parent="539" name="weekly_delta">
+    <column id="802" parent="539" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="811" parent="539" name="weekly_lasttotal">
+    <column id="803" parent="539" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="812" parent="539" name="weekly_timestamp">
+    <column id="804" parent="539" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="813" parent="539" name="monthly_delta">
+    <column id="805" parent="539" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="814" parent="539" name="monthly_lasttotal">
+    <column id="806" parent="539" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="815" parent="539" name="monthly_timestamp">
+    <column id="807" parent="539" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="816" parent="539" name="namecache">
+    <column id="808" parent="539" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="817" parent="539" name="prefixcache">
+    <column id="809" parent="539" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="818" parent="539" name="suffixcache">
+    <column id="810" parent="539" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="819" parent="539" name="PRIMARY">
+    <index id="811" parent="539" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="820" parent="539" name="PRIMARY">
+    <key id="812" parent="539" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="821" parent="540" name="id">
+    <column id="813" parent="540" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="822" parent="540" name="value">
+    <column id="814" parent="540" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="823" parent="540" name="hourly_delta">
+    <column id="815" parent="540" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="824" parent="540" name="hourly_lasttotal">
+    <column id="816" parent="540" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="825" parent="540" name="hourly_timestamp">
+    <column id="817" parent="540" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="826" parent="540" name="daily_delta">
+    <column id="818" parent="540" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="827" parent="540" name="daily_lasttotal">
+    <column id="819" parent="540" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="828" parent="540" name="daily_timestamp">
+    <column id="820" parent="540" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="829" parent="540" name="weekly_delta">
+    <column id="821" parent="540" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="830" parent="540" name="weekly_lasttotal">
+    <column id="822" parent="540" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="831" parent="540" name="weekly_timestamp">
+    <column id="823" parent="540" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="832" parent="540" name="monthly_delta">
+    <column id="824" parent="540" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="833" parent="540" name="monthly_lasttotal">
+    <column id="825" parent="540" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="834" parent="540" name="monthly_timestamp">
+    <column id="826" parent="540" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="835" parent="540" name="namecache">
+    <column id="827" parent="540" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="836" parent="540" name="prefixcache">
+    <column id="828" parent="540" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="837" parent="540" name="suffixcache">
+    <column id="829" parent="540" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="838" parent="540" name="PRIMARY">
+    <index id="830" parent="540" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="839" parent="540" name="PRIMARY">
+    <key id="831" parent="540" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="840" parent="541" name="id">
+    <column id="832" parent="541" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="841" parent="541" name="value">
+    <column id="833" parent="541" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="842" parent="541" name="hourly_delta">
+    <column id="834" parent="541" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="843" parent="541" name="hourly_lasttotal">
+    <column id="835" parent="541" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="844" parent="541" name="hourly_timestamp">
+    <column id="836" parent="541" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="845" parent="541" name="daily_delta">
+    <column id="837" parent="541" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="846" parent="541" name="daily_lasttotal">
+    <column id="838" parent="541" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="847" parent="541" name="daily_timestamp">
+    <column id="839" parent="541" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="848" parent="541" name="weekly_delta">
+    <column id="840" parent="541" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="849" parent="541" name="weekly_lasttotal">
+    <column id="841" parent="541" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="850" parent="541" name="weekly_timestamp">
+    <column id="842" parent="541" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="851" parent="541" name="monthly_delta">
+    <column id="843" parent="541" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="852" parent="541" name="monthly_lasttotal">
+    <column id="844" parent="541" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="853" parent="541" name="monthly_timestamp">
+    <column id="845" parent="541" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="854" parent="541" name="namecache">
+    <column id="846" parent="541" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="855" parent="541" name="prefixcache">
+    <column id="847" parent="541" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="856" parent="541" name="suffixcache">
+    <column id="848" parent="541" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="857" parent="541" name="PRIMARY">
+    <index id="849" parent="541" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="858" parent="541" name="PRIMARY">
+    <key id="850" parent="541" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="859" parent="542" name="id">
+    <column id="851" parent="542" name="id">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="860" parent="542" name="value">
+    <column id="852" parent="542" name="value">
       <DasType>bigint(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="861" parent="542" name="hourly_delta">
+    <column id="853" parent="542" name="hourly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="862" parent="542" name="hourly_lasttotal">
+    <column id="854" parent="542" name="hourly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="863" parent="542" name="hourly_timestamp">
+    <column id="855" parent="542" name="hourly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="864" parent="542" name="daily_delta">
+    <column id="856" parent="542" name="daily_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="865" parent="542" name="daily_lasttotal">
+    <column id="857" parent="542" name="daily_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="866" parent="542" name="daily_timestamp">
+    <column id="858" parent="542" name="daily_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="867" parent="542" name="weekly_delta">
+    <column id="859" parent="542" name="weekly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="868" parent="542" name="weekly_lasttotal">
+    <column id="860" parent="542" name="weekly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="869" parent="542" name="weekly_timestamp">
+    <column id="861" parent="542" name="weekly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="870" parent="542" name="monthly_delta">
+    <column id="862" parent="542" name="monthly_delta">
       <DasType>bigint(20)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="871" parent="542" name="monthly_lasttotal">
+    <column id="863" parent="542" name="monthly_lasttotal">
       <DasType>bigint(20)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="872" parent="542" name="monthly_timestamp">
+    <column id="864" parent="542" name="monthly_timestamp">
       <DasType>bigint(20)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="873" parent="542" name="namecache">
+    <column id="865" parent="542" name="namecache">
       <DasType>varchar(16)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="874" parent="542" name="prefixcache">
+    <column id="866" parent="542" name="prefixcache">
       <DasType>tinytext|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="875" parent="542" name="suffixcache">
+    <column id="867" parent="542" name="suffixcache">
       <DasType>tinytext|0s</DasType>
       <Position>17</Position>
     </column>
-    <index id="876" parent="542" name="PRIMARY">
+    <index id="868" parent="542" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="877" parent="542" name="PRIMARY">
+    <key id="869" parent="542" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="878" parent="543" name="UUID">
+    <column id="870" parent="543" name="UUID">
       <DasType>varchar(80)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="879" parent="543" name="Selected">
+    <column id="871" parent="543" name="Selected">
       <DasType>varchar(80)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="880" parent="544" name="id">
+    <column id="872" parent="544" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="881" parent="544" name="clan_id">
+    <column id="873" parent="544" name="clan_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="882" parent="544" name="executor">
+    <column id="874" parent="544" name="executor">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="883" parent="544" name="action">
+    <column id="875" parent="544" name="action">
       <DasType>tinyint(4)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="884" parent="544" name="amount">
+    <column id="876" parent="544" name="amount">
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="885" parent="544" name="executed_at">
+    <column id="877" parent="544" name="executed_at">
       <DasType>timestamp|0s</DasType>
       <DefaultExpression>current_timestamp()</DefaultExpression>
       <NotNull>1</NotNull>
       <OnUpdate>current_timestamp()</OnUpdate>
       <Position>6</Position>
     </column>
-    <index id="886" parent="544" name="PRIMARY">
+    <index id="878" parent="544" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="887" parent="544" name="PRIMARY">
+    <key id="879" parent="544" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="888" parent="545" name="UUID">
+    <column id="880" parent="545" name="UUID">
       <DasType>varchar(80)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="889" parent="545" name="Selected">
+    <column id="881" parent="545" name="Selected">
       <DasType>varchar(80)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="890" parent="546" name="UUID">
+    <column id="882" parent="546" name="UUID">
       <DasType>varchar(80)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="891" parent="546" name="Selected">
+    <column id="883" parent="546" name="Selected">
       <DasType>varchar(80)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="892" parent="547" name="id">
-      <AutoIncrement>2</AutoIncrement>
+    <column id="884" parent="547" name="id">
+      <AutoIncrement>3</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="893" parent="547" name="name">
+    <column id="885" parent="547" name="name">
       <DasType>varchar(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="894" parent="547" name="owner">
+    <column id="886" parent="547" name="owner">
       <DasType>varchar(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="895" parent="547" name="max_members">
+    <column id="887" parent="547" name="max_members">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="896" parent="547" name="tag">
+    <column id="888" parent="547" name="tag">
       <DasType>varchar(32)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="897" parent="547" name="date_creation">
+    <column id="889" parent="547" name="date_creation">
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <index id="898" parent="547" name="PRIMARY">
+    <index id="890" parent="547" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="899" parent="547" name="clan_clans_name_unique">
+    <index id="891" parent="547" name="clan_clans_name_unique">
       <ColNames>name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="900" parent="547" name="clan_clans_tag_unique">
+    <index id="892" parent="547" name="clan_clans_tag_unique">
       <ColNames>tag</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="901" parent="547" name="PRIMARY">
+    <key id="893" parent="547" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="902" parent="547" name="clan_clans_name_unique">
+    <key id="894" parent="547" name="clan_clans_name_unique">
       <UnderlyingIndexName>clan_clans_name_unique</UnderlyingIndexName>
     </key>
-    <key id="903" parent="547" name="clan_clans_tag_unique">
+    <key id="895" parent="547" name="clan_clans_tag_unique">
       <UnderlyingIndexName>clan_clans_tag_unique</UnderlyingIndexName>
     </key>
-    <column id="904" parent="548" name="username">
+    <column id="896" parent="548" name="username">
       <DasType>varchar(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="905" parent="548" name="clan_name">
+    <column id="897" parent="548" name="clan_name">
       <DasType>varchar(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="906" parent="548" name="role">
+    <column id="898" parent="548" name="role">
       <DasType>varchar(32)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="907" parent="548" name="fk_clan_users_clan_name__name">
+    <foreign-key id="899" parent="548" name="fk_clan_users_clan_name__name">
       <ColNames>clan_name</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>name</RefColNames>
       <RefTableName>clan_clans</RefTableName>
     </foreign-key>
-    <index id="908" parent="548" name="PRIMARY">
+    <index id="900" parent="548" name="PRIMARY">
       <ColNames>username</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="909" parent="548" name="clan_users_username_unique">
+    <index id="901" parent="548" name="clan_users_username_unique">
       <ColNames>username</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="910" parent="548" name="fk_clan_users_clan_name__name">
+    <index id="902" parent="548" name="fk_clan_users_clan_name__name">
       <ColNames>clan_name</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="911" parent="548" name="PRIMARY">
+    <key id="903" parent="548" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="912" parent="548" name="clan_users_username_unique">
+    <key id="904" parent="548" name="clan_users_username_unique">
       <UnderlyingIndexName>clan_users_username_unique</UnderlyingIndexName>
     </key>
-    <column id="913" parent="549" name="UUID">
+    <column id="905" parent="549" name="name">
+      <DasType>varchar(32)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="906" parent="549" name="friend_name">
+      <DasType>text|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <index id="907" parent="549" name="cooperation_friend_name_unique">
+      <ColNames>name</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="908" parent="549" name="cooperation_friend_name_unique">
+      <UnderlyingIndexName>cooperation_friend_name_unique</UnderlyingIndexName>
+    </key>
+    <column id="909" parent="550" name="UUID">
       <DasType>varchar(80)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="914" parent="549" name="Selected">
+    <column id="910" parent="550" name="Selected">
       <DasType>varchar(80)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="915" parent="550" name="player_id">
+    <column id="911" parent="551" name="player_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="916" parent="550" name="stat_value">
+    <column id="912" parent="551" name="stat_value">
       <DasType>double(22)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="917" parent="550" name="stat_id">
+    <column id="913" parent="551" name="stat_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <foreign-key id="918" parent="550" name="default_lhrv_alltime_ibfk_1">
+    <foreign-key id="914" parent="551" name="default_lhrv_alltime_ibfk_1">
       <ColNames>player_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>player_id</RefColNames>
       <RefTableName>lhrv_players</RefTableName>
     </foreign-key>
-    <foreign-key id="919" parent="550" name="default_lhrv_alltime_ibfk_2">
+    <foreign-key id="915" parent="551" name="default_lhrv_alltime_ibfk_2">
       <ColNames>stat_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>stat_id</RefColNames>
       <RefTableName>lhrv_statistics</RefTableName>
     </foreign-key>
-    <index id="920" parent="550" name="PRIMARY">
+    <index id="916" parent="551" name="PRIMARY">
       <ColNames>player_id
 stat_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="921" parent="550" name="stat_id">
+    <index id="917" parent="551" name="stat_id">
       <ColNames>stat_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="922" parent="550" name="PRIMARY">
+    <key id="918" parent="551" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="923" parent="551" name="player_id">
+    <column id="919" parent="552" name="player_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="924" parent="551" name="stat_value">
+    <column id="920" parent="552" name="stat_value">
       <DasType>double(22)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="925" parent="551" name="stat_id">
+    <column id="921" parent="552" name="stat_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="926" parent="551" name="day">
+    <column id="922" parent="552" name="day">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="927" parent="551" name="year">
+    <column id="923" parent="552" name="year">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <foreign-key id="928" parent="551" name="default_lhrv_daily_ibfk_1">
+    <foreign-key id="924" parent="552" name="default_lhrv_daily_ibfk_1">
       <ColNames>player_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>player_id</RefColNames>
       <RefTableName>lhrv_players</RefTableName>
     </foreign-key>
-    <foreign-key id="929" parent="551" name="default_lhrv_daily_ibfk_2">
+    <foreign-key id="925" parent="552" name="default_lhrv_daily_ibfk_2">
       <ColNames>stat_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>stat_id</RefColNames>
       <RefTableName>lhrv_statistics</RefTableName>
     </foreign-key>
-    <index id="930" parent="551" name="PRIMARY">
+    <index id="926" parent="552" name="PRIMARY">
       <ColNames>player_id
 stat_id
 day
@@ -2997,53 +2982,53 @@ year</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="931" parent="551" name="stat_id">
+    <index id="927" parent="552" name="stat_id">
       <ColNames>stat_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="932" parent="551" name="PRIMARY">
+    <key id="928" parent="552" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="933" parent="552" name="player_id">
+    <column id="929" parent="553" name="player_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="934" parent="552" name="stat_value">
+    <column id="930" parent="553" name="stat_value">
       <DasType>double(22)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="935" parent="552" name="stat_id">
+    <column id="931" parent="553" name="stat_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="936" parent="552" name="month">
+    <column id="932" parent="553" name="month">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="937" parent="552" name="year">
+    <column id="933" parent="553" name="year">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <foreign-key id="938" parent="552" name="default_lhrv_monthly_ibfk_1">
+    <foreign-key id="934" parent="553" name="default_lhrv_monthly_ibfk_1">
       <ColNames>player_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>player_id</RefColNames>
       <RefTableName>lhrv_players</RefTableName>
     </foreign-key>
-    <foreign-key id="939" parent="552" name="default_lhrv_monthly_ibfk_2">
+    <foreign-key id="935" parent="553" name="default_lhrv_monthly_ibfk_2">
       <ColNames>stat_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>stat_id</RefColNames>
       <RefTableName>lhrv_statistics</RefTableName>
     </foreign-key>
-    <index id="940" parent="552" name="PRIMARY">
+    <index id="936" parent="553" name="PRIMARY">
       <ColNames>player_id
 stat_id
 month
@@ -3051,53 +3036,53 @@ year</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="941" parent="552" name="stat_id">
+    <index id="937" parent="553" name="stat_id">
       <ColNames>stat_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="942" parent="552" name="PRIMARY">
+    <key id="938" parent="553" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="943" parent="553" name="player_id">
+    <column id="939" parent="554" name="player_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="944" parent="553" name="stat_value">
+    <column id="940" parent="554" name="stat_value">
       <DasType>double(22)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="945" parent="553" name="stat_id">
+    <column id="941" parent="554" name="stat_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="946" parent="553" name="week">
+    <column id="942" parent="554" name="week">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="947" parent="553" name="year">
+    <column id="943" parent="554" name="year">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <foreign-key id="948" parent="553" name="default_lhrv_weekly_ibfk_1">
+    <foreign-key id="944" parent="554" name="default_lhrv_weekly_ibfk_1">
       <ColNames>player_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>player_id</RefColNames>
       <RefTableName>lhrv_players</RefTableName>
     </foreign-key>
-    <foreign-key id="949" parent="553" name="default_lhrv_weekly_ibfk_2">
+    <foreign-key id="945" parent="554" name="default_lhrv_weekly_ibfk_2">
       <ColNames>stat_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>stat_id</RefColNames>
       <RefTableName>lhrv_statistics</RefTableName>
     </foreign-key>
-    <index id="950" parent="553" name="PRIMARY">
+    <index id="946" parent="554" name="PRIMARY">
       <ColNames>player_id
 stat_id
 week
@@ -3105,1582 +3090,1383 @@ year</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="951" parent="553" name="stat_id">
+    <index id="947" parent="554" name="stat_id">
       <ColNames>stat_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="952" parent="553" name="PRIMARY">
+    <key id="948" parent="554" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="953" parent="554" name="player_id">
+    <column id="949" parent="555" name="player_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="954" parent="554" name="stat_value">
+    <column id="950" parent="555" name="stat_value">
       <DasType>double(22)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="955" parent="554" name="stat_id">
+    <column id="951" parent="555" name="stat_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="956" parent="554" name="year">
+    <column id="952" parent="555" name="year">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <foreign-key id="957" parent="554" name="default_lhrv_yearly_ibfk_1">
+    <foreign-key id="953" parent="555" name="default_lhrv_yearly_ibfk_1">
       <ColNames>player_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>player_id</RefColNames>
       <RefTableName>lhrv_players</RefTableName>
     </foreign-key>
-    <foreign-key id="958" parent="554" name="default_lhrv_yearly_ibfk_2">
+    <foreign-key id="954" parent="555" name="default_lhrv_yearly_ibfk_2">
       <ColNames>stat_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>stat_id</RefColNames>
       <RefTableName>lhrv_statistics</RefTableName>
     </foreign-key>
-    <index id="959" parent="554" name="PRIMARY">
+    <index id="955" parent="555" name="PRIMARY">
       <ColNames>player_id
 stat_id
 year</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="960" parent="554" name="stat_id">
+    <index id="956" parent="555" name="stat_id">
       <ColNames>stat_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="961" parent="554" name="PRIMARY">
+    <key id="957" parent="555" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="962" parent="555" name="Name">
+    <column id="958" parent="556" name="Name">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="963" parent="555" name="Price">
+    <column id="959" parent="556" name="Price">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="964" parent="555" name="Discount">
+    <column id="960" parent="556" name="Discount">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="965" parent="556" name="id">
+    <column id="961" parent="557" name="id">
       <AutoIncrement>146</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="966" parent="556" name="time">
+    <column id="962" parent="557" name="time">
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="967" parent="556" name="actor_uuid">
+    <column id="963" parent="557" name="actor_uuid">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="968" parent="556" name="actor_name">
+    <column id="964" parent="557" name="actor_name">
       <DasType>varchar(100)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="969" parent="556" name="type">
+    <column id="965" parent="557" name="type">
       <DasType>char(1)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="970" parent="556" name="acted_uuid">
+    <column id="966" parent="557" name="acted_uuid">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="971" parent="556" name="acted_name">
+    <column id="967" parent="557" name="acted_name">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="972" parent="556" name="action">
+    <column id="968" parent="557" name="action">
       <DasType>varchar(300)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <index id="973" parent="556" name="PRIMARY">
+    <index id="969" parent="557" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="974" parent="556" name="PRIMARY">
+    <key id="970" parent="557" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="975" parent="557" name="id">
+    <column id="971" parent="558" name="id">
       <AutoIncrement>74</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="976" parent="557" name="name">
+    <column id="972" parent="558" name="name">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="977" parent="557" name="permission">
+    <column id="973" parent="558" name="permission">
       <DasType>varchar(200)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="978" parent="557" name="value">
+    <column id="974" parent="558" name="value">
       <DasType>tinyint(1)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="979" parent="557" name="server">
+    <column id="975" parent="558" name="server">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="980" parent="557" name="world">
+    <column id="976" parent="558" name="world">
       <DasType>varchar(64)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="981" parent="557" name="expiry">
+    <column id="977" parent="558" name="expiry">
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="982" parent="557" name="contexts">
+    <column id="978" parent="558" name="contexts">
       <DasType>varchar(200)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <index id="983" parent="557" name="PRIMARY">
+    <index id="979" parent="558" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="984" parent="557" name="global_group_permissions_name">
+    <index id="980" parent="558" name="global_group_permissions_name">
       <ColNames>name</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="985" parent="557" name="PRIMARY">
+    <key id="981" parent="558" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="986" parent="558" name="name">
+    <column id="982" parent="559" name="name">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <index id="987" parent="558" name="PRIMARY">
+    <index id="983" parent="559" name="PRIMARY">
       <ColNames>name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="988" parent="558" name="PRIMARY">
+    <key id="984" parent="559" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="989" parent="559" name="uuid">
+    <column id="985" parent="560" name="uuid">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="990" parent="559" name="username">
+    <column id="986" parent="560" name="username">
       <DasType>varchar(16)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="991" parent="559" name="primary_group">
+    <column id="987" parent="560" name="primary_group">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="992" parent="559" name="PRIMARY">
+    <index id="988" parent="560" name="PRIMARY">
       <ColNames>uuid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="993" parent="559" name="global_players_username">
+    <index id="989" parent="560" name="global_players_username">
       <ColNames>username</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="994" parent="559" name="PRIMARY">
+    <key id="990" parent="560" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="995" parent="560" name="name">
+    <column id="991" parent="561" name="name">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="996" parent="560" name="groups">
+    <column id="992" parent="561" name="groups">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="997" parent="560" name="PRIMARY">
+    <index id="993" parent="561" name="PRIMARY">
       <ColNames>name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="998" parent="560" name="PRIMARY">
+    <key id="994" parent="561" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="999" parent="561" name="id">
+    <column id="995" parent="562" name="id">
       <AutoIncrement>51</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1000" parent="561" name="uuid">
+    <column id="996" parent="562" name="uuid">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="1001" parent="561" name="permission">
+    <column id="997" parent="562" name="permission">
       <DasType>varchar(200)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="1002" parent="561" name="value">
+    <column id="998" parent="562" name="value">
       <DasType>tinyint(1)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="1003" parent="561" name="server">
+    <column id="999" parent="562" name="server">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="1004" parent="561" name="world">
+    <column id="1000" parent="562" name="world">
       <DasType>varchar(64)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="1005" parent="561" name="expiry">
+    <column id="1001" parent="562" name="expiry">
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="1006" parent="561" name="contexts">
+    <column id="1002" parent="562" name="contexts">
       <DasType>varchar(200)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <index id="1007" parent="561" name="PRIMARY">
+    <index id="1003" parent="562" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="1008" parent="561" name="global_user_permissions_uuid">
+    <index id="1004" parent="562" name="global_user_permissions_uuid">
       <ColNames>uuid</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="1009" parent="561" name="PRIMARY">
+    <key id="1005" parent="562" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1010" parent="562" name="UUID">
+    <column id="1006" parent="563" name="UUID">
       <DasType>varchar(80)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="1011" parent="562" name="Selected">
+    <column id="1007" parent="563" name="Selected">
       <DasType>varchar(80)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="1012" parent="563" name="UUID">
+    <column id="1008" parent="564" name="UUID">
       <DasType>varchar(80)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="1013" parent="563" name="Selected">
+    <column id="1009" parent="564" name="Selected">
       <DasType>varchar(80)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="1014" parent="564" name="uuid">
+    <column id="1010" parent="565" name="uuid">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1015" parent="564" name="name">
+    <column id="1011" parent="565" name="name">
       <DasType>varchar(255)|0s</DasType>
       <DefaultExpression>&apos;&apos;</DefaultExpression>
       <Position>2</Position>
     </column>
-    <column id="1016" parent="564" name="lastLogin">
+    <column id="1012" parent="565" name="lastLogin">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="1017" parent="564" name="lastLogout">
+    <column id="1013" parent="565" name="lastLogout">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="1018" parent="564" name="PRIMARY">
+    <index id="1014" parent="565" name="PRIMARY">
       <ColNames>uuid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1019" parent="564" name="PRIMARY">
+    <key id="1015" parent="565" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1020" parent="565" name="id">
+    <column id="1016" parent="566" name="id">
       <AutoIncrement>2</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1021" parent="565" name="version">
+    <column id="1017" parent="566" name="version">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="1022" parent="565" name="description">
+    <column id="1018" parent="566" name="description">
       <DasType>varchar(25)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="1023" parent="565" name="script_name">
+    <column id="1019" parent="566" name="script_name">
       <DasType>varchar(25)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="1024" parent="565" name="install_date">
+    <column id="1020" parent="566" name="install_date">
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="1025" parent="565" name="PRIMARY">
+    <index id="1021" parent="566" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1026" parent="565" name="PRIMARY">
+    <key id="1022" parent="566" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1027" parent="566" name="player_id">
+    <column id="1023" parent="567" name="player_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1028" parent="566" name="stat_id">
+    <column id="1024" parent="567" name="stat_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="1029" parent="566" name="lhrv_excluded_ibfk_1">
+    <foreign-key id="1025" parent="567" name="lhrv_excluded_ibfk_1">
       <ColNames>player_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>player_id</RefColNames>
       <RefTableName>lhrv_players</RefTableName>
     </foreign-key>
-    <foreign-key id="1030" parent="566" name="lhrv_excluded_ibfk_2">
+    <foreign-key id="1026" parent="567" name="lhrv_excluded_ibfk_2">
       <ColNames>stat_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>stat_id</RefColNames>
       <RefTableName>lhrv_statistics</RefTableName>
     </foreign-key>
-    <index id="1031" parent="566" name="PRIMARY">
+    <index id="1027" parent="567" name="PRIMARY">
       <ColNames>player_id
 stat_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="1032" parent="566" name="stat_id">
+    <index id="1028" parent="567" name="stat_id">
       <ColNames>stat_id</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="1033" parent="566" name="PRIMARY">
+    <key id="1029" parent="567" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1034" parent="567" name="player_id">
+    <column id="1030" parent="568" name="player_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <foreign-key id="1035" parent="567" name="lhrv_excluded_all_ibfk_1">
+    <foreign-key id="1031" parent="568" name="lhrv_excluded_all_ibfk_1">
       <ColNames>player_id</ColNames>
       <OnDelete>cascade</OnDelete>
       <RefColNames>player_id</RefColNames>
       <RefTableName>lhrv_players</RefTableName>
     </foreign-key>
-    <index id="1036" parent="567" name="PRIMARY">
+    <index id="1032" parent="568" name="PRIMARY">
       <ColNames>player_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1037" parent="567" name="PRIMARY">
+    <key id="1033" parent="568" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1038" parent="568" name="player_id">
+    <column id="1034" parent="569" name="player_id">
       <AutoIncrement>12</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1039" parent="568" name="uuid">
+    <column id="1035" parent="569" name="uuid">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="1040" parent="568" name="name">
+    <column id="1036" parent="569" name="name">
       <DasType>varchar(16)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="1041" parent="568" name="last_join">
+    <column id="1037" parent="569" name="last_join">
       <DasType>datetime|0s</DasType>
       <Position>4</Position>
     </column>
-    <index id="1042" parent="568" name="PRIMARY">
+    <index id="1038" parent="569" name="PRIMARY">
       <ColNames>player_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="1043" parent="568" name="uuid">
+    <index id="1039" parent="569" name="uuid">
       <ColNames>uuid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="1044" parent="568" name="name">
+    <index id="1040" parent="569" name="name">
       <ColNames>name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1045" parent="568" name="PRIMARY">
+    <key id="1041" parent="569" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="1046" parent="568" name="uuid">
+    <key id="1042" parent="569" name="uuid">
       <UnderlyingIndexName>uuid</UnderlyingIndexName>
     </key>
-    <key id="1047" parent="568" name="name">
+    <key id="1043" parent="569" name="name">
       <UnderlyingIndexName>name</UnderlyingIndexName>
     </key>
-    <column id="1048" parent="569" name="stat_id">
+    <column id="1044" parent="570" name="stat_id">
       <AutoIncrement>6</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1049" parent="569" name="stat_name">
+    <column id="1045" parent="570" name="stat_name">
       <DasType>varchar(64)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="1050" parent="569" name="PRIMARY">
+    <index id="1046" parent="570" name="PRIMARY">
       <ColNames>stat_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="1051" parent="569" name="stat_name">
+    <index id="1047" parent="570" name="stat_name">
       <ColNames>stat_name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1052" parent="569" name="PRIMARY">
+    <key id="1048" parent="570" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="1053" parent="569" name="stat_name">
+    <key id="1049" parent="570" name="stat_name">
       <UnderlyingIndexName>stat_name</UnderlyingIndexName>
     </key>
-    <column id="1054" parent="570" name="name">
+    <column id="1050" parent="571" name="name">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1055" parent="570" name="groups">
+    <column id="1051" parent="571" name="groups">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="1056" parent="570" name="PRIMARY">
+    <index id="1052" parent="571" name="PRIMARY">
       <ColNames>name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1057" parent="570" name="PRIMARY">
+    <key id="1053" parent="571" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1058" parent="571" name="UUID">
+    <column id="1054" parent="572" name="UUID">
       <DasType>varchar(80)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="1059" parent="571" name="Coins">
+    <column id="1055" parent="572" name="Coins">
       <DasType>int(11)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="1060" parent="572" name="id">
+    <column id="1056" parent="573" name="id">
       <DasType>char(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1061" parent="572" name="name">
+    <column id="1057" parent="573" name="name">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="1062" parent="572" name="tag">
+    <column id="1058" parent="573" name="tag">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="1063" parent="572" name="leader">
+    <column id="1059" parent="573" name="leader">
       <DasType>char(36)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="1064" parent="572" name="description">
+    <column id="1060" parent="573" name="description">
       <DasType>varchar(255)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="1065" parent="572" name="motd">
+    <column id="1061" parent="573" name="motd">
       <DasType>varchar(500)|0s</DasType>
       <Position>6</Position>
     </column>
-    <column id="1066" parent="572" name="color">
+    <column id="1062" parent="573" name="color">
       <DasType>varchar(255)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="1067" parent="572" name="kills">
+    <column id="1063" parent="573" name="kills">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>8</Position>
     </column>
-    <column id="1068" parent="572" name="password">
+    <column id="1064" parent="573" name="password">
       <DasType>varchar(255)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="1069" parent="572" name="home">
+    <column id="1065" parent="573" name="home">
       <DasType>varchar(255)|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="1070" parent="572" name="protection">
+    <column id="1066" parent="573" name="protection">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>11</Position>
     </column>
-    <column id="1071" parent="572" name="experience">
+    <column id="1067" parent="573" name="experience">
       <DasType>double(22)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>12</Position>
     </column>
-    <column id="1072" parent="572" name="follow">
+    <column id="1068" parent="573" name="follow">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>1</DefaultExpression>
       <Position>13</Position>
     </column>
-    <index id="1073" parent="572" name="PRIMARY">
+    <index id="1069" parent="573" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1074" parent="572" name="PRIMARY">
+    <key id="1070" parent="573" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1075" parent="573" name="uuid">
+    <column id="1071" parent="574" name="uuid">
       <DasType>char(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1076" parent="573" name="party">
+    <column id="1072" parent="574" name="party">
       <DasType>char(36)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="1077" parent="573" name="rank">
+    <column id="1073" parent="574" name="rank">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>3</Position>
     </column>
-    <column id="1078" parent="573" name="nickname">
+    <column id="1074" parent="574" name="nickname">
       <DasType>varchar(100)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="1079" parent="573" name="chat">
+    <column id="1075" parent="574" name="chat">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>5</Position>
     </column>
-    <column id="1080" parent="573" name="spy">
+    <column id="1076" parent="574" name="spy">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>6</Position>
     </column>
-    <column id="1081" parent="573" name="mute">
+    <column id="1077" parent="574" name="mute">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>7</Position>
     </column>
-    <index id="1082" parent="573" name="PRIMARY">
+    <index id="1078" parent="574" name="PRIMARY">
       <ColNames>uuid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1083" parent="573" name="PRIMARY">
+    <key id="1079" parent="574" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1084" parent="574" name="id">
+    <column id="1080" parent="575" name="id">
       <AutoIncrement>2</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1085" parent="574" name="version">
+    <column id="1081" parent="575" name="version">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="1086" parent="574" name="description">
+    <column id="1082" parent="575" name="description">
       <DasType>varchar(25)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="1087" parent="574" name="script_name">
+    <column id="1083" parent="575" name="script_name">
       <DasType>varchar(25)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="1088" parent="574" name="install_date">
+    <column id="1084" parent="575" name="install_date">
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="1089" parent="574" name="PRIMARY">
+    <index id="1085" parent="575" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1090" parent="574" name="PRIMARY">
+    <key id="1086" parent="575" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1091" parent="575" name="name">
+    <column id="1087" parent="576" name="name">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1092" parent="575" name="buyer_amount">
+    <column id="1088" parent="576" name="buyer_amount">
       <DasType>int(100)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>2</Position>
     </column>
-    <column id="1093" parent="575" name="buyer_level">
+    <column id="1089" parent="576" name="buyer_level">
       <DasType>int(3)|0s</DasType>
       <DefaultExpression>1</DefaultExpression>
       <Position>3</Position>
     </column>
-    <column id="1094" parent="575" name="seller_level">
+    <column id="1090" parent="576" name="seller_level">
       <DasType>int(3)|0s</DasType>
       <DefaultExpression>1</DefaultExpression>
       <Position>4</Position>
     </column>
-    <column id="1095" parent="575" name="seller_amount">
+    <column id="1091" parent="576" name="seller_amount">
       <DasType>int(100)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>5</Position>
     </column>
-    <index id="1096" parent="575" name="name">
+    <index id="1092" parent="576" name="name">
       <ColNames>name</ColNames>
       <Type>btree</Type>
     </index>
-    <column id="1097" parent="576" name="id">
+    <column id="1093" parent="577" name="id">
       <AutoIncrement>1</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1098" parent="576" name="uuid">
+    <column id="1094" parent="577" name="uuid">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="1099" parent="576" name="points">
+    <column id="1095" parent="577" name="points">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="1100" parent="576" name="PRIMARY">
+    <index id="1096" parent="577" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="1101" parent="576" name="uuid">
+    <index id="1097" parent="577" name="uuid">
       <ColNames>uuid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1102" parent="576" name="PRIMARY">
+    <key id="1098" parent="577" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="1103" parent="576" name="uuid">
+    <key id="1099" parent="577" name="uuid">
       <UnderlyingIndexName>uuid</UnderlyingIndexName>
     </key>
-    <column id="1104" parent="577" name="uuid">
+    <column id="1100" parent="578" name="uuid">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1105" parent="577" name="username">
+    <column id="1101" parent="578" name="username">
       <DasType>varchar(30)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <index id="1106" parent="577" name="uuid">
+    <index id="1102" parent="578" name="uuid">
       <ColNames>uuid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="1107" parent="577" name="playerpoints_username_cache_uuid_index">
+    <index id="1103" parent="578" name="playerpoints_username_cache_uuid_index">
       <ColNames>uuid</ColNames>
       <Type>btree</Type>
     </index>
-    <index id="1108" parent="577" name="playerpoints_username_cache_username_index">
+    <index id="1104" parent="578" name="playerpoints_username_cache_username_index">
       <ColNames>username</ColNames>
       <Type>btree</Type>
     </index>
-    <key id="1109" parent="577" name="uuid">
+    <key id="1105" parent="578" name="uuid">
       <UnderlyingIndexName>uuid</UnderlyingIndexName>
     </key>
-    <column id="1110" parent="578" name="Nick">
-      <DasType>varchar(17)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="1111" parent="578" name="Skin">
-      <DasType>varchar(19)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <index id="1112" parent="578" name="PRIMARY">
-      <ColNames>Nick</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="1113" parent="578" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="1114" parent="579" name="UUID">
+    <column id="1106" parent="579" name="UUID">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1115" parent="579" name="Name">
+    <column id="1107" parent="579" name="Name">
       <DasType>varchar(16)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="1116" parent="579" name="Vanished">
+    <column id="1108" parent="579" name="Vanished">
       <DasType>tinyint(1)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="1117" parent="579" name="ItemPickUps">
+    <column id="1109" parent="579" name="ItemPickUps">
       <DasType>tinyint(1)|0s</DasType>
       <Position>4</Position>
     </column>
-    <index id="1118" parent="579" name="PRIMARY">
+    <index id="1110" parent="579" name="PRIMARY">
       <ColNames>UUID</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1119" parent="579" name="PRIMARY">
+    <key id="1111" parent="579" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1120" parent="580" name="UUID">
+    <column id="1112" parent="580" name="UUID">
       <DasType>varchar(80)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="1121" parent="580" name="Selected">
+    <column id="1113" parent="580" name="Selected">
       <DasType>varchar(80)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="1122" parent="581" name="name">
+    <column id="1114" parent="581" name="name">
       <DasType>varchar(16)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1123" parent="581" name="uuid">
+    <column id="1115" parent="581" name="uuid">
       <DasType>varchar(36)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="1124" parent="581" name="timestamp">
+    <column id="1116" parent="581" name="timestamp">
       <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="1125" parent="581" name="PRIMARY">
+    <index id="1117" parent="581" name="PRIMARY">
       <ColNames>name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1126" parent="581" name="PRIMARY">
+    <key id="1118" parent="581" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1127" parent="582" name="name">
+    <column id="1119" parent="582" name="uuid">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1128" parent="582" name="value">
-      <DasType>text|0s</DasType>
+    <column id="1120" parent="582" name="group_name">
+      <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="1129" parent="582" name="signature">
-      <DasType>text|0s</DasType>
+    <column id="1121" parent="582" name="creation_time">
+      <DasType>bigint(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <index id="1130" parent="582" name="PRIMARY">
-      <ColNames>name</ColNames>
+    <column id="1122" parent="582" name="duration">
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <index id="1123" parent="582" name="PRIMARY">
+      <ColNames>uuid
+group_name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1131" parent="582" name="PRIMARY">
+    <key id="1124" parent="582" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1132" parent="583" name="uuid">
+    <column id="1125" parent="583" name="name">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1133" parent="583" name="last_known_name">
-      <DasType>varchar(16)|0s</DasType>
+    <column id="1126" parent="583" name="display_name">
+      <DasType>text|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="1134" parent="583" name="value">
+    <column id="1127" parent="583" name="value">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="1135" parent="583" name="signature">
+    <column id="1128" parent="583" name="signature">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="1136" parent="583" name="timestamp">
-      <DasType>bigint(20)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <index id="1137" parent="583" name="PRIMARY">
-      <ColNames>uuid</ColNames>
+    <index id="1129" parent="583" name="PRIMARY">
+      <ColNames>name</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1138" parent="583" name="PRIMARY">
+    <key id="1130" parent="583" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1139" parent="584" name="uuid">
+    <column id="1131" parent="584" name="uuid">
       <DasType>varchar(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1140" parent="584" name="skin_identifier">
+    <column id="1132" parent="584" name="timestamp">
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="1133" parent="584" name="skin_identifier">
+      <DasType>varchar(2083)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="1134" parent="584" name="skin_variant">
+      <DasType>varchar(20)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="1135" parent="584" name="skin_type">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="1136" parent="584" name="PRIMARY">
+      <ColNames>uuid
+timestamp</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1137" parent="584" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1138" parent="585" name="uuid">
+      <DasType>varchar(36)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1139" parent="585" name="timestamp">
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <column id="1140" parent="585" name="skin_identifier">
+      <DasType>varchar(2083)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="1141" parent="585" name="skin_variant">
+      <DasType>varchar(20)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="1142" parent="585" name="skin_type">
+      <DasType>varchar(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="1143" parent="585" name="PRIMARY">
+      <ColNames>uuid
+timestamp</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1144" parent="585" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1145" parent="586" name="uuid">
+      <DasType>varchar(36)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1146" parent="586" name="last_known_name">
+      <DasType>varchar(16)|0s</DasType>
+      <Position>2</Position>
+    </column>
+    <column id="1147" parent="586" name="value">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="1148" parent="586" name="signature">
+      <DasType>text|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="1149" parent="586" name="timestamp">
+      <DasType>bigint(20)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="1150" parent="586" name="PRIMARY">
+      <ColNames>uuid</ColNames>
+      <Type>btree</Type>
+      <Unique>1</Unique>
+    </index>
+    <key id="1151" parent="586" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
+    </key>
+    <column id="1152" parent="587" name="uuid">
+      <DasType>varchar(36)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="1153" parent="587" name="skin_identifier">
       <DasType>varchar(2083)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="1141" parent="584" name="skin_variant">
+    <column id="1154" parent="587" name="skin_variant">
       <DasType>varchar(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="1142" parent="584" name="skin_type">
+    <column id="1155" parent="587" name="skin_type">
       <DasType>varchar(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <index id="1143" parent="584" name="PRIMARY">
+    <index id="1156" parent="587" name="PRIMARY">
       <ColNames>uuid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1144" parent="584" name="PRIMARY">
+    <key id="1157" parent="587" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1145" parent="585" name="url">
+    <column id="1158" parent="588" name="url">
       <DasType>varchar(266)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1146" parent="585" name="skin_variant">
+    <column id="1159" parent="588" name="skin_variant">
       <DasType>varchar(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <index id="1147" parent="585" name="PRIMARY">
+    <index id="1160" parent="588" name="PRIMARY">
       <ColNames>url</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1148" parent="585" name="PRIMARY">
+    <key id="1161" parent="588" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1149" parent="586" name="url">
+    <column id="1162" parent="589" name="url">
       <DasType>varchar(266)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1150" parent="586" name="mine_skin_id">
+    <column id="1163" parent="589" name="mine_skin_id">
       <DasType>varchar(36)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="1151" parent="586" name="value">
+    <column id="1164" parent="589" name="value">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="1152" parent="586" name="signature">
+    <column id="1165" parent="589" name="signature">
       <DasType>text|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="1153" parent="586" name="skin_variant">
+    <column id="1166" parent="589" name="skin_variant">
       <DasType>varchar(20)|0s</DasType>
       <Position>5</Position>
     </column>
-    <index id="1154" parent="586" name="PRIMARY">
+    <index id="1167" parent="589" name="PRIMARY">
       <ColNames>url</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1155" parent="586" name="PRIMARY">
+    <key id="1168" parent="589" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1156" parent="587" name="Nick">
-      <DasType>varchar(19)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="1157" parent="587" name="Value">
-      <DasType>text|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="1158" parent="587" name="Signature">
-      <DasType>text|0s</DasType>
-      <Position>3</Position>
-    </column>
-    <column id="1159" parent="587" name="timestamp">
-      <DasType>text|0s</DasType>
-      <Position>4</Position>
-    </column>
-    <index id="1160" parent="587" name="PRIMARY">
-      <ColNames>Nick</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="1161" parent="587" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="1162" parent="588" name="name">
-      <DasType>varchar(32)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="1163" parent="588" name="level">
-      <DasType>int(255)|0s</DasType>
-      <DefaultExpression>0</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="1164" parent="588" name="experience">
-      <DasType>int(255)|0s</DasType>
-      <DefaultExpression>0</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="1165" parent="588" name="hasPremiumPass">
-      <DasType>tinyint(1)|0s</DasType>
-      <DefaultExpression>0</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="1166" parent="589" name="name">
-      <DasType>varchar(255)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="1167" parent="589" name="status">
-      <DasType>varchar(255)|0s</DasType>
-      <DefaultExpression>&apos;ONLINE&apos;</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="1168" parent="589" name="role">
-      <DasType>varchar(255)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="1169" parent="589" name="isChatToggle">
-      <DasType>int(11)|0s</DasType>
-      <DefaultExpression>0</DefaultExpression>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="1170" parent="590" name="name">
-      <DasType>varchar(16)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="1171" parent="590" name="is_premium">
-      <DasType>tinyint(1)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="1172" parent="590" name="uuid">
-      <DasType>varchar(36)|0s</DasType>
-      <Position>3</Position>
-    </column>
-    <column id="1173" parent="590" name="timestamp">
-      <DasType>bigint(20)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <index id="1174" parent="590" name="PRIMARY">
-      <ColNames>name</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="1175" parent="590" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="1176" parent="591" name="name">
-      <DasType>varchar(36)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="1177" parent="591" name="value">
-      <DasType>text|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="1178" parent="591" name="signature">
-      <DasType>text|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <index id="1179" parent="591" name="PRIMARY">
-      <ColNames>name</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="1180" parent="591" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="1181" parent="592" name="name">
-      <DasType>varchar(17)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="1182" parent="592" name="skin_name">
-      <DasType>varchar(19)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <index id="1183" parent="592" name="PRIMARY">
-      <ColNames>name</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="1184" parent="592" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="1185" parent="593" name="name">
-      <DasType>varchar(36)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="1186" parent="593" name="value">
-      <DasType>text|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>2</Position>
-    </column>
-    <column id="1187" parent="593" name="signature">
-      <DasType>text|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <index id="1188" parent="593" name="PRIMARY">
-      <ColNames>name</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="1189" parent="593" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="1190" parent="594" name="uuid">
-      <DasType>varchar(36)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="1191" parent="594" name="last_known_name">
-      <DasType>varchar(16)|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="1192" parent="594" name="value">
-      <DasType>text|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="1193" parent="594" name="signature">
-      <DasType>text|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="1194" parent="594" name="timestamp">
-      <DasType>bigint(20)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>5</Position>
-    </column>
-    <index id="1195" parent="594" name="PRIMARY">
-      <ColNames>uuid</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="1196" parent="594" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="1197" parent="595" name="uuid">
-      <DasType>varchar(36)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="1198" parent="595" name="skin_identifier">
-      <DasType>varchar(2083)|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="1199" parent="595" name="skin_variant">
-      <DasType>varchar(20)|0s</DasType>
-      <Position>3</Position>
-    </column>
-    <column id="1200" parent="595" name="skin_type">
-      <DasType>varchar(20)|0s</DasType>
-      <Position>4</Position>
-    </column>
-    <index id="1201" parent="595" name="PRIMARY">
-      <ColNames>uuid</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="1202" parent="595" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="1203" parent="596" name="url">
-      <DasType>varchar(266)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="1204" parent="596" name="skin_variant">
-      <DasType>varchar(20)|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <index id="1205" parent="596" name="PRIMARY">
-      <ColNames>url</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="1206" parent="596" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="1207" parent="597" name="url">
-      <DasType>varchar(266)|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>1</Position>
-    </column>
-    <column id="1208" parent="597" name="mine_skin_id">
-      <DasType>varchar(36)|0s</DasType>
-      <Position>2</Position>
-    </column>
-    <column id="1209" parent="597" name="value">
-      <DasType>text|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>3</Position>
-    </column>
-    <column id="1210" parent="597" name="signature">
-      <DasType>text|0s</DasType>
-      <NotNull>1</NotNull>
-      <Position>4</Position>
-    </column>
-    <column id="1211" parent="597" name="skin_variant">
-      <DasType>varchar(20)|0s</DasType>
-      <Position>5</Position>
-    </column>
-    <index id="1212" parent="597" name="PRIMARY">
-      <ColNames>url</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="1213" parent="597" name="PRIMARY">
-      <NameSurrogate>1</NameSurrogate>
-      <Primary>1</Primary>
-      <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <column id="1214" parent="598" name="report_id">
+    <column id="1169" parent="590" name="report_id">
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1215" parent="598" name="comment_id">
+    <column id="1170" parent="590" name="comment_id">
       <AutoIncrement>2</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="1216" parent="598" name="status">
+    <column id="1171" parent="590" name="status">
       <DasType>varchar(25)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="1217" parent="598" name="date">
+    <column id="1172" parent="590" name="date">
       <DasType>varchar(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="1218" parent="598" name="author">
+    <column id="1173" parent="590" name="author">
       <DasType>varchar(255)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="1219" parent="598" name="message">
+    <column id="1174" parent="590" name="message">
       <DasType>text|0s</DasType>
       <Position>6</Position>
     </column>
-    <index id="1220" parent="598" name="PRIMARY">
+    <index id="1175" parent="590" name="PRIMARY">
       <ColNames>comment_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1221" parent="598" name="PRIMARY">
+    <key id="1176" parent="590" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1222" parent="599" name="report_id">
+    <column id="1177" parent="591" name="report_id">
       <AutoIncrement>20</AutoIncrement>
       <DasType>int(11)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1223" parent="599" name="status">
+    <column id="1178" parent="591" name="status">
       <DasType>varchar(50)|0s</DasType>
       <DefaultExpression>&apos;Waiting&apos;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="1224" parent="599" name="appreciation">
+    <column id="1179" parent="591" name="appreciation">
       <DasType>varchar(255)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="1225" parent="599" name="date">
+    <column id="1180" parent="591" name="date">
       <DasType>varchar(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="1226" parent="599" name="reported_uuid">
+    <column id="1181" parent="591" name="reported_uuid">
       <DasType>char(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="1227" parent="599" name="reporter_uuid">
+    <column id="1182" parent="591" name="reporter_uuid">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="1228" parent="599" name="reason">
+    <column id="1183" parent="591" name="reason">
       <DasType>varchar(255)|0s</DasType>
       <Position>7</Position>
     </column>
-    <column id="1229" parent="599" name="reported_ip">
+    <column id="1184" parent="591" name="reported_ip">
       <DasType>varchar(46)|0s</DasType>
       <Position>8</Position>
     </column>
-    <column id="1230" parent="599" name="reported_location">
+    <column id="1185" parent="591" name="reported_location">
       <DasType>varchar(510)|0s</DasType>
       <Position>9</Position>
     </column>
-    <column id="1231" parent="599" name="reported_messages">
+    <column id="1186" parent="591" name="reported_messages">
       <DasType>text|0s</DasType>
       <Position>10</Position>
     </column>
-    <column id="1232" parent="599" name="reported_gamemode">
+    <column id="1187" parent="591" name="reported_gamemode">
       <DasType>char(10)|0s</DasType>
       <Position>11</Position>
     </column>
-    <column id="1233" parent="599" name="reported_on_ground">
+    <column id="1188" parent="591" name="reported_on_ground">
       <DasType>char(1)|0s</DasType>
       <Position>12</Position>
     </column>
-    <column id="1234" parent="599" name="reported_sneak">
+    <column id="1189" parent="591" name="reported_sneak">
       <DasType>char(1)|0s</DasType>
       <Position>13</Position>
     </column>
-    <column id="1235" parent="599" name="reported_sprint">
+    <column id="1190" parent="591" name="reported_sprint">
       <DasType>char(1)|0s</DasType>
       <Position>14</Position>
     </column>
-    <column id="1236" parent="599" name="reported_health">
+    <column id="1191" parent="591" name="reported_health">
       <DasType>varchar(10)|0s</DasType>
       <Position>15</Position>
     </column>
-    <column id="1237" parent="599" name="reported_food">
+    <column id="1192" parent="591" name="reported_food">
       <DasType>varchar(10)|0s</DasType>
       <Position>16</Position>
     </column>
-    <column id="1238" parent="599" name="reported_effects">
+    <column id="1193" parent="591" name="reported_effects">
       <DasType>text|0s</DasType>
       <Position>17</Position>
     </column>
-    <column id="1239" parent="599" name="reporter_ip">
+    <column id="1194" parent="591" name="reporter_ip">
       <DasType>varchar(46)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>18</Position>
     </column>
-    <column id="1240" parent="599" name="reporter_location">
+    <column id="1195" parent="591" name="reporter_location">
       <DasType>varchar(510)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>19</Position>
     </column>
-    <column id="1241" parent="599" name="reporter_messages">
+    <column id="1196" parent="591" name="reporter_messages">
       <DasType>text|0s</DasType>
       <Position>20</Position>
     </column>
-    <column id="1242" parent="599" name="archived">
+    <column id="1197" parent="591" name="archived">
       <DasType>tinyint(1)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>21</Position>
     </column>
-    <index id="1243" parent="599" name="PRIMARY">
+    <index id="1198" parent="591" name="PRIMARY">
       <ColNames>report_id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1244" parent="599" name="PRIMARY">
+    <key id="1199" parent="591" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1245" parent="600" name="uuid">
+    <column id="1200" parent="592" name="uuid">
       <DasType>char(36)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1246" parent="600" name="name">
+    <column id="1201" parent="592" name="name">
       <DasType>varchar(20)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="1247" parent="600" name="cooldown">
+    <column id="1202" parent="592" name="cooldown">
       <DasType>varchar(20)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="1248" parent="600" name="immunity">
+    <column id="1203" parent="592" name="immunity">
       <DasType>varchar(20)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="1249" parent="600" name="notifications">
+    <column id="1204" parent="592" name="notifications">
       <DasType>text|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="1250" parent="600" name="true_appreciations">
+    <column id="1205" parent="592" name="true_appreciations">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>6</Position>
     </column>
-    <column id="1251" parent="600" name="uncertain_appreciations">
+    <column id="1206" parent="592" name="uncertain_appreciations">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>7</Position>
     </column>
-    <column id="1252" parent="600" name="false_appreciations">
+    <column id="1207" parent="592" name="false_appreciations">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>8</Position>
     </column>
-    <column id="1253" parent="600" name="reports">
+    <column id="1208" parent="592" name="reports">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>9</Position>
     </column>
-    <column id="1254" parent="600" name="reported_times">
+    <column id="1209" parent="592" name="reported_times">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>10</Position>
     </column>
-    <column id="1255" parent="600" name="processed_reports">
+    <column id="1210" parent="592" name="processed_reports">
       <DasType>int(11)|0s</DasType>
       <DefaultExpression>0</DefaultExpression>
       <Position>11</Position>
     </column>
-    <index id="1256" parent="600" name="PRIMARY">
+    <index id="1211" parent="592" name="PRIMARY">
       <ColNames>uuid</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1257" parent="600" name="PRIMARY">
+    <key id="1212" parent="592" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1258" parent="601" name="UUID">
+    <column id="1213" parent="593" name="UUID">
       <DasType>varchar(80)|0s</DasType>
       <Position>1</Position>
     </column>
-    <column id="1259" parent="601" name="Selected">
+    <column id="1214" parent="593" name="Selected">
       <DasType>varchar(80)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="1260" parent="602" name="UID">
+    <column id="1215" parent="594" name="UID">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1261" parent="602" name="player">
+    <column id="1216" parent="594" name="player">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="1262" parent="602" name="balance">
+    <column id="1217" parent="594" name="balance">
       <DasType>double(20,2 digit)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="1263" parent="602" name="hidden">
+    <column id="1218" parent="594" name="hidden">
       <DasType>int(5)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <index id="1264" parent="602" name="PRIMARY">
+    <index id="1219" parent="594" name="PRIMARY">
       <ColNames>UID</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1265" parent="602" name="PRIMARY">
+    <key id="1220" parent="594" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <column id="1266" parent="603" name="id">
-      <AutoIncrement>68</AutoIncrement>
+    <column id="1221" parent="595" name="id">
+      <AutoIncrement>73</AutoIncrement>
       <DasType>int(20)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="1267" parent="603" name="type">
+    <column id="1222" parent="595" name="type">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="1268" parent="603" name="uid">
+    <column id="1223" parent="595" name="uid">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="1269" parent="603" name="player">
+    <column id="1224" parent="595" name="player">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="1270" parent="603" name="balance">
+    <column id="1225" parent="595" name="balance">
       <DasType>double(20,2 digit)|0s</DasType>
       <Position>5</Position>
     </column>
-    <column id="1271" parent="603" name="amount">
+    <column id="1226" parent="595" name="amount">
       <DasType>double(20,2 digit)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <column id="1272" parent="603" name="operation">
+    <column id="1227" parent="595" name="operation">
       <DasType>varchar(50)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>7</Position>
     </column>
-    <column id="1273" parent="603" name="command">
+    <column id="1228" parent="595" name="command">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>8</Position>
     </column>
-    <column id="1274" parent="603" name="comment">
+    <column id="1229" parent="595" name="comment">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>9</Position>
     </column>
-    <column id="1275" parent="603" name="datetime">
+    <column id="1230" parent="595" name="datetime">
       <DasType>datetime|0s</DasType>
       <NotNull>1</NotNull>
       <Position>10</Position>
     </column>
-    <index id="1276" parent="603" name="PRIMARY">
+    <index id="1231" parent="595" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="1277" parent="603" name="PRIMARY">
+    <key id="1232" parent="595" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>

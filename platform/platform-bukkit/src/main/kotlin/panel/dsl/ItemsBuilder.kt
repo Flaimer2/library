@@ -12,6 +12,10 @@ class ItemsBuilder {
     operator fun Char.invoke(setup: ItemBuilder.() -> Unit) {
         items.add(ItemBuilder(this).apply(setup).build())
     }
+
+    infix fun item(item: Item) {
+        items.add(item)
+    }
 }
 
 class ItemBuilder(val index: Char? = null) {
