@@ -22,3 +22,7 @@ fun Player.withdrawMoney(amount: Int, success: (Player) -> Unit = {}, fail: (Pla
 
     fail(this)
 }
+
+fun Player.depositMoney(amount: Int) {
+    api.depositPlayer(this, amount.toDouble())
+}

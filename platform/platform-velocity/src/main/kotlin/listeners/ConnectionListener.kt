@@ -8,14 +8,17 @@ import ru.snapix.library.network.events.Events
 import ru.snapix.library.network.events.PlayerDisconnectEvent
 import ru.snapix.library.network.player.OfflineNetworkPlayer
 import ru.snapix.library.network.player.statistic.Statistics
+import ru.snapix.library.utils.Skins
 import ru.snapix.library.velocity.plugin
 
 class ConnectionListener {
     @Subscribe(order = PostOrder.EARLY)
     fun onLogin(event: LoginEvent) {
-        val username = event.player.username
+        val player = event.player
+        val username = player.username
         plugin.addPlayer(username)
         Statistics.update(username)
+        Skins.update(player)
     }
 
     @Subscribe(order = PostOrder.EARLY)

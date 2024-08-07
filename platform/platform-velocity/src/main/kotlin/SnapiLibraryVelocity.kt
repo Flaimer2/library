@@ -14,6 +14,7 @@ import ru.snapix.library.SnapiLibrary
 import ru.snapix.library.network.messenger.Messenger
 import ru.snapix.library.network.player.NetworkPlayer
 import ru.snapix.library.network.player.statistic.Statistics
+import ru.snapix.library.utils.Skins
 import ru.snapix.library.utils.async
 import ru.snapix.library.utils.redisClient
 import ru.snapix.library.velocity.listeners.ConnectionListener
@@ -48,6 +49,7 @@ class SnapiLibraryVelocity @Inject constructor(
                 Statistics.update(it.username)
             }
         }
+        Skins.update()
     }
 
     @Subscribe

@@ -8,25 +8,33 @@
       <Current>1</Current>
     </schema>
     <schema id="3" parent="1" name="1"/>
-    <schema id="4" parent="1" name="2"/>
-    <schema id="5" parent="1" name="3"/>
-    <schema id="6" parent="1" name="4"/>
-    <schema id="7" parent="1" name="5"/>
-    <schema id="8" parent="1" name="6"/>
-    <schema id="9" parent="1" name="7"/>
-    <schema id="10" parent="1" name="8"/>
-    <schema id="11" parent="1" name="9"/>
-    <schema id="12" parent="1" name="10"/>
-    <schema id="13" parent="1" name="11"/>
-    <schema id="14" parent="1" name="12"/>
-    <schema id="15" parent="1" name="13"/>
-    <schema id="16" parent="1" name="14"/>
-    <schema id="17" parent="1" name="15"/>
+    <schema id="4" parent="1" name="10"/>
+    <schema id="5" parent="1" name="11"/>
+    <schema id="6" parent="1" name="12"/>
+    <schema id="7" parent="1" name="13"/>
+    <schema id="8" parent="1" name="14"/>
+    <schema id="9" parent="1" name="15"/>
+    <schema id="10" parent="1" name="2"/>
+    <schema id="11" parent="1" name="3"/>
+    <schema id="12" parent="1" name="4"/>
+    <schema id="13" parent="1" name="5"/>
+    <schema id="14" parent="1" name="6"/>
+    <schema id="15" parent="1" name="7"/>
+    <schema id="16" parent="1" name="8"/>
+    <schema id="17" parent="1" name="9"/>
     <hash-table id="18" parent="2" name="account-coins"/>
-    <hash-table id="19" parent="2" name="balancer-server:lobby"/>
-    <hash-table id="20" parent="2" name="friends"/>
-    <hash-table id="21" parent="2" name="player-connected-server"/>
-    <hash-table id="22" parent="2" name="statistic"/>
-    <set id="23" parent="2" name="proxy-player"/>
+    <hash-table id="19" parent="2" name="balancer-server:anarchy"/>
+    <hash-table id="20" parent="2" name="balancer-server:classic"/>
+    <hash-table id="21" parent="2" name="balancer-server:lobby"/>
+    <hash-table id="22" parent="2" name="balancer-server:skyblock"/>
+    <hash-table id="23" parent="2" name="balancer-server:skywars"/>
+    <hash-table id="24" parent="2" name="clan-clans"/>
+    <hash-table id="25" parent="2" name="clan-users"/>
+    <hash-table id="26" parent="2" name="friends"/>
+    <hash-table id="27" parent="2" name="game-rewards"/>
+    <hash-table id="28" parent="2" name="player-connected-server"/>
+    <hash-table id="29" parent="2" name="player-skin"/>
+    <hash-table id="30" parent="2" name="statistic"/>
+    <set id="31" parent="2" name="proxy-player"/>
   </database-model>
 </dataSource>
