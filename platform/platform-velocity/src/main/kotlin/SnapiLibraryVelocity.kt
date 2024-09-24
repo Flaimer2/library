@@ -49,6 +49,7 @@ class SnapiLibraryVelocity @Inject constructor(
                 Statistics.update(it.username)
             }
         }
+        Skins.load()
         Skins.update()
     }
 

@@ -1,4 +1,5 @@
 plugins {
+    java
     alias(libs.plugins.plugin.yml.bukkit)
 }
 
@@ -7,6 +8,8 @@ dependencies {
 
     implementation(libs.acf.paper)
     implementation(libs.xseries)
+    implementation("fr.mrmicky:FastParticles:2.0.1")
+    implementation("xyz.xenondevs:particle:1.8.3")
 
     compileOnly(libs.bukkit)
     compileOnly(libs.dazzleconf)
@@ -20,6 +23,7 @@ dependencies {
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
     relocateDependency("co.aikar")
+    relocateDependency("io.netty")
     relocateDependency("io.github.crackthecodeabhi")
     relocateDependency("mu")
     relocateDependency("space.arim")

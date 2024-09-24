@@ -24,10 +24,10 @@ enum class MurderMysteryType {
 enum class TheBridgeType {
     WINS,
     LOSES,
-    GAMESPLAYED,
+    GAMES_PLAYED,
     KILLS,
     DEATHS,
-    POINTS
+    SCORED_POINTS
 }
 
 enum class AlonsoLevelsType {

@@ -85,7 +85,11 @@ class GeneratorPanel<T> internal constructor(
         for (slot in 0..<inventory.size) {
             val item = itemMap[slot]?.clone()
             if (item != null) {
-                if (!item.condition(Conditions(this, item, slot))) continue
+                if (!item.condition(Conditions(this, item, slot))) {
+                    inventory.setItem(slot, null)
+                    clickItemMap[slot] = Item()
+                    continue
+                }
                 item.replace(player, replacements, updateReplacements)
                 inventory.setItem(slot, item.item())
                 clickItemMap[slot] = item

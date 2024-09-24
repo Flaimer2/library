@@ -20,6 +20,10 @@ fun getPlayerTexture(name: String): String? {
 data class PlayerSkin(val username: String, val value: String)
 
 object Skins {
+    fun load() {
+        SkinDatabase.load()
+    }
+
     fun update() {
         SkinDatabase.values().forEach { SkinCache.update(it) }
     }
@@ -58,6 +62,11 @@ object SkinTable : Table("player_skins") {
 }
 
 internal object SkinDatabase {
+    fun load() {
+        transaction(SnapiLibrary.globalDatabase) {
+            SchemaUtils.create(SkinTable)
+        }
+    }
     fun create(skin: PlayerSkin) {
         transaction(SnapiLibrary.globalDatabase) {
             SkinTable.insertIgnore {

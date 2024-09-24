@@ -16,6 +16,7 @@ dependencies {
 
 tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar> {
     relocateDependency("co.aikar")
+    relocateDependency("io.netty")
     relocateDependency("io.github.crackthecodeabhi")
     relocateDependency("mu")
     relocateDependency("space.arim")

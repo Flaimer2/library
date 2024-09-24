@@ -3,6 +3,7 @@ package ru.snapix.library.bukkit
 import net.milkbowl.vault.economy.Economy
 import org.bukkit.plugin.java.JavaPlugin
 import ru.snapix.library.SnapiLibrary
+import ru.snapix.library.bukkit.commands.Commands
 import ru.snapix.library.bukkit.panel.InventoryListener
 import ru.snapix.library.bukkit.panel.type.BukkitPanel
 import ru.snapix.library.bukkit.settings.Settings
@@ -25,6 +26,7 @@ class SnapiLibraryBukkit : JavaPlugin() {
         server.pluginManager.registerEvents(InventoryListener(), this)
         server.pluginManager.registerEvents(ChatListener, this)
         Events.enable()
+        Commands.enable()
     }
 
     override fun onDisable() {

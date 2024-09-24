@@ -9,6 +9,7 @@ dependencies {
     implementation(libs.dazzleconf) { exclude(group = "org.yaml", module = "snakeyaml") }
     implementation(libs.adventure.minimessage)
     implementation(libs.adventure.bukkit)
+    implementation("io.netty:netty-all:4.1.112.Final")
 
     compileOnly(libs.lastloginapi)
     compileOnly(libs.luckperms)
