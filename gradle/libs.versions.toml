@@ -19,6 +19,7 @@ xseries = "11.2.0"
 paper-api = "1.12.2-R0.1-SNAPSHOT"
 plugin-yml-bukkit = "0.6.0"
 luckperms = "5.4"
+balancer = "1.5"
 
 [libraries]
 velocityapi = { module = "com.velocitypowered:velocity-api", version.ref = "velocity" }
@@ -41,6 +42,10 @@ vault = { module = "com.github.MilkBowl:VaultAPI", version.ref = "vault" }
 placeholderapi = { module = "me.clip:placeholderapi", version.ref = "placeholderapi" }
 xseries = { module = "com.github.cryptomorin:XSeries", version.ref = "xseries" }
 luckperms = { module = "net.luckperms:api", version.ref = "luckperms" }
+balancer = { module = "ru.snapix:snapibalancer-bukkit", version.ref = "balancer" }
+
+[bundles]
+exposed = ["exposed-core", "exposed-dao", "exposed-jdbc"]
 
 [plugins]
 jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }

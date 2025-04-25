@@ -1,0 +1,68 @@
+package ru.snapix.library.bukkit.panel.dsl
+
+import com.cryptomorin.xseries.XMaterial
+import org.bukkit.inventory.ItemFlag
+import ru.snapix.library.bukkit.panel.ClickAction
+import ru.snapix.library.bukkit.panel.Condition
+import ru.snapix.library.bukkit.panel.Item
+
+class ItemsBuilder {
+    val items = mutableListOf<Item>()
+
+    operator fun Char.invoke(setup: ItemBuilder.() -> Unit) {
+        items.add(ItemBuilder(this).apply(setup).build())
+    }
+
+    infix fun item(item: Item) {
+        items.add(item)
+    }
+}
+
+class ItemBuilder(val index: Char? = null) {
+    var name: String? = null
+    var material: Material = Material.AIR
+    var amount: Int = 1
+    var lore = mutableListOf<String>()
+    var itemFlag = mutableListOf<ItemFlag>()
+    var actions: ClickAction? = null
+    var head: String? = null
+    var condition: Condition = { true }
+
+    fun lore(setup: LoreBuilder.() -> Unit) {
+        lore = LoreBuilder().apply(setup).list
+    }
+
+    fun itemFlag(setup: ItemFlagBuilder.() -> Unit) {
+        itemFlag = ItemFlagBuilder().apply(setup).list
+    }
+
+    fun actions(actions: ClickAction) {
+        this.actions = actions
+    }
+
+    fun condition(condition: Condition) {
+        this.condition = condition
+    }
+
+    class LoreBuilder {
+        val list = mutableListOf<String>()
+
+        operator fun String.unaryMinus() {
+            list.add(this)
+        }
+    }
+
+    class ItemFlagBuilder {
+        val list = mutableListOf<ItemFlag>()
+
+        operator fun ItemFlag.unaryMinus() {
+            list.add(this)
+        }
+    }
+
+    fun build(): Item {
+        return Item(index, name, material, amount, lore, itemFlag, actions, head, condition)
+    }
+}
+
+typealias Material = XMaterial

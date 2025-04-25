@@ -1,0 +1,65 @@
+package ru.snapix.library.bukkit.panel.type
+
+import org.bukkit.Material
+import org.bukkit.entity.Player
+import org.bukkit.event.inventory.ClickType
+import org.bukkit.inventory.Inventory
+import org.bukkit.inventory.InventoryHolder
+import org.bukkit.inventory.ItemStack
+import org.bukkit.scheduler.BukkitTask
+import ru.snapix.library.Replacement
+import ru.snapix.library.bukkit.panel.Click
+import ru.snapix.library.bukkit.panel.Conditions
+import ru.snapix.library.bukkit.panel.Item
+import ru.snapix.library.bukkit.panel.ItemMap
+import ru.snapix.library.network.panel.Panel
+import kotlin.time.Duration
+import kotlin.time.measureTime
+
+abstract class BukkitPanel internal constructor(
+    val player: Player,
+    override val title: String,
+    override val update: Duration?,
+    override val replacements: Replacement,
+    override val updateReplacements: (String) -> String
+) : Panel, InventoryHolder {
+    abstract val bukkitInventory: Inventory
+    abstract val updateTimer: BukkitTask?
+
+    open fun render(itemMap: ItemMap) {
+        val replacements = replacements.mapValues { it.value().toString() }.toMutableMap()
+
+        for (slot in 0..<inventory.size) {
+            val item = itemMap[slot]?.clone()
+            if (item != null && item.condition(Conditions(this, item, slot))) {
+                item.replace(player, replacements, updateReplacements)
+                inventory.setItem(slot, item.item())
+            } else {
+                inventory.setItem(slot, null)
+            }
+        }
+
+        player.updateInventory()
+    }
+
+    override fun disable() {
+        updateTimer?.cancel()
+    }
+
+    fun runClickCallbacks(slot: Int, type: ClickType) {
+        val item = getItemBySlot(slot) ?: return
+        val clickAction = item.clickAction ?: return
+        if (!item.condition(Conditions(this, item, slot))) return
+        
+        val click = Click(player, this, type, item, slot)
+
+        click.clickAction()
+    }
+
+    abstract fun getItemBySlot(slot: Int): Item?
+    abstract fun render()
+
+    override fun getInventory(): Inventory {
+        return bukkitInventory
+    }
+}
